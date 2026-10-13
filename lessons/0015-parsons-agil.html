@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 15 课 · 帕森斯（四）：模式变项与 AGIL——体系怎么长成又怎么崩</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+  .diagram { background:var(--paper-alt); border:1px solid var(--rule); padding:1.4rem 1rem 1rem; margin:1.6rem 0; overflow-x:auto; }
+  .diagram pre { font-family:"SF Mono", Consolas, "Cascadia Mono", monospace; font-size:.82rem; line-height:1.55; margin:0; color:var(--ink); white-space:pre; }
+  .quote { border-left:3px solid var(--rule); padding:.6rem 0 .6rem 1rem; margin:1.1rem 0; color:var(--ink-soft); font-size:.94rem; }
+  .quote cite { display:block; margin-top:.5rem; font-size:.8rem; color:var(--ink-faint); font-style:normal; }
+  .roster { border:1px solid var(--rule); border-radius:8px; overflow:hidden; margin:1.4rem 0; }
+  .roster .row { display:flex; flex-wrap:wrap; border-top:1px solid var(--rule); }
+  .roster .row:first-child { border-top:none; }
+  .roster .row > div { padding:.65rem .9rem; font-size:.9rem; }
+  .roster .row > div:first-child { flex:0 0 110px; font-weight:600; background:var(--paper-alt); }
+  .roster .row > div:last-child { flex:1 1 320px; }
+  .hook { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .hook h4 { margin:0 0 .5rem; font-size:1rem; }
+  .hook p { margin:.35rem 0; }
+  .hook .main { font-size:1.15rem; font-weight:700; }
+  .note { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .note .label { display:block; font-weight:700; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.03em; }
+  .note p { margin:.4rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  .contrast { display:flex; gap:1rem; flex-wrap:wrap; margin:1.4rem 0; }
+  .contrast > div { flex:1 1 240px; border:1px solid #ddd; border-radius:8px; padding:.9rem 1.1rem; }
+  .contrast h4 { margin-top:0; font-size:1rem; }
+  .contrast p:last-child { margin-bottom:0; }
+  .step { display:flex; align-items:center; gap:.6rem; margin:1.6rem 0 .8rem; font-weight:700; font-size:1.02rem; }
+  .step .num { flex:0 0 2rem; height:2rem; border-radius:50%; background:#333; color:#fff;
+                display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">社会学 · 第 15 课（四）· 约 30 分钟</p>
+  <h1>帕森斯（四）：模式变项与 AGIL</h1>
+  <p class="subtitle">1937—1970s · 他如何把整个社会装进一个框架，以及这个框架为什么自己压垮了自己</p>
+
+  <div class="note">
+    <span class="label">这一课接在哪</span>
+    <p>前三课讲了他怎么起来：<strong>12</strong> 问题与武器 → <strong>13</strong> 角色与闭环 → <strong>14</strong> 优点与裂缝。</p>
+    <p><strong>这一课（四）</strong>看他怎么把「两条腿」的机制<strong>扩成一台装下整个社会的机器</strong>——以及这台机器<strong>为什么会自己撑不住</strong>。</p>
+    <p class="meta">本课同样按七段写：<strong>① 背景 ② 问题 ③ 回答 ④ 优点 ⑤ 裂缝 ⑥ 挑战 ⑦ 影响</strong>。</p>
+  </div>
+
+  <div class="hook">
+    <h4>把手词（本课）</h4>
+    <p>主：<span class="main">模式变项</span>　—　五组二分选项，<strong>不是行动类型</strong></p>
+    <p>辅一：<strong>AGIL</strong>　—　任何系统都必须满足的四个功能</p>
+    <p>辅二：<strong>LIGA / 控制论等级</strong>　—　他自己加的那个「价值在上」的层级（这是他的破绽）</p>
+  </div>
+
+  <div class="step"><span class="num">1</span>思想背景：1950 年代的两股风</div>
+
+  <h2>他想把社会学做成「科学」，而当时有两把现成的工具</h2>
+
+  <p>第 12 课讲过：1930 年代他面对的是功利主义与进化论。</p>
+
+  <p><strong>到了 1950 年代，学术空气变了</strong>——他手上多了两把新工具，而且他都用了：</p>
+
+  <div class="contrast">
+    <div>
+      <h4>工具一：控制论</h4>
+      <p>1950 年代对生物学与自然科学影响极大的控制理论</p>
+      <p>核心意象是<strong>「调温器」</strong>——靠收集信息来自动调节</p>
+      <p class="meta">第 3555—3562 行</p>
+    </div>
+    <div>
+      <h4>工具二：生物学／系统论</h4>
+      <p>他本来就在生物学系就读过</p>
+      <p>把「系统」当成有<strong>边界、有需求、要维持自身</strong>的整体</p>
+      <p class="meta">第 3555—3559 行</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">这个背景很重要，它解释了他后来的所有选择</span>
+    <p>他不再满足于「行动理论」（研究单个行动的结构），他要的是<strong>一套能覆盖一切的理论语言</strong>。</p>
+    <p>而当时最像「万能语言」的东西，就是<strong>系统论 + 控制论</strong>。</p>
+    <p class="meta">——这个选择成就了他，也埋了他的雷。</p>
+  </div>
+
+  <div class="step"><span class="num n2">2</span>他面临什么问题</div>
+
+  <h2>问题：社会学里那几组「吵不出结果」的二分法</h2>
+
+  <p>到 1950 年代，他已经有了一套关于<strong>行动</strong>的理论（单位行动 + 角色）。但有两个麻烦一直没解决：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>麻烦一</div>
+      <div><strong>行动怎么比较？</strong>——同一个行动，在不同的规范环境里意义完全不同。怎么描述这种差别？</div>
+    </div>
+    <div class="row">
+      <div>麻烦二</div>
+      <div><strong>那些老二分法吵不完</strong>——马克思的「上层结构 / 下层结构」、韦伯的「利益 / 观念」，<strong>到底谁先谁后？</strong>（第 3368—3373 行）</div>
+    </div>
+    <div class="row">
+      <div>麻烦三</div>
+      <div><strong>功能描述「一个人一个说法」</strong>——研究教会说它「凝聚人心」，研究学校说它「传递知识」，研究家庭说它「养育后代」。<strong>每个都对，但它们之间没有共同尺度</strong>：没法比较，也没法证明「有没有漏掉什么」（第 3270—3277 行）</div>
+    </div>
+  </div>
+
+  <p>麻烦二尤其让他难受，因为它<strong>纠缠了他一辈子</strong>——从《社会行动的结构》起，就不断有人指责他「暗暗陷于文化决定论，过于强调规范和价值」（第 3374—3376 行）。</p>
+
+  <h3>麻烦三值得多说一句：他想要的是「统一格式」</h3>
+
+  <p>这一点最容易漏，但它才是 AGIL 真正的起源。<strong>他的原话</strong>（第 3270—3277 行）：</p>
+
+  <div class="quote">
+    在对社会现象的观察中我们可以识别出一系列满足更大整体需要的功能。但<strong>光搞清楚这些功能还是不够的，因为每个功能描述可能都很不一样，甚至可能是完全无关的</strong>。帕森斯清楚地意识到<strong>在这方面要进行系统化</strong>，所以他考虑<strong>能不能用某种方式将这些从系统推导出来的功能给总括起来</strong>。人们是不是甚至可以声称，<strong>所有的社会系统都必须满足一定数量的、可以被清楚命名的功能</strong>？
+    <cite>《社会理论二十讲》第 3270—3277 行</cite>
+  </div>
+
+  <div class="diagram">
+<pre>在他之前，功能分析是这样的：
+
+  研究教会 → 「它起了凝聚人心的作用」
+  研究学校 → 「它起了传递知识的作用」
+  研究家庭 → 「它起了养育后代的作用」
+
+  每一个都对，但彼此没有共同尺度。
+  → 没法比较，也没法证明「有没有漏掉什么」
+
+他要的是一份「任何系统都必须回答的问题清单」：
+
+  不管研究什么，都拿同样的问题去问
+  → 功能分析从「各说各话」变成「有统一格式」</pre>
+  </div>
+
+  <div class="hook">
+    <p><strong>所以他这一阶段的问题可以概括成两句</strong>：</p>
+    <p>① 有没有一种理论语言，能让我说清「<strong>行动有哪些可能</strong>」，并且一次解决那些二分法？</p>
+    <p>② 有没有一份清单，能让「<strong>功能分析</strong>」变成一套可操作的标准程序？</p>
+  </div>
+
+  <div class="step"><span class="num n3">3</span>他提出什么回答</div>
+
+  <h2>回答一：模式变项——五组二分选项</h2>
+
+  <div class="quote">
+    模式变项意指人类行动<strong>会在五组二分选项当中游移</strong>，人类每次采取行动时都<strong>必须在这五组互斥二分的可能选项当中进行选择</strong>。
+    <cite>《社会理论二十讲》第 3048—3050 行</cite>
+  </div>
+
+  <div class="roster">
+    <div class="row">
+      <div>①</div>
+      <div><strong>情感 — 情感中立</strong>　—　我对学生指导时要不要带情绪？</div>
+    </div>
+    <div class="row">
+      <div>②</div>
+      <div><strong>自我取向 — 集体取向</strong>　—　我照自己的利益，还是照共同体的利益？</div>
+    </div>
+    <div class="row">
+      <div>③</div>
+      <div><strong>普遍主义 — 特殊主义</strong>　—　我照对所有人有效的规矩，还是只照对我亲友有效的规矩？</div>
+    </div>
+    <div class="row">
+      <div>④</div>
+      <div><strong>继承 — 成就</strong>　—　我凭出身外貌判断人，还是凭他的功绩？</div>
+    </div>
+    <div class="row">
+      <div>⑤</div>
+      <div><strong>特定 — 宽泛</strong>　—　我是「一家之主」（各方面都要管），还是「供暖设施装配工」（只管一件事）？</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">⚠️ 第一个必避的误解：不是行动类型</span>
+    <p>它们看起来像韦伯的四种行动类型，<strong>但根本不是一类东西</strong>（第 3093—3104 行）。</p>
+    <p>韦伯的四种类型<strong>互斥</strong>：一个行动如果是目的理性的，就不能同时是传统的。</p>
+    <p>但帕森斯这五组<strong>可以组合</strong>——「情感中立的行动」，再结合剩下四组，就能变成完全不同的行动（第 3107—3110 行）。</p>
+  </div>
+
+  <div class="diagram">
+<pre>韦伯：4 种行动类型（互斥，选一）
+
+帕森斯：5 组二分选项（可组合）
+   2 × 2 × 2 × 2 × 2 = 32 种行动可能
+
+  这才是「模式变项」这个名字的由来
+  —— 不是「类型表」，是「选项组合器」</pre>
+  </div>
+
+  <h2>回答二：AGIL——任何系统都必须满足的四个功能</h2>
+
+  <p>这套东西来得很不「社会学」——<strong>起点是小团体研究</strong>（第 3300—3306 行）：</p>
+
+  <div class="quote">
+    帕森斯和他的共同作者把这些<strong>普遍化的小团体命题再加以普遍化</strong>，并且声称，<strong>不只是小团体，而是每个系统策略上都必须满足四个功能</strong>。
+    <cite>《社会理论二十讲》第 3305—3307 行</cite>
+  </div>
+
+  <div class="roster">
+    <div class="row">
+      <div>A</div>
+      <div><strong>适应</strong>（Adaptation）　—　系统必须适应外在环境或其他系统</div>
+    </div>
+    <div class="row">
+      <div>G</div>
+      <div><strong>目标达成</strong>（Goal attainment）　—　每个系统都有必须达成的特定目标</div>
+    </div>
+    <div class="row">
+      <div>I</div>
+      <div><strong>整合</strong>（Integration）　—　系统必须整合它的各个部分</div>
+    </div>
+    <div class="row">
+      <div>L</div>
+      <div><strong>模式维持 / 潜存</strong>（Latency）　—　以维系性的价值来组织自身<br><span class="meta">「潜存」这个名字有讲究：「因为价值不一定是很明确的，而且大多数价值只是潜在地在背后发挥作用」（第 3311—3313 行）</span></div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">⚠️ 关键：AGIL 不是新东西——它是给「功能前提」填了一张清单</span>
+    <p>回顾<strong>第 13 课</strong>：他已经有了「<strong>功能前提</strong>」这个概念——「<strong>系统得以持存的一种必要条件</strong>」（第 2859—2861 行）。</p>
+    <p>而 AGIL 说的是：「<strong>每个系统策略上都必须满足四个功能</strong>」（第 3306—3307 行）。</p>
+    <p><strong>这两句是同一件事——AGIL 只是把「某些条件」列成了具体的四条。</strong></p>
+  </div>
+
+  <div class="diagram">
+<pre>功能前提（第 13 课）      AGIL（本课）
+系统要持存，                系统要持存，
+必须满足某些条件        →   必须满足这四个功能
+（没列清单）                （列了清单）
+
+差别只在「有没有列出来」。
+而这一步恰恰是最可疑的 ——
+「必须满足某些条件」是稳的（必要条件，逻辑上无懈可击）；
+「必须恰好是这四个」就不稳了：凭什么不是三个、不是五个？</pre>
+  </div>
+
+  <div class="note">
+    <span class="label">这就是「多余感」的第一个来源</span>
+    <p>他要列的这份清单<strong>没有逻辑必然性，只有「看起来挺全」</strong>——而它的实际来源更单薄：<strong>一次小团体协作研究的观察结果</strong>（第 3283—3297 行）。</p>
+    <p class="meta">这一点在第 ⑤ 段「裂缝」还会再回来。</p>
+  </div>
+
+  <h3>而且这四个格子能一路套下去</h3>
+
+  <p>把整个社会当系统，四格对应四个子系统（第 3334—3340 行）：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>A → 经济</div>
+      <div>满足适应功能的<strong>经济子系统</strong></div>
+    </div>
+    <div class="row">
+      <div>G → 政治</div>
+      <div>满足目标达成的<strong>政治子系统</strong></div>
+    </div>
+    <div class="row">
+      <div>I → 社会共同体</div>
+      <div>满足整合功能的<strong>「社会共同体」</strong>（非政治非经济的机构组织）</div>
+    </div>
+    <div class="row">
+      <div>L → 文化</div>
+      <div>满足价值维系的<strong>文化子系统</strong>（帕森斯叫「信托系统」）</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    这个「<strong>追问游戏</strong>」可以不断继续下去。到了<strong>个别企业的层次，到了企业中的个别公司的层次，甚至到了公司中工作团队的层次</strong>，都可以追问其中还有哪些部分必须带来哪些功能成就。
+    <cite>《社会理论二十讲》第 3346—3350 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>两个工具的配合方式</h4>
+    <p><strong>模式变项</strong>管「一个行动有哪些可能」——是<strong>微观的选项清单</strong>。</p>
+    <p><strong>AGIL</strong> 管「一个系统要满足哪些功能」——是<strong>宏观的需求清单</strong>。</p>
+    <p>两个一配合，从个人行动到整个社会，<strong>用的是同一套语言</strong>——这就是他要的「万能理论语言」。</p>
+  </div>
+
+  <div class="step"><span class="num n4">4</span>优点何在：他赢在哪</div>
+
+  <h2>优点一：他确实给了一个「能覆盖一切」的框架</h2>
+
+  <p>这一点必须承认。<strong>1950—60 年代的社会学需要一套共同语言</strong>，而他给了：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>对经验研究</div>
+      <div>角色学习（社会化）与越轨行为两个领域，<strong>直接从他这里得到启发而蓬勃发展</strong>（第 2967—2988 行）</div>
+    </div>
+    <div class="row">
+      <div>对学科身份</div>
+      <div>AGIL 让社会学能说「我有一套自己的分析语言」，不必借心理学或经济学</div>
+    </div>
+  </div>
+
+  <h2>优点二：他真的想解决「谁先谁后」这个死结</h2>
+
+  <div class="quote">
+    关于马克思的上层结构与下层结构二分法，以及韦伯不断重新提出的关于<strong>利益与观念之间的分析关系</strong>，帕森斯都认为<strong>最终可以通过四分的功能模式来去芜存菁</strong>，因为人们正好可以指出，社会制度和秩序总是<strong>从不同的功能需求和相应的过程呈现出一种复杂的混合关系</strong>，所以关于上层结构和下层结构、利益和观念，<strong>追问谁先谁后是没有意义的</strong>。
+    <cite>《社会理论二十讲》第 3369—3373 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这个思路其实很现代</span>
+    <p>他说的「追问谁先谁后没有意义」——<strong>和 20 世纪后期「拒绝简单因果、强调相互构成」的思路是同方向的</strong>。</p>
+    <p>问题不在这个想法，在于<strong>他用什么工具实现它</strong>。</p>
+  </div>
+
+  <h2>优点三：他想让功能论「动」起来</h2>
+
+  <p>他很清楚别人在骂他什么（第 3390—3395 行）：</p>
+
+  <div class="quote">
+    到目前为止，帕森斯都在谈功能；而他现在开始要来<strong>揭示时间了</strong>。功能的满足需要时间。他尝试以此避免人们指责，说他<strong>的思想原则上是一种僵固性的思想</strong>，说他的理论中不存在变动性。
+    <cite>《社会理论二十讲》第 3390—3394 行</cite>
+  </div>
+
+  <p>1956 年与斯梅尔瑟合著《经济与社会》，提出<strong>交换关系理论</strong>——经济给别的子系统什么、从别的子系统拿什么。<strong>这是真心想做动态。</strong></p>
+
+  <div class="step"><span class="num n5">5</span>缺点怎么暴露</div>
+
+  <h2>裂缝一：他做的不是「动态」，是「系统内部的变动」</h2>
+
+  <p>《二十讲》紧接着就点破（第 3619—3623 行）：</p>
+
+  <div class="quote">
+    当然帕森斯很快就承认，他的批评者不会满意这种说法。因为帕森斯和斯梅尔瑟事实上<strong>也都只是在描述社会系统内部的改变过程，而不是真的在分析社会系统本身的改变</strong>。社会基本上是如何变迁的，尤其是如何理解社会从「原始」社会变成「现代」西方社会的改变过程，<strong>帕森斯的这一套理论对于这个问题到目前为止都没有太多贡献</strong>。
+    <cite>《社会理论二十讲》第 3619—3623 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">用比喻说清这个区别</span>
+    <p><strong>系统内变动</strong>：一台机器运转时，零件在动、能量在流动——<strong>但机器本身没变</strong>。</p>
+    <p><strong>系统本身的改变</strong>：这台机器被拆了，改成了完全不同的另一台。</p>
+    <p>帕森斯做了前者，还把它当成了后者。</p>
+  </div>
+
+  <h2>裂缝二：他自己加的「LIGA」——价值必须在上，这是硬塞的</h2>
+
+  <p><strong>这是全课最要紧的一处。</strong></p>
+
+  <p>AGIL 本来是<strong>四个并列的功能</strong>。但他后来加了一层——<strong>控制论等级</strong>（第 3562—3566 行）：</p>
+
+  <div class="quote">
+    就像<strong>调温器</strong>这么一个不起眼的小工具，会通过收集和处理信息来控制空调，以此调节室温……帕森斯认为 AGIL 模型也贯穿着<strong>控制论式的等级层次</strong>。每个系统的<strong>控制中心位于所谓的 L 领域当中</strong>，也即社会的价值或文化系统，控制了社会的其他子系统。根本上人们<strong>不该说 AGIL，而是应该说 LIGA 系统</strong>，因为「模式持存」优先于整合，而整合优先于目标达成，目标达成优先于适应。
+    <cite>《社会理论二十讲》第 3560—3566 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>这一步是什么性质？</h4>
+    <p><strong>他把一个本来并列的四格框架，改成了一个「价值在最上」的等级体系。</strong></p>
+    <p>而这恰恰<strong>印证了别人一直骂他的那句话</strong>：说他暗暗陷于<strong>文化决定论</strong>，过于强调规范和价值（第 3374—3376 行）。</p>
+    <p>他本想用 AGIL 来洗清这个嫌疑（「你看我考虑了四个功能，多面向」）——<strong>结果反手用 LIGA 把「价值优先」明说了出来。</strong></p>
+  </div>
+
+  <h2>裂缝三：框架吃掉了他自己的行动理论</h2>
+
+  <p>哈贝马斯给了最准的一刀（第 3569—3578 行）：</p>
+
+  <div class="quote">
+    这种「<strong>用系统理论的套路来融合行动理论的基本概念</strong>」是有问题的做法……帕森斯的理论原先「<strong>以行动理论作为优先的基本概念，结果变成以（功能论的）系统理论作为优先的基本概念</strong>」……这最终导致一个后果，就是<strong>行动越来越淡出帕森斯的视野</strong>，或者行动越来越被认为<strong>只是派生自系统的功能需求罢了</strong>。
+    <cite>《社会理论二十讲》第 3570—3579 行，引哈贝马斯</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这句话要慢慢读——它是全课的重锤</span>
+    <p>帕森斯 1937 年的起点是<strong>「行动者」</strong>——一个会选、会想、有目的的人。</p>
+    <p>到 1970 年代，<strong>行动变成「系统功能的产物」</strong>。</p>
+    <p><strong>他绕了一大圈，回到了他年轻时最想反对的那个位置——</strong>把人看成被结构推着走的东西。</p>
+    <p class="meta">这正是第 14 课「裂缝二」（他的框架太客观，漏了行动者怎么诠释）的最终形态。</p>
+  </div>
+
+  <h2>裂缝四：框架膨胀到自己人都不懂了</h2>
+
+  <p>1970 年代他把「行动系统」也拆成四个子系统，再往上套出「人类境况系统」（第 3590—3606 行）：</p>
+
+  <div class="quote">
+    然而这时候<strong>已经很少有人会重视帕森斯的这串思路了</strong>。因为<strong>连许多他的拥护者都开始搞不清楚，为什么所有与社会学有关的事情都要套上 AGIL 模型，不懂这样做可以获得什么发现</strong>。而且帕森斯将某些现象归类到某些功能的做法，<strong>有一点任意、没什么说服力</strong>。（为什么人类境况系统中的行动系统，满足的是整合功能？<strong>行动系统到底整合了什么？</strong>）
+    <cite>《社会理论二十讲》第 3602—3606 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>用比喻说清这个失败</h4>
+    <p>他做了一把<strong>能拧所有螺丝的万能扳手</strong>——这是他的成就。</p>
+    <p>然后他开始说<strong>所有东西都是螺丝</strong>：门把手是、水龙头是、连「人为什么活着」也是。</p>
+    <p><strong>当一把工具宣称什么都能拧时，别人就不知道它到底在拧什么了。</strong></p>
+  </div>
+
+  <h3>「多余感」的出处，就在这段引文里</h3>
+
+  <p>回看第 3602—3604 行那句话——<strong>它是全课最有力的一句「多余」的证词</strong>：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>是谁说的</div>
+      <div><strong>他的拥护者</strong>，不是反对者</div>
+    </div>
+    <div class="row">
+      <div>说了什么</div>
+      <div>「<strong>搞不清楚……不懂这样做可以获得什么发现</strong>」</div>
+    </div>
+    <div class="row">
+      <div>意味着</div>
+      <div>不是「你错了」，而是「<strong>我不知道拿它来干什么</strong>」——<strong>一个工具失去了用处，比出了错更致命</strong></div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">把「非提不可」与「显得多余」接起来</span>
+    <p><strong>他非提不可</strong>：功能描述各说各话，没有共同尺度，他需要一个统一格式。</p>
+    <p><strong>它显得多余</strong>：他给出的那份具体清单（恰好四个）<strong>不是从系统逻辑推出来的</strong>，是从「一次小团体协作研究的观察」搬过来的——<strong>所以它只能"看起来挺全"，不能证明"必然如此"</strong>。</p>
+    <p><strong>结果</strong>：一个本来是为了「让功能分析有统一格式」的工具，最后变成了「<strong>什么都往上套、却没人知道套了有什么用</strong>」的东西。</p>
+    <p class="meta">这也是为什么后来「中层理论」（默顿）能取代它——与其找一份通用清单，不如各自研究自己的问题。第 16 课讲。</p>
+  </div>
+
+  <div class="step"><span class="num n6">6</span>被谁挑战</div>
+
+  <h2>反他的人不止一层——用「他理论的零件」排个深度序</h2>
+
+  <p>「谁挑战了他」这个问题，如果只是列名字，会越列越乱。<strong>按深度分层才看得清</strong>——因为不同的人反的<strong>不是同一个零件</strong>。</p>
+
+  <div class="diagram">
+<pre>帕森斯的理论有五个零件（自下而上）：
+
+  ⑤ 他的「人」是什么      行动者 = 追求目的、受规范引导
+  ④ 他的「机制」是什么    内化 + 制度化，两条腿
+  ③ 他的「系统」是什么    系统有功能前提（要活就得满足条件）
+  ② 他的「清单」是什么    AGIL 四功能（恰好这四个）
+  ① 他的「起点」是什么    单位行动（从单个行动者出发）
+
+  越往下，反得越深 —— ① 是地基，⑤ 是屋顶</pre>
+  </div>
+
+  <h3>第一层（最浅）：只反 ② 那份清单</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>谁</div>
+      <div><strong>他的拥护者们</strong>，以及后来的经验研究者</div>
+    </div>
+    <div class="row">
+      <div>反什么</div>
+      <div>「<strong>连许多他的拥护者都开始搞不清楚，为什么所有与社会学有关的事情都要套上 AGIL 模型，不懂这样做可以获得什么发现</strong>」（第 3602—3604 行）</div>
+    </div>
+    <div class="row">
+      <div>性质</div>
+      <div><strong>不算挑战</strong>——他们不改任何前提，只说「这工具不好用」。<strong>属动结论。</strong></div>
+    </div>
+  </div>
+
+  <h3>第二层：反 ③「系统有功能前提」这个思路</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>谁</div>
+      <div><strong>冲突理论</strong>（第 17 课）——科塞、达伦多夫、米尔斯</div>
+    </div>
+    <div class="row">
+      <div>反什么</div>
+      <div>科塞指责帕森斯把冲突<strong>当成「心理所决定的现象，个人的错误行为，甚至有时候还将其诠释成『病态的』」</strong>——因为「<strong>社会现状被诠释成一种正常状态</strong>」（第 6943—6947 行）</div>
+    </div>
+    <div class="row">
+      <div>砍在哪</div>
+      <div><strong>不是砍「四格不对」，是砍「你为什么会看不见冲突」</strong>。根子就在「功能前提」这个问法本身——<strong>你先问「什么让系统持存」，就很难看见「什么让系统崩坏」</strong></div>
+    </div>
+    <div class="row">
+      <div>性质</div>
+      <div><strong>介于两者之间</strong>——科塞承认功能论有价值，只是说它有个盲区</div>
+    </div>
+  </div>
+
+  <h3>第三层：反 ①「从单位行动出发」这个起点</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>谁</div>
+      <div><strong>《二十讲》那六条批评</strong>（第 14 课已展开）· 齐美尔 · 米德 · 后来的吉登斯</div>
+    </div>
+    <div class="row">
+      <div>反什么</div>
+      <div><strong>六条批评是一个起点的六个后果</strong>——行动模型太窄、情境客观、行动孤立、个人优先、规范凭空、行动者无驱力</div>
+    </div>
+    <div class="row">
+      <div>性质</div>
+      <div><strong>动前提</strong>——不针对任何具体结论，针对「<strong>从单位行动出发</strong>」这件事本身</div>
+    </div>
+  </div>
+
+  <h3>第四层（最深）：反 ⑤ 他的「人」是什么</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>谁</div>
+      <div><strong>诠释取向两家</strong>（第 18 课：象征互动论 + 常人方法论）· <strong>哈贝马斯</strong>（第 19 课）</div>
+    </div>
+    <div class="row">
+      <div>反什么</div>
+      <div>· <strong>诠释取向</strong>：「<strong>帕森斯忽略了价值与规范是有赖于诠释的</strong>」（第 5005—5008 行）——<strong>你把人当成规范的执行者，但人其实是规范的解读者</strong><br>· <strong>哈贝马斯</strong>：你说要研究<strong>行动</strong>，结果研究的是<strong>系统需求</strong>——「<strong>以行动理论作为优先的基本概念，结果变成以系统理论作为优先的基本概念</strong>」（第 3570—3574 行）</div>
+    </div>
+    <div class="row">
+      <div>性质</div>
+      <div><strong>动前提，而且是动他的「人论」</strong>——最深的一刀</div>
+    </div>
+  </div>
+
+  <h3>一张图收束</h3>
+
+  <div class="diagram">
+<pre>反得浅 ─────────────────────────────────────→ 反得深
+
+  ② 清单          ③ 功能前提思路      ① 单位行动        ⑤ 人是什么
+  AGIL 四条        系统必须持存        从单个行动者出发   行动者受规范引导
+
+  拥护者们         冲突理论            六条批评          诠释取向
+  「不知道套上      科塞 · 达伦多夫     齐美尔 · 米德      哈贝马斯
+   去能获得什么     米尔斯              吉登斯（后来）
+   发现」
+
+  ───────────     ──────────────     ─────────────   ─────────────
+   动结论           介于两者            动前提           动前提
+                   （承认有价值，                       （动「人论」）
+                     但指出盲区）</pre>
+  </div>
+
+  <div class="hook">
+    <h4>一句话记住四层的差别</h4>
+    <p><strong>反 AGIL 的人</strong>，是在嫌<strong>工具不好用</strong>。</p>
+    <p><strong>反功能前提的人</strong>，是在说<strong>这工具让你看不见某些东西</strong>。</p>
+    <p><strong>反单位行动的人</strong>，是在说<strong>你拿错了工具</strong>。</p>
+    <p><strong>反「人是什么」的人</strong>，是在说<strong>你根本不该从这个方向看</strong>。</p>
+  </div>
+
+  <div class="note">
+    <span class="label">本课这一层与前几课的接口</span>
+    <p>· <strong>默顿</strong>（第 16 课）落在<strong>第一层</strong>——不改前提，改操作（把框架「中型化」）</p>
+    <p>· <strong>冲突理论</strong>（第 17 课）落在<strong>第二层</strong></p>
+    <p>· <strong>诠释取向两家</strong>（第 18 课）落在<strong>第四层</strong></p>
+    <p>· <strong>哈贝马斯</strong>（第 19 课）也在<strong>第四层</strong>，而且他那句批评本课已经出现了</p>
+  </div>
+
+  <div class="step"><span class="num">7</span>现代影响</div>
+
+  <h2>影响一：「中层理论」成了美国社会学的标准做法</h2>
+
+  <p>这是<strong>默顿对 AGIL 膨胀的反作用</strong>——第 16 课讲。它至今仍是美国社会学的主流研究方式。</p>
+
+  <h2>影响二：AGIL 本身退场了，但它的思路留下了</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>退场的</div>
+      <div>「四功能」这套硬框架，1970 年代后基本没人再套</div>
+    </div>
+    <div class="row">
+      <div>留下的</div>
+      <div>「<strong>任何系统都要处理资源、目标、整合、价值维系这四类问题</strong>」——这个思路在组织社会学、管理研究里还在用，只是不再叫 AGIL</div>
+    </div>
+  </div>
+
+  <h2>影响三：他成了「现代社会学必须绕过的那座山」</h2>
+
+  <p>哈贝马斯、卢曼、吉登斯、布迪厄——<strong>后面四课的人，全都要先处理「怎么对待帕森斯」这个问题</strong>。</p>
+
+  <div class="diagram">
+<pre>哈贝马斯   ← 批他「系统理论吃掉行动理论」，然后自己重建沟通行动
+卢曼      ← 接他的系统论，但做得更彻底（不提行动者了）
+吉登斯    ← 批他把「结构」和「行动」切成两截，提出结构二重性
+布迪厄    ← 批他「客观主义」，提出惯习与实践
+
+→ 你可以说：1960 年以后的社会学，
+   有相当大一部分是在回应他一个人。</pre>
+  </div>
+
+  <h2>影响四：他自己写的一本书，预告了他的失败</h2>
+
+  <p>这一点很有意思——他在 1970 年代把「人类境况」也套进 AGIL，<strong>说明他自己也意识到框架飘得太远</strong>，但停不下来。</p>
+
+  <hr>
+
+  <h2>三个坑</h2>
+
+  <h3>坑 1：模式变项不是行动类型</h3>
+  <p>《二十讲》第 3095 行专门提醒过：<strong>「不能把帕森斯的五种模式变项跟韦伯的四种行动类型简单作对比」</strong>。<strong>它是二分选项，能组合出 32 种。</strong></p>
+
+  <h3>坑 2：AGIL 不是「硬分的四格」，是从功能前提推出来的</h3>
+  <p>它接的是第 13 课那个<strong>「系统要活下去，必须解决这几件事」</strong>。丢掉这条线，AGIL 就变成四个不明所以的字母。</p>
+
+  <h3>坑 3：别把他的崩溃全归给外部批评</h3>
+  <p><strong>LIGA 那一步是他自己加的</strong>——把并列的四格改成「价值在上」的等级。<strong>他死于自己的选择，不只是死于别人的攻击。</strong></p>
+
+  <hr>
+
+  <h2>自己动手转译</h2>
+
+  <div class="note">
+    <span class="label">题目</span>
+    <p>杰诺维西看到中国中间阶层<strong>「能传导（功能）却无方向决定权（自主）」</strong>。</p>
+    <p>用这一课的两个工具问：</p>
+    <p>　· 用 <strong>AGIL</strong> 问：18 世纪中国的统治体系，这四个功能分别由谁承担？<strong>中间阶层满足的是哪一个（或哪几个）？</strong></p>
+    <p>　· 然后问一个他自己答不了的：<strong>AGIL 的四格是并列的，但他后来改成了「LIGA」——价值在最上。如果他没说错，那「价值」由谁掌握？</strong></p>
+  </div>
+
+  <div class="note">
+    <span class="label">分寸提醒</span>
+    <p>借帕森斯的工具，问杰诺维西的问题；<strong>社会学是描述工具，不是论据</strong>。</p>
+    <p class="meta">这一问的价值在于：<strong>「LIGA」这个他自己加的东西，恰恰暴露了他的架构预设了「价值层由谁掌握」</strong>。而你论文里的中间阶层<strong>恰好在价值层的门外</strong>——这又是一处「框架装不下」的位置。</p>
+  </div>
+
+  <hr>
+
+  <h2>本课小结（按七段）</h2>
+
+  <div class="diagram">
+<pre>① 背景   1950s：控制论 + 系统论当道，他要一套「万能理论语言」
+② 问题   ① 行动怎么比较？② 上层/下层、利益/观念，谁先谁后吵不完
+③ 回答   ★ 模式变项：五组二分选项（可组合出 32 种，不是类型）
+         ★ AGIL：任何系统都要满足的四功能
+           A 适应 → 经济 · G 目标达成 → 政治
+           I 整合 → 社会共同体 · L 模式维持 → 文化
+④ 优点   给了能覆盖一切的语言；想解决「谁先谁后」；想让功能论动起来
+⑤ 裂缝   一：只做了「系统内变动」，不是「系统本身改变」
+         二：自己加 LIGA（价值在上）——硬塞，且坐实了「文化决定论」
+         三：框架吃掉行动理论（哈贝马斯那一刀）
+         四：膨胀到自己人都不懂了（人类境况系统）
+⑥ 挑战   默顿（改操作）· 哈贝马斯（动前提）· 冲突理论 · 诠释取向
+⑦ 影响   中层理论成标准做法；AGIL 退场但思路留存
+         他成了「后四课必须绕过的山」</pre>
+  </div>
+
+  <h2>下一课预告</h2>
+
+  <p><strong>第 16 课 · 默顿：给功能主义打补丁的人</strong></p>
+
+  <div class="roster">
+    <div class="row">
+      <div>他要解决什么</div>
+      <div>帕森斯的框架<strong>太大、太硬</strong>——默顿要把它「中型化」，还要让它能解释<strong>冲突</strong>和<strong>意外后果</strong></div>
+    </div>
+    <div class="row">
+      <div>把手词</div>
+      <div><strong>中层理论</strong> · <strong>显功能／潜功能</strong> · <strong>反功能</strong></div>
+    </div>
+  </div>
+
+  <h2>本课依据</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>主依据</div>
+      <div><code>社会理论二十讲…md</code><br>第 2967—2996 行（角色学习与越轨研究从他而来）· <strong>第 3048—3110 行（模式变项五组二分 · 两个误解）</strong>· <strong>第 3300—3400 行（AGIL 定义 · 四子系统 · 追问游戏 · 与斯梅尔瑟合著）</strong>· 第 3555—3606 行（<strong>控制论等级 · LIGA · 哈贝马斯的批评 · 人类境况系统</strong>）· 第 3610—3623 行（只做了系统内变动）</div>
+    </div>
+    <div class="row">
+      <div>辅依据</div>
+      <div>哈贝马斯 Theorie des kommunikativen Handelns, Bd. II（转引自《二十讲》第 3569—3577 行）· 帕森斯 Toward a General Theory of Action（第 3048—3056 行引）· Parsons and Smelser, Economy and Society（第 3358—3365 行引）</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">出处等级说明</span>
+    <p>本课<strong>所有引文与行号，本机书可核验</strong>。</p>
+    <p>「他成了后四课必须绕过的山」这个提法，是<strong>据第 3569—3589 行（哈贝马斯批评）与后续课程安排作出的整理</strong>，<strong>不是原句</strong>。</p>
+    <p>「万能扳手」那个比喻，是<strong>我加的</strong>，用来解释第 3602—3606 行「连拥护者都搞不清楚」的处境。</p>
+  </div>
+
+  <h2>速查卡</h2>
+
+  <div class="diagram">
+<pre>帕森斯（四）· 模式变项与 AGIL
+
+模式变项 pattern variables
+  人类行动在五组二分选项里游移：
+    情感—情感中立 · 自我取向—集体取向
+    普遍主义—特殊主义 · 继承—成就 · 特定—宽泛
+  ⚠️ 不是行动类型（互斥），是二分选项（可组合）
+     5 组 → 32 种行动可能
+
+AGIL
+  A 适应 Adaptation      → 经济子系统
+  G 目标达成 Goal         → 政治子系统
+  I 整合 Integration      → 社会共同体
+  L 模式维持 Latency      → 文化子系统（信托系统）
+  来源：小团体研究的四个功能需求，再普遍化
+  特点：「追问游戏」——每一层都能再套一遍
+
+LIGA（他自己加的，也是他的破绽）
+  把并列四格改成控制论等级：L > I > G > A
+  「控制中心位于 L 领域」= 价值/文化控制其他子系统
+  → 恰好坐实了「文化决定论」的指责
+
+崩溃的三个原因
+  1. 只做「系统内变动」，没做「系统本身的改变」
+  2. 自加 LIGA，把价值硬放在最上
+  3. 系统理论吃掉行动理论（哈贝马斯那一刀）
+  4. 膨胀到「人类境况系统」，连拥护者都不懂了
+
+关键动作
+  从「行动理论」走向「系统理论」——这是他一生最大的转向
+  晚年承认批评者不会满意</pre>
+  </div>
+
+  <p class="meta">下一课：第 16 课 · 默顿——给功能主义打补丁的人（中层理论 · 显功能／潜功能 · 反功能）</p>
+
+  <div class="lesson-footer">
+    <p class="meta">返回：<a href="../index.html">课程总目录</a> · <a href="../ROADMAP.md">路线图</a></p>
+  </div>
+
+</div>
+</body>
+</html>

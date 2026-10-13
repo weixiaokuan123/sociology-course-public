@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 12 课 · 帕森斯（上）：社会秩序为什么可能</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+  .diagram {
+    background:var(--paper-alt); border:1px solid var(--rule);
+    padding:1.4rem 1rem 1rem; margin:1.6rem 0; overflow-x:auto;
+  }
+  .diagram pre {
+    font-family:"SF Mono", Consolas, "Cascadia Mono", monospace;
+    font-size:.82rem; line-height:1.55; margin:0; color:var(--ink); white-space:pre;
+  }
+  .quote {
+    border-left:3px solid var(--rule); padding:.6rem 0 .6rem 1rem;
+    margin:1.1rem 0; color:var(--ink-soft); font-size:.94rem;
+  }
+  .quote cite { display:block; margin-top:.5rem; font-size:.8rem; color:var(--ink-faint); font-style:normal; }
+  .roster { border:1px solid var(--rule); border-radius:8px; overflow:hidden; margin:1.4rem 0; }
+  .roster .row { display:flex; flex-wrap:wrap; border-top:1px solid var(--rule); }
+  .roster .row:first-child { border-top:none; }
+  .roster .row > div { padding:.65rem .9rem; font-size:.9rem; }
+  .roster .row > div:first-child { flex:0 0 110px; font-weight:600; background:var(--paper-alt); }
+  .roster .row > div:last-child { flex:1 1 320px; }
+  .hook { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .hook h4 { margin:0 0 .5rem; font-size:1rem; }
+  .hook p { margin:.35rem 0; }
+  .hook .main { font-size:1.15rem; font-weight:700; }
+  .note {
+    background:#f7f4ec; border:1px solid var(--rule); border-radius:8px;
+    padding:1rem 1.2rem; margin:1.4rem 0;
+  }
+  .note .label { display:block; font-weight:700; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.03em; }
+  .note p { margin:.4rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  .contrast { display:flex; gap:1rem; flex-wrap:wrap; margin:1.4rem 0; }
+  .contrast > div { flex:1 1 240px; border:1px solid #ddd; border-radius:8px; padding:.9rem 1.1rem; }
+  .contrast h4 { margin-top:0; font-size:1rem; }
+  .contrast p:last-child { margin-bottom:0; }
+  .step { display:flex; align-items:center; gap:.6rem; margin:1.6rem 0 .8rem; font-weight:700; font-size:1.02rem; }
+  .step .num { flex:0 0 2rem; height:2rem; border-radius:50%; background:#333; color:#fff;
+                display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+  .step .n2 { background:#666; } .step .n3 { background:#888; }
+  .step .n4 { background:#2a6e4a; } .step .n5 { background:#a8611a; }
+  .step .n6 { background:#8b2f2f; } .step .n7 { background:#333; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">社会学 · 第 12 课（上）· 约 30 分钟</p>
+  <h1>帕森斯（上）：社会秩序为什么可能</h1>
+  <p class="subtitle">1937《社会行动的结构》· 1930 年代的思想背景 · 「目的随机性」这个洞 · 他的第一件武器</p>
+
+  <div class="note">
+    <span class="label">这一课怎么读</span>
+    <p>帕森斯材料太多，拆成<strong>三课</strong>：</p>
+    <p><strong>本课（上）</strong>：他接手一个什么问题、他的第一件武器是什么 —— 对应七段的 <strong>① 背景 ② 问题 ③ 回答（前两条）</strong></p>
+    <p><strong>第 13 课（中）</strong>：他把「角色」焊上去 —— ③ 回答的后三条</p>
+    <p><strong>第 14 课（下）</strong>：他赢在哪、又输在哪 —— ④ 优点 ⑤ 裂缝 ⑥ 挑战 ⑦ 影响</p>
+  </div>
+
+  <div class="hook">
+    <h4>把手词（本课）</h4>
+    <p>主：<span class="main">目的随机性</span>　—　他指出的那个漏洞：功利主义<strong>假装</strong>人的目的天然就一致</p>
+    <p>辅：<strong>单位行动</strong>　—　他把「一个行动」拆成四要素，补上别人丢掉的那一项</p>
+    <p class="meta">「角色」与「闭环」这两个把手在第 13 课（中）。</p>
+  </div>
+  <div class="step"><span class="num n2">1</span>思想背景：他站在什么样的空气里</div>
+
+  <h2>1930 年代：两种思想当道，而且都不管「意义」</h2>
+
+  <p>先不说他。先说<strong>他 1937 年出书时，学术界流行的东西</strong>。</p>
+
+  <h3>当道的思想一：功利主义 / 实证主义</h3>
+
+  <p>这股风来自英国（斯宾塞）和经济学传统。它的基本假设是：</p>
+
+  <div class="hook">
+    <p><strong>人是理性的逐利者。给他条件和手段，他自己会算出最划算的路。</strong></p>
+    <p>至于「他为什么想要这个、不想要那个」——<strong>不用问，那是心理学的事。</strong></p>
+  </div>
+
+  <p>《二十讲》第 1660—1676 行说得很直接：</p>
+
+  <div class="quote">
+    长久以来，经济学都没有讨论<strong>行动者的目的和功利观念是从哪里来的</strong>……他们都没有确切地去研究，行动者到底是如何制定出他们的目的，如何解释他们的功利概念所指为何。……至于这些东西是怎么形成的，<strong>功利主义对此不予置评，觉得回答这个问题是心理学家或生物学家的任务</strong>。
+    <cite>《社会理论二十讲》第 1661—1676 行</cite>
+  </div>
+
+  <h3>当道的思想二：进化论 / 进步史观</h3>
+
+  <p>这是斯宾塞那一套：社会像生物有机体，从简单走向复杂，优胜劣汰。</p>
+
+  <p>注意——<strong>这两股思想都有一个共同特点：它们不关心「行动者自己怎么想」</strong>。</p>
+
+  <div class="diagram">
+<pre>功利主义： 不用问目的哪来的 → 是心理学的事
+进化论：   不用问人怎么想   → 是规律的事
+
+两者都把「人」化简成：
+   条件 + 手段 → 结果</pre>
+  </div>
+
+  <h3>但当时美国其实还有第三股思想——他后来把它抹掉了</h3>
+
+  <p>这一点很关键。<strong>1937 年的美国，实用主义正有影响力</strong>（第 2128 行）。而且有一批拿得出手的学者：米德、杜威、库利、托马斯、帕克。</p>
+
+  <p>但帕森斯在《社会行动的结构》里说：美国思想史整个被斯宾塞笼罩。<strong>《二十讲》说这个说法是不公平的，甚至根本是错的</strong>：</p>
+
+  <div class="quote">
+    这些领域中有很多相当出色的代表学者，像是<strong>米德、杜威、库利、托马斯、帕克</strong>，他们<strong>从来也不是</strong>功利主义或斯宾塞那一派的人。<strong>但帕森斯对他们只字未提。</strong>
+    <cite>《社会理论二十讲》第 2108—2112 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一笔先记住，第 ⑥ 段会用上</span>
+    <p>他不是「没看见」这批人，而是<strong>选择不提</strong>。《二十讲》甚至猜：这跟哈佛（他任教处）和芝加哥（实用主义大本营）之间的过节有关（第 2126—2129 行）。</p>
+    <p class="meta">回顾第 11 课：芝加哥学派 1910—30 年代正在支配美国社会学。帕森斯 1937 出书，1940 年代起势，1950 年代夺权——<strong>他写书的这一刻，正是要抢芝加哥的地盘。</strong></p>
+  </div>
+
+  <div class="step"><span class="num n2">2</span>他面临什么问题：功利主义漏了一个洞</div>
+
+  <h2>问题：「目的随机性」——一个不能说的假设</h2>
+
+  <p>帕森斯盯上了功利主义的一个<strong>不敢细想的地方</strong>。</p>
+
+  <p>功利主义说：各人追各人的利益，秩序靠契约和市场自发形成。<strong>但它有个前提没交代</strong>——</p>
+
+  <div class="quote">
+    人们不能假定有个完全的「<strong>目的随机性</strong>」（帕森斯经常用这个概念），也就是说不能假定<strong>社会成员的目的是偶然的</strong>。<strong>如果假设，人类都有自身的特殊目的和功利观念，这些特殊目的和功利观念跟身边的其他人都不同，或者即使一样的话也是偶然一样的，那么这个假设当然是错的。</strong>
+    <cite>《社会理论二十讲》第 1651—1656 行</cite>
+  </div>
+
+  <h3>用买菜打个比方</h3>
+
+  <div class="diagram">
+<pre>假设：每个人想要什么，是随机生成的。
+
+那么市场会怎样？
+  我想买 3 斤钉子，你想卖 200 斤香菜，
+  隔壁老王只想收 40 只活鸡 —— 但没人在意价格。
+
+→ 根本不会形成任何「市场价格」这种东西。
+   因为价格要成立，前提是大家的估价得能对上。</pre>
+  </div>
+
+  <p>帕森斯要问的是（第 1667—1670 行）：</p>
+
+  <div class="hook">
+    <p><strong>「如果秩序实际上已经存在，那么行动理论要怎么解释它？」</strong></p>
+    <p>更具体地说：<strong>日常生活中各种行动目的，为什么通常能毫无问题地协调起来？</strong></p>
+  </div>
+
+  <p>这问题不是他发明的，是<strong>霍布斯的旧问题换了个角度</strong>：</p>
+
+  <div class="contrast">
+    <div>
+      <h4>霍布斯的问题</h4>
+      <p>一群各自逐利的人</p>
+      <p>为什么没有打成一团？</p>
+      <p>答案：<strong>需要强权</strong>（利维坦）</p>
+      <p><strong>但强权本身靠什么维持？</strong>又绕回来了</p>
+    </div>
+    <div>
+      <h4>帕森斯重问一遍</h4>
+      <p>不是「为什么不打」，而是</p>
+      <p>「<strong>为什么大家想要的东西能对上</strong>」</p>
+      <p>强权解决不了这个——<strong>因为强权也需要人愿意服从</strong></p>
+    </div>
+  </div>
+
+  <div class="step"><span class="num n2">3</span>他提出什么回答：补上第四项</div>
+
+  <h2>回答一：单位行动——四要素，第四项是别人丢的</h2>
+
+  <p>他把「一个行动」拆成四个要素（第 1880—1891 行）：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>① 行动者</div>
+      <div>谁在做</div>
+    </div>
+    <div class="row">
+      <div>② 行动目的</div>
+      <div>他要什么　<span class="meta">← 功利主义有这一项</span></div>
+    </div>
+    <div class="row">
+      <div>③ 行动情境</div>
+      <div>再分两半——<strong>条件</strong>（他控制不了的：下雨、物价）+ <strong>手段</strong>（他能用的：钱、力气）　<span class="meta">← 功利主义也有</span></div>
+    </div>
+    <div class="row">
+      <div>④ 规范与价值</div>
+      <div><strong>他该不该这么做</strong>　<span class="meta">← <strong>这一项是他说别人丢掉的</strong></span></div>
+    </div>
+  </div>
+
+  <div class="quote">
+    功利主义的行动理论当中，<strong>已经包含前三个要素，但是缺乏第四个关键的规范与价值面向</strong>。
+    <cite>《社会理论二十讲》第 1892—1893 行</cite>
+  </div>
+
+  <p>整本书的论证可以压成一句话：</p>
+
+  <div class="hook">
+    <p><strong>「你们只看到目的、手段、条件；你们漏了第四样——规范。补上它，秩序问题就解决了。」</strong></p>
+  </div>
+
+  <h2>回答二：规范怎么解决问题——两种秩序</h2>
+
+  <p>他区分了两种「秩序」，这是他整段论证的枢纽（第 1774—1791 行）：</p>
+
+  <div class="contrast">
+    <div>
+      <h4>实际秩序</h4>
+      <p><strong>不是刻意形成的</strong></p>
+      <p>《二十讲》给的例子：<strong>德国度假旺季的堵车</strong>——大家都想快，结果同时上路，塞成一团</p>
+      <p>市场自发价格也是这一类</p>
+      <p class="meta">可以用统计描述，但没有规定「每年必须堵一次」</p>
+    </div>
+    <div>
+      <h4>规范秩序</h4>
+      <p><strong>靠共享规范形成的</strong></p>
+      <p>大家（有意或无意地）<strong>遵照共同的准则</strong>行动</p>
+      <p>帕森斯认为<strong>这才是社会学的主要对象</strong></p>
+      <p class="meta">即便「同意」是默认的、没说出口的</p>
+    </div>
+  </div>
+
+  <p>然后他给了关键的连接（引帕森斯原文，第 1798—1810 行）：</p>
+
+  <div class="quote">
+    社会秩序就它很容易进行科学分析而言，总是一种<strong>实际秩序</strong>，但是<strong>若没有某些规范要素的有效运作，这种实际秩序是不具有稳定性的</strong>。
+    <cite>帕森斯，The Structure of Social Action, pp.91—92；转引自《二十讲》第 1807—1810 行</cite>
+  </div>
+
+  <h3>再用堵车打个比方（《二十讲》自己的例子）</h3>
+
+  <div class="diagram">
+<pre>堵车（实际秩序）：
+  大家想快点到，同时上路 → 堵住
+  这是「现象」，能统计，能预测
+
+BUT —— 为什么大家没直接开进对向车道？
+  因为「不能逆行」这条规范在起作用。
+
+→ 规范不产生堵车，但规范让「堵」这种混乱
+   不变成「全面互撞」的彻底崩坏。
+   （第 1812—1815 行）</pre>
+  </div>
+
+  <div class="note">
+    <span class="label">这个说法的简化在哪里</span>
+    <p>把「规范」说成秩序的地基，听上去很稳。但它有个代价：<strong>它把秩序的重心从「强制」搬到了「共识」</strong>。</p>
+    <p>这个搬迁有一个隐含前提：<strong>社会成员大体上真的共享那套规范</strong>。在稳定社会里这个前提大致成立；在激烈冲突的社会里，它就不成立了——<strong>这正是<strong>第 14 课（下）</strong>要讲的漏洞，也是<strong>第 15 课</strong>冲突理论的入口。</strong></p>
+  </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 14 课 · 帕森斯（下）：他赢在哪，又输在哪</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+  .diagram {
+    background:var(--paper-alt); border:1px solid var(--rule);
+    padding:1.4rem 1rem 1rem; margin:1.6rem 0; overflow-x:auto;
+  }
+  .diagram pre {
+    font-family:"SF Mono", Consolas, "Cascadia Mono", monospace;
+    font-size:.82rem; line-height:1.55; margin:0; color:var(--ink); white-space:pre;
+  }
+  .quote {
+    border-left:3px solid var(--rule); padding:.6rem 0 .6rem 1rem;
+    margin:1.1rem 0; color:var(--ink-soft); font-size:.94rem;
+  }
+  .quote cite { display:block; margin-top:.5rem; font-size:.8rem; color:var(--ink-faint); font-style:normal; }
+  .roster { border:1px solid var(--rule); border-radius:8px; overflow:hidden; margin:1.4rem 0; }
+  .roster .row { display:flex; flex-wrap:wrap; border-top:1px solid var(--rule); }
+  .roster .row:first-child { border-top:none; }
+  .roster .row > div { padding:.65rem .9rem; font-size:.9rem; }
+  .roster .row > div:first-child { flex:0 0 110px; font-weight:600; background:var(--paper-alt); }
+  .roster .row > div:last-child { flex:1 1 320px; }
+  .hook { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .hook h4 { margin:0 0 .5rem; font-size:1rem; }
+  .hook p { margin:.35rem 0; }
+  .hook .main { font-size:1.15rem; font-weight:700; }
+  .note {
+    background:#f7f4ec; border:1px solid var(--rule); border-radius:8px;
+    padding:1rem 1.2rem; margin:1.4rem 0;
+  }
+  .note .label { display:block; font-weight:700; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.03em; }
+  .note p { margin:.4rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  .contrast { display:flex; gap:1rem; flex-wrap:wrap; margin:1.4rem 0; }
+  .contrast > div { flex:1 1 240px; border:1px solid #ddd; border-radius:8px; padding:.9rem 1.1rem; }
+  .contrast h4 { margin-top:0; font-size:1rem; }
+  .contrast p:last-child { margin-bottom:0; }
+  .step { display:flex; align-items:center; gap:.6rem; margin:1.6rem 0 .8rem; font-weight:700; font-size:1.02rem; }
+  .step .num { flex:0 0 2rem; height:2rem; border-radius:50%; background:#333; color:#fff;
+                display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+  .step .n2 { background:#666; } .step .n3 { background:#888; }
+  .step .n4 { background:#2a6e4a; } .step .n5 { background:#a8611a; }
+  .step .n6 { background:#8b2f2f; } .step .n7 { background:#333; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">社会学 · 第 14 课（下）· 约 30 分钟</p>
+  <h1>帕森斯（下）：他赢在哪，又输在哪</h1>
+  <p class="subtitle">优点 · 三处裂缝 · 六条批评 · 现代影响 · 以及你论文能切的那个空格</p>
+
+  <div class="note">
+    <span class="label">这一课接在哪</span>
+    <p>第 12 课（上）讲他接手的问题与第一件武器；第 13 课（中）讲他把「角色」焊了上去。</p>
+    <p><strong>这一课（下）</strong>看结果：<strong>他凭什么赢了二十年</strong>（④ 优点）、<strong>他这套东西在哪儿开始不够用</strong>（⑤ 三处裂缝）、<strong>谁在打他</strong>（⑥ 挑战）、<strong>他留下了什么</strong>（⑦ 影响）。</p>
+    <p class="meta">课末的「自己动手转译」，用的是你论文里的杰诺维西。</p>
+  </div>
+
+  <div class="hook">
+    <h4>把手词（本课）</h4>
+    <p>主：<span class="main">三处裂缝</span>　—　运转 vs 变动 · 规范要不要诠释 · 「内化成功但范围被限定」这一格</p>
+    <p>辅：<strong>功能前提的两面性</strong>　—　它解释了稳定，也解释了为什么他看不见冲突</p>
+  </div>
+
+  <div class="step"><span class="num n4">4</span>优点何在：他赢在哪</div>
+
+  <h2>他的回答有三个真本事</h2>
+
+  <h3>优点一：他补的那一项，确实是别人漏的</h3>
+
+  <p>这不是硬造。功利主义<strong>真的没解释「目的从哪来」</strong>——它把这个推给了心理学（第 1675—1676 行）。帕森斯把这个洞指出来，<strong>指得准</strong>。</p>
+
+  <h3>优点二：一个概念干了三件原本分开的活</h3>
+
+  <p>「角色」这个概念之所以厉害，因为它一次解决了三个划界问题（第 2928—2935 行）：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>对生物学</div>
+      <div>社会事物<strong>不源自自然</strong>——人不是靠本能行动的</div>
+    </div>
+    <div class="row">
+      <div>对文化人类学</div>
+      <div>社会事物<strong>不直接源自文化</strong>——文化要经过制度才落地</div>
+    </div>
+    <div class="row">
+      <div>对心理学</div>
+      <div><strong>社会不是个人行动的简单加总</strong>——角色是超出个人的东西</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    凭借角色概念，帕森斯<strong>漂亮地论证了社会事物的独特性，也论证了社会学这门学科是必不可少的</strong>。
+    <cite>《社会理论二十讲》第 2933—2935 行</cite>
+  </div>
+
+  <h3>优点三：他给了社会学一个「自己的地盘」</h3>
+
+  <p>这一点对你写论文有实际意义。<strong>1930 年代的社会学身份焦虑很重</strong>——它到底是心理学？经济学？历史学？</p>
+
+  <p>帕森斯用「角色」划出了一块地：<strong>研究「角色」的学问，就是社会学。</strong>这让他几乎凭一己之力把社会学变成了「有正式理论的学科」。</p>
+
+  <div class="diagram">
+<pre>他赢在哪，一句话：
+
+  别人在争「社会是什么」，
+  他直接给出一个可操作的单元 ——
+  「研究角色」，
+  并且证明了这块地不属于任何邻居。</pre>
+  </div>
+
+  <div class="step"><span class="num n5">5</span>缺点怎么暴露：三处裂缝</div>
+
+  <h2>裂缝一（他自己留下的）：「角色」只能解释运转，不能解释变动</h2>
+
+  <p>《二十讲》给了一句很准的判断（第 2962—2963 行）：</p>
+
+  <div class="quote">
+    但是<strong>角色概念却首先适用于描述现有结构的运作</strong>。很奇怪的是，帕森斯在那个时候<strong>几乎仅仅专注于社会行动和社会秩序</strong>。
+    <cite>《社会理论二十讲》第 2962—2963 行</cite>
+  </div>
+
+  <p>这不是别人说的，是<strong>他的概念设计本身造成的偏向</strong>：</p>
+
+  <div class="diagram">
+<pre>问他：系统怎么运转？  → 角色概念答得很好
+问他：系统怎么变动？  → 角色概念答不上来
+
+因为「角色」的定义里，
+「系统需要这个角色」是预设好的。
+预设好了，就解释不了它怎么变。</pre>
+  </div>
+
+  <p><strong>这就是第 15 课冲突理论的入口</strong>：你只讲整合，不讲冲突。</p>
+
+  <div class="note">
+    <span class="label">这个偏向，从他「怎么问」就开始了</span>
+    <p>《二十讲》第 2856—2857 行点出了他的研究顺序：<strong>「首先要做的是一般性地分析社会系统的静态状况……然后去问社会系统的动态状况。」</strong></p>
+    <p><strong>先静态、后动态</strong>——这是个顺序选择，但代价很大：</p>
+    <p>· 如果你先问「<strong>什么让系统持存</strong>」，你就很难看见「<strong>什么让系统崩坏</strong>」</p>
+    <p>· 如果你先问「<strong>谁满足了功能前提</strong>」，你就很难看见「<strong>谁在反对这些功能前提</strong>」</p>
+    <p>所以「冲突」在他那里只能被读成「功能失调」（系统出了毛病），「反对者」只能被读成「越轨者」（社会化失败）。</p>
+    <p class="meta">——<strong>第 13 课（中）</strong>「回答五」里说的「循环起点固定在系统那一侧」，后果就在这里显现。</p>
+  </div>
+
+  <p>最能看出这个偏向的，是他自己的举例（第 2944—2951 行）：</p>
+
+  <div class="quote">
+    比如<strong>母亲角色或父亲角色为「家庭」这个社会系统的运作作出了什么贡献</strong>。那么，一个学校班上或小团体中的「<strong>开心果</strong>」或「<strong>怪咖</strong>」又执行了哪些功能呢？
+    <cite>《社会理论二十讲》第 2944—2947 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">注意——连「怪咖」都要被问「他执行了什么功能」</span>
+    <p>这<strong>既是他理论的厉害之处</strong>（任何现象都能装进框架），<strong>也是它被攻击的地方</strong>——如果任何现象都必须被解释成「有功能」，那「纯粹的破坏」就没有位置了。</p>
+  </div>
+
+  <h2>裂缝二（别人指出的）：他的框架「太客观」</h2>
+
+  <p>《二十讲》第 5005—5008 行说得很清楚：</p>
+
+  <div class="quote">
+    帕森斯<strong>忽略了一个事实</strong>，即对于行动者来说，<strong>规范与价值不是抽象的东西</strong>，也不是在行动中可以毫无问题地实现成真的东西。规范与价值<strong>常会随着具体的行动情境而异，必须经由人们加以诠释</strong>。也就是说，<strong>帕森斯忽略了价值与规范是有赖于诠释的</strong>。
+    <cite>《社会理论二十讲》第 5005—5008 行</cite>
+  </div>
+
+  <h3>用打招呼打个比方</h3>
+
+  <div class="diagram">
+<pre>帕森斯的看法：
+  「见面要打招呼」是一条规范
+  → 人照做即可
+
+实际的看法：
+  同一条「要打招呼」的规范，
+  对老板、对老同学、对刚吵完架的人，
+  你得自己判断该怎么打招呼。
+
+→ 规范不是复印机，是乐谱。
+   不同的人演奏，每次都不一样。</pre>
+  </div>
+
+  <div class="note">
+    <span class="label">两处裂缝的分量不一样</span>
+    <p><strong>裂缝一</strong>是「他的答案有边界」——在稳定的地方好用，在变动的地方失灵。</p>
+    <p><strong>裂缝二</strong>更根本——是「他的答案漏掉了一整个维度」：<strong>行动者自己对意义的理解</strong>。</p>
+    <p>裂缝二这条路，通向第 16 课的象征互动论与常人方法论；裂缝一这条路，通向第 15 课的冲突理论。</p>
+  </div>
+
+  <h3>裂缝三（最深处）：他的框架里，没有「内化成功但范围被限定」这一格</h3>
+
+  <p class="meta">这一节也由你的提问生成——顺着<strong>第 13 课（中）</strong>「两条腿」往下追出来的。</p>
+
+  <p><strong>第 13 课（中）</strong>说了：他的全部赌注押在「<strong>内化会成功</strong>」上。那<strong>内化不成功</strong>怎么办？</p>
+
+  <p>他答了，但答法暴露了框架的边界。《二十讲》第 2984—2987 行：</p>
+
+  <div class="quote">
+    另一个主题则正好跟第一个主题相反，主要是犯罪社会学和「越轨行为社会学」所研究的<strong>某些人的价值内化正好不成功的那种状态</strong>，或是研究<strong>为什么在某些社会领域中价值的内化是不够的</strong>，并且因此相应地<strong>产生越轨的、不符合规范的行为</strong>。
+    <cite>《社会理论二十讲》第 2984—2987 行</cite>
+  </div>
+
+  <p><strong>注意他把它归到了哪里</strong>——归到了「<strong>越轨 / 犯罪</strong>」。</p>
+
+  <div class="diagram">
+<pre>帕森斯框架里的全部可能：
+
+  内化成功  →  正常
+  内化失败  →  越轨（这个人出了问题 / 社会化失败）
+
+  只有这两格。</pre>
+  </div>
+
+  <p><strong>但现实中还有第三种状态</strong>——这一格他装不下：</p>
+
+  <div class="hook">
+    <h4>第三种状态：内化成功，但内化的范围被设了上限</h4>
+    <p>一个人<strong>真心认同</strong>自己被安排的那个角色（内化完全成功），</p>
+    <p>而这个角色<strong>本身就不包含某些东西</strong>（比如「决定方向」这件事，制度上从来没给过这个角色）。</p>
+    <p>于是：<strong>他不是一个"失败的越轨者"，他是一个"成功的、被限定了范围的"行动者。</strong></p>
+  </div>
+
+  <div class="note">
+    <span class="label">为什么这一格他的框架装不下</span>
+    <p>因为他的框架里，<strong>「内化失败」被定义成个人的毛病</strong>（社会化没做好），<strong>而不是「这套规范本身有问题」</strong>。</p>
+    <p>所以一旦出现「一整个阶层长期处于某种半内化状态」，他就只能把它解释成「这一批人社会化失败」——<strong>而这显然不是全部真相。</strong></p>
+    <p><strong>这就是他的框架的边界：它假设「规范值得被内化」是默认成立的。</strong></p>
+  </div>
+
+  <h3>这个空格正好是你论文能切的地方</h3>
+
+  <div class="note">
+    <span class="label">用双过程框架重看杰诺维西</span>
+    <p>杰诺维西看到中国中间阶层<strong>「能传导（功能）却无方向决定权（自主）」</strong>。用两条腿重看：</p>
+  </div>
+
+  <div class="roster">
+    <div class="row">
+      <div>制度化</div>
+      <div>制度规定这个角色该做什么——<strong>吃得很透</strong>，所以「功能」到位</div>
+    </div>
+    <div class="row">
+      <div>内化</div>
+      <div>人把角色当成自己想做的——<strong>这里出问题</strong></div>
+    </div>
+  </div>
+
+  <p><strong>但精确的说法不是「内化失败」</strong>，而是：</p>
+
+  <div class="diagram">
+<pre>「传导」这个角色   →  他们真心认同，内化得很好
+「决定方向」这件事 →  制度上从未成为他们的角色
+                      所以也无从内化
+
+→ 结果：内化是成功的，
+   但内化的内容本身被限定在「只传导、不决定」。</pre>
+  </div>
+
+  <p><strong>所以杰诺维西那个观察，可以翻译得更准</strong>：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>笼统版</div>
+      <div>中国中间阶层<strong>没能获得自主</strong>（听上去像他们的失败）</div>
+    </div>
+    <div class="row">
+      <div>精确版</div>
+      <div>他们<strong>成功地内化了一个「不包括自主」的角色</strong><br><span class="meta">——这不是他们失败了，是这个角色从一开始就没把自主放进去</span></div>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>为什么这个区分对你写论文重要</h4>
+    <p>帕森斯的框架只给了两格（成功 / 越轨），<strong>而你要写的那种状态是第三格</strong>。</p>
+    <p><strong>「他的框架装不下这一格」这件事本身，就是你的理论贡献点</strong>——不是"帕森斯错了"，而是"他的框架有一个空格，而杰诺维西的材料正好落在那个空格里"。</p>
+    <p class="meta">这比说「杰诺维西的中间阶层被压迫了」精确得多，也不容易被人反驳。</p>
+  </div>
+
+  <div class="step"><span class="num n6">6</span>被谁挑战：先说清方向</div>
+
+  <h2>先分清两个方向（上一版课文在这里混过）</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>他挑战谁</div>
+      <div><strong>斯宾塞</strong>（动前提）· 顺便处理<strong>马克思</strong>（只用不收编）</div>
+    </div>
+    <div class="row">
+      <div>谁挑战他</div>
+      <div><strong>六条批评</strong>（本课展开）→ 后来分成两大路：<strong>冲突理论</strong>、<strong>诠释取向</strong></div>
+    </div>
+  </div>
+
+  <h3>（一）他挑战谁：斯宾塞——开篇就宣布对手死了</h3>
+
+  <p>《二十讲》引的是《社会行动的结构》<strong>第一页</strong>的原话：</p>
+
+  <div class="quote">
+    从他第一本主要著作《社会行动的结构》的<strong>第一页开始</strong>，他很明显就是在反对<strong>斯宾塞那宏大的、进化论的、信仰进步的历史哲学思想</strong>。他在第一页引的句子「<strong>现在谁还在读斯宾塞？斯宾塞已经死了</strong>」就很清楚地表明了他的立场。
+    <cite>《社会理论二十讲》第 3626—3630 行</cite>
+  </div>
+
+  <p><strong>用判据看</strong>：斯宾塞主张「社会像有机体，从同质走向异质」。帕森斯不是说某条结论错了，而是说<strong>「用进化论搭历史」这个做法本身不成立</strong>——<strong>动前提，属真挑战</strong>。</p>
+
+  <h3>（二）他怎么处理马克思：只用一次，不收编</h3>
+
+  <div class="quote">
+    帕森斯虽然<strong>没有像讨论另外四位欧洲大师那样专章探讨马克思</strong>，但他还是在《社会行动的结构》中的<strong>两个不同的地方</strong>讨论过马克思。不过这些讨论<strong>都过于简短</strong>。有趣的是，之所以这么简短，是由于帕森斯出于建立自己的唯意志论行动理论的企图，<strong>把马克思诠释成一位非常重要的人物</strong>。
+    <cite>《社会理论二十讲》第 2166—2171 行</cite>
+  </div>
+
+  <p><strong>马克思的处境很特别</strong>：不是被删，也不是被收编，而是<strong>被当成「桥」用了一次</strong>——帕森斯说他站在观念论与功利主义之间。然后就不再讨论了。</p>
+
+  <h3>（三）谁挑战他：六条批评 —— 它们是「一个起点的六个后果」</h3>
+
+  <p>《二十讲》第 2340—2464 行列了<strong>六条批评</strong>，并说「<strong>请读者务必记牢</strong>」。</p>
+
+  <p><strong>但六条不要当六件事背。</strong>它们打的是<strong>同一个东西</strong>——他理论<strong>最底下那块地砖：从「单位行动」出发</strong>。六条只是这个起点失灵的<strong>六个不同表现</strong>。</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>批评一</div>
+      <div><strong>不是所有行动都是「目的—手段」</strong><br>宗教仪式、艺术、<strong>做早餐</strong>——这些行动没有明确目的，也不参照规范。<br><span class="meta">例子（第 2352—2363 行）：「我们一年到头常常都在做早餐，但这并没有什么根据给定的方法而清楚设置的目的」</span><br><strong>→ 起点的「行动模型」太窄</strong>，装不下仪式性、习惯性的行动</div>
+    </div>
+    <div class="row">
+      <div>批评二</div>
+      <div><strong>「客观主义」偏误</strong>——他没有真的考虑行动者<strong>认知的能力与局限</strong>；对他来说，手段和条件仿佛<strong>就明明白白摆在那里</strong>。<br><strong>→ 起点的「情境」是客观给定的</strong>，漏了行动者自己的认知（第 2368—2380 行）</div>
+    </div>
+    <div class="row">
+      <div>批评三</div>
+      <div><strong>不谈行动的后果</strong>——「仿佛一个行动一旦达到目的，这个行动就结束了」。漏了<strong>非意图后果</strong>。<br><span class="meta">例子（第 2408—2411 行）：<strong>萨拉热窝刺杀 → 第一次世界大战</strong>——暗杀者绝对想不到</span><br><strong>→ 起点的「行动」是孤立的一次</strong>，不是一个链条</div>
+    </div>
+    <div class="row">
+      <div>批评四</div>
+      <div><strong>从单个行动者出发本身就是偏差</strong>——<strong>齐美尔的出发点是社会关系，不是单个行动者</strong>。<br><span class="meta">原话（第 2425—2427 行）：「<strong>人并非一到世界上就是一个行动者，而是首先作为一个什么都不会的婴儿生在社会结构中</strong>」</span><br><strong>→ 起点的「个人优先」是倒置的</strong>——先有社会性，才有行动能力</div>
+    </div>
+    <div class="row">
+      <div>批评五</div>
+      <div><strong>没交代「价值」是怎么来的</strong>——读他的书会觉得「<strong>价值就是存在了</strong>」（第 2446 行）。<br><span class="meta">原话（第 2440—2443 行）：「人们也可以用<strong>类似于帕森斯指责功利主义的方式来指责帕森斯</strong>」——你骂功利主义不解释目的从哪来，<strong>你自己也不解释价值从哪来</strong></span><br><strong>→ 起点的「规范」是凭空存在的</strong></div>
+    </div>
+    <div class="row">
+      <div>批评六</div>
+      <div><strong>没交代行动的动力是什么</strong>——「人们可以拥有目标和价值……<strong>但实际上并没有让自己去实现</strong>」。意志、努力、能量从何而来？<br><span class="meta">这一条<strong>他自己也承认</strong>（第 2455—2462 行）</span><br><strong>→ 起点的「行动者」没有发动机</strong>——只有方向盘，没有油门</div>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>一句话看清六条的关系</h4>
+    <p><strong>它们不是六件不相干的事，是同一个起点的六个后果。</strong></p>
+    <p>「从单个行动者的一次行动出发」——这个起点一旦定下：</p>
+    <p>· 行动就只能是<strong>目的—手段</strong>（装不下仪式）→ <strong>批评一</strong></p>
+    <p>· 情境就只能是<strong>客观给定</strong>（装不下认知）→ <strong>批评二</strong></p>
+    <p>· 行动就只能是<strong>孤立一次</strong>（装不下后果链）→ <strong>批评三</strong></p>
+    <p>· 个人就必然<strong>先于社会</strong>（与齐美尔、米德相反）→ <strong>批评四</strong></p>
+    <p>· 规范就必然<strong>凭空存在</strong>（他不追问来源）→ <strong>批评五</strong></p>
+    <p>· 行动者就必然<strong>没有驱力</strong>（只剩认知和评价）→ <strong>批评六</strong></p>
+  </div>
+
+  <div class="diagram">
+<pre>             他的起点
+        「从单个行动者的一次行动出发」
+                    │
+    ┌───────┬───────┼───────┬───────┐
+    ↓       ↓       ↓       ↓       ↓
+  行动模型  情境    行动    个人    规范   行动者
+  太窄     客观    孤立    优先    凭空   无驱力
+    │       │       │       │       │      │
+   ①       ②      ③      ④      ⑤     ⑥</pre>
+  </div>
+
+  <div class="note">
+    <span class="label">为什么这一层的反对最致命</span>
+    <p>反 AGIL 的人，是在说<strong>「工具不好用」</strong>。</p>
+    <p>反功能前提（如冲突理论）的人，是在说<strong>「这工具让你看不见某些东西」</strong>。</p>
+    <p><strong>而这六条，是在说「你拿错了工具」——问题出在起点本身。</strong></p>
+    <p class="meta">《二十讲》第 2464—2466 行说「请读者务必记牢」，原因就在此：它不是对某一部著作的评论，是<strong>对整套理论地基的质疑</strong>。</p>
+  </div>
+
+  <h4>顺带：他删掉齐美尔这件事（放在这里才顺）</h4>
+
+  <p>第 ① 段讲过：1937 年的美国本来还有实用主义那条线，他<strong>只字未提</strong>。齐美尔也是一样——<strong>他写了一章，付梓前删了</strong>，而且自己承认（第 2133—2145 行）：</p>
+
+  <div class="quote">
+    有一件也许还蛮有趣的事情是，我其实在《社会行动的结构》里<strong>撰写了一章专门讨论齐美尔，但部分出自篇幅因素，所以最后决定删除这一章</strong>。齐美尔更多的是微观社会学家而不是宏观社会学家，此外，<strong>我认为他不是与其他学者同一个层次的理论家</strong>。
+    <cite>帕森斯，The Structure of Social Action, p.XIV, Fn.10；转引自《二十讲》第 2140—2145 行</cite>
+  </div>
+
+  <p>《二十讲》不信「篇幅」这个理由（第 2146—2162 行）：</p>
+
+  <div class="quote">
+    说齐美尔没有清楚的理论方向，<strong>就让人难以接受了</strong>……<strong>若把齐美尔包含在帕森斯的《社会行动的结构》中，会危及帕森斯「精心策划的故事情节」。</strong>
+    <cite>《社会理论二十讲》第 2148—2162 行</cite>
+  </div>
+
+  <div class="hook">
+    <p><strong>为什么删齐美尔？因为起点会打架。</strong></p>
+    <p>帕森斯的起点是<strong>「单个行动者」</strong>；齐美尔的起点是<strong>「个体之间」</strong>。</p>
+    <p>如果承认齐美尔，整套理论的出发点就得重写。<strong>删掉他，不是因为他不重要，是因为他太重要，会动摇地基。</strong></p>
+    <p class="meta">（回顾第 8 课：齐美尔的单位是「两个人之间的线」。）</p>
+  </div>
+
+  <div class="step"><span class="num">7</span>现代影响：什么东西还在用</div>
+
+  <h2>影响一：他定义了「社会学该怎么做」二十年</h2>
+
+  <div class="quote">
+    <strong>直至 20 世纪 60 年代，功能主义思想或许是社会学中最主要的理论传统</strong>，在美国尤其如此。
+    <cite>《社会学（第八版）上册》第 1669 行</cite>
+  </div>
+
+  <h2>影响二：「角色」成了所有人的通用语言</h2>
+
+  <p><strong>角色、角色冲突、角色期待、角色学习、社会化</strong>——这些词今天还在用，就是他和那个学派推成标准配置的（第 2913—2914 行）。</p>
+
+  <p>你今天写论文时若说「中间阶层承担着某种<strong>角色</strong>」，用的就是帕森斯留下的语言。</p>
+
+  <h2>影响三：他制造了「古典传统」这件事</h2>
+
+  <p>他挑的四个人成了此后几十年的标准名单；他删掉的（芝加哥学派、齐美尔、实用主义）要等 1960 年代才回来。<strong>这正是第 11 课的结论，在这里落地了。</strong></p>
+
+  <h2>影响四（反面）：他留下了「被围攻的靶子」</h2>
+
+  <p>1960 年代围攻他的三支——<strong>冲突理论 · 象征互动论 · 常人方法论</strong>——恰好一个对一个地打他的三处软肋：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>冲突理论</div>
+      <div>打「只讲整合不讲冲突」（裂缝一）</div>
+    </div>
+    <div class="row">
+      <div>象征互动论</div>
+      <div>打「规范不靠诠释」（裂缝二）</div>
+    </div>
+    <div class="row">
+      <div>常人方法论</div>
+      <div>打得更狠：说秩序根本不是规范撑起来的，是<strong>当场做出来的</strong></div>
+    </div>
+  </div>
+
+  <p>第 15、16 课分别讲前两支。</p>
+
+  <hr>
+
+  <h2>三个坑（讲的时候要避开）</h2>
+
+  <h3>坑 1：别把两个名单混为一谈</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>名单 A</div>
+      <div><strong>教科书「古典六人」</strong>——由《社会行动的结构》确立，后世教材沿用</div>
+    </div>
+    <div class="row">
+      <div>名单 B</div>
+      <div><strong>帕森斯本人选的四位</strong>：韦伯、涂尔干、<strong>马歇尔</strong>、<strong>帕累托</strong></div>
+    </div>
+  </div>
+
+  <h3>坑 2：别把他讲成「保守派反派」</h3>
+
+  <p><strong>他问的问题是真问题。</strong>「一群各自逐利的人，为什么能有秩序」——霍布斯问过，康德问过，今天仍然成立。</p>
+
+  <p>问题在于<strong>答案押在了「共享价值」上</strong>：这在稳定社会好用，在冲突社会失灵。<strong>这是答案的局限，不是问题的错。</strong></p>
+
+  <h3>坑 3：别把「目的随机性」当成冷僻术语跳过</h3>
+
+  <p>这是全课的<strong>把手</strong>。他的整本书，就是<strong>围绕「目的不是随机的，是被共享规范塑形的」这一句话转的</strong>。抓住它，其余都是展开。</p>
+
+  <hr>
+
+  <h2>自己动手转译</h2>
+
+  <div class="note">
+    <span class="label">题目</span>
+    <p>杰诺维西分析中国的中间阶层时，看到它<strong>「能传导（功能）却无方向决定权（自主）」</strong>。</p>
+    <p>用这一课的工具问<strong>它们的问题</strong>：</p>
+    <p>　· 用他的<strong>角色</strong>概念看：18 世纪中国的中间阶层，<strong>承担的是什么样的角色？这些角色「道出了」什么价值？</strong></p>
+    <p>　· 再追问一个他自己答不了的问题：<strong>如果角色既是规范载体、又是系统零件，那为什么这些角色长不出「自主」？</strong></p>
+  </div>
+
+  <div class="note">
+    <span class="label">分寸提醒</span>
+    <p>借帕森斯的工具，问杰诺维西的问题；<strong>社会学是描述工具，不是论据</strong>。</p>
+    <p class="meta">这次的追问有额外价值：帕森斯的概念<strong>长于描述「系统怎么运转」、短于描述「系统怎么变」</strong>（裂缝一）。如果杰诺维西的中间阶层恰恰是「运转良好但无法自主」，那正好落在<strong>他框架的适用边界上</strong>——<strong>这个「边界」本身就可以写成发现。</strong></p>
+  </div>
+
+  <hr>
+
+  <h2>本课小结（按七段）</h2>
+
+  <div class="diagram">
+<pre>① 背景   1930s 流行两股：功利主义/实证主义 + 进化论/进步史观
+         两者都不问「行动者自己怎么想」
+         当时还有第三股（美国实用主义），他抹掉了
+
+② 问题   功利主义漏了个洞：「目的随机性」
+         —— 它假装人的目的天然一致，却不说目的从哪来
+
+③ 回答   单位行动四要素，补上第四项「规范与价值」
+         价值 → 制度化 → 角色
+         角色 = 规范载体 + 系统零件
+          ★ 最要紧一步：不是「让他相信」，
+            是「制度化 + 内化」两条腿同时扎住
+
+          闭环（回答五）——不是「个人为系统服务」，是互为条件：
+           系统 → 功能前提 → 必须有人做 → 角色
+                → 对个人提要求 → 内化成动机 → 系统存续
+           四句话：存续是「条件」不是「结果」；
+                   「制度化」不能省；是循环不是单线；
+                   但循环起点固定在系统那侧
+
+④ 优点   补的那项确实别人漏了
+         一个概念干三件划界的活（对生物学/文化人类学/心理学）
+         给了社会学自己的地盘
+
+⑤ 裂缝   一：角色只能解释「运转」，不能解释「变动」
+         二：规范被当成抽象存在，漏了「行动者怎么诠释它」
+         三：框架里只有「内化成功／越轨」两格，
+             没有「内化成功但范围被限定」这一格
+             ← 这一格就是论文能切的位置
+
+⑥ 挑战   他挑战斯宾塞（动前提）· 对马克思只用不收编
+         删齐美尔（起点会打架）
+         别人挑战他：六条批评 → 通向下课
+
+⑦ 影响   直至 1960s 是社会学主流传统
+         「角色」成通用语言
+         他制定了古典名单
+         也留下了被围攻的靶子</pre>
+  </div>
+
+  <h2>下一课预告</h2>
+
+  <p><strong>第 15 课 · 帕森斯（四）：模式变项 + AGIL——体系怎么长成一座大机器</strong></p>
+
+  <div class="roster">
+    <div class="row">
+      <div>要看什么</div>
+      <div>① <strong>模式变项</strong>（五组二分选项，注意<strong>不是行动类型</strong>）② <strong>AGIL 模型</strong> ③ 与斯梅尔瑟合著、讨论「钱」④ 六条批评怎么回来</div>
+    </div>
+    <div class="row">
+      <div>衔接</div>
+      <div>第 12—14 课讲他怎么起来、赢在哪、又输在哪；第 15 课看他怎么把体系撑到极限、又怎么崩</div>
+    </div>
+  </div>
+
+  <h2>本课依据</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>主依据一</div>
+      <div><code>社会理论二十讲…md</code><br>第 1651—1676 行（目的随机性 · 经济学不问目的来源）· 第 1764—1815 行（两种秩序 · 堵车比喻）· <strong>第 1878—1922 行（行动参照框架 · 单位行动四要素）</strong>· 第 2095—2131 行（<strong>1930s 美国思想背景 · 实用主义被抹掉</strong>）· 第 2132—2165 行（删齐美尔）· 第 2166—2171 行（对马克思）· 第 2340—2464 行（六条批评）· <strong>第 2905—2963 行（角色概念）</strong>· 第 3626—3630 行（反斯宾塞）· 第 5005—5008 行（规范有赖诠释）</div>
+    </div>
+    <div class="row">
+      <div>主依据二</div>
+      <div><code>社会学（第八版）上册…md</code> 第 1625—1667 行（功能主义 · 有机体类比 · 道德共识）· 第 1669—1701 行（功能主义的兴衰）</div>
+    </div>
+    <div class="row">
+      <div>辅依据</div>
+      <div><code>侯钧生《西方社会学理论教程》…md</code> 第六章 · <a href="../reference/two-traditions.html">《古典两条路》对照表</a></div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">出处等级说明</span>
+    <p>本课<strong>所有引文与行号，本机书可核验</strong>。</p>
+    <p>「把角色与功能焊在一起」是<strong>对第 2936—2940 行两句话的概括</strong>，属整理，不是原句。</p>
+    <p>「他抹掉了实用主义那条线」是<strong>据第 2095—2131 行的整理</strong>——原文说的是「只字未提」「整个否认美国思想史对他自己理论计划的重要性」，并暗示哈佛与芝加哥有竞争关系；<strong>「抹掉」这个动词是我加的概括</strong>。</p>
+  </div>
+
+  <h2>速查卡</h2>
+
+  <div class="diagram">
+<pre>帕森斯 Talcott Parsons  1902—1979
+《社会行动的结构》The Structure of Social Action  1937
+《社会系统》The Social System  1951
+
+主把手  目的随机性（功利主义漏的洞）
+辅把手  单位行动（四要素）· 角色
+
+七段速记
+  背景   1930s：功利主义 + 进化论当道，都不问「意义」
+  问题   目的随机性：你们假装目的天然一致
+  回答   补第四项「规范」；价值→制度化→角色
+         ★ 不是「让他相信」，是「制度化 + 内化」两条腿
+         ★ 是循环不是单线：系统→功能前提→角色→内化→系统存续
+           但循环起点固定在系统那侧
+  优点   补得准 · 一个概念三处划界 · 给社会学一块地
+  裂缝   一：只能解释运转，不能解释变动（从他「先静态」的问法就开始了）
+         二：漏了「行动者怎么诠释规范」
+         三：只有「内化成功／越轨」两格，没有
+             「内化成功但范围被限定」这一格 ← 论文切口
+  挑战   反斯宾塞（动前提）· 删齐美尔 · 六条批评（下课）
+  影响   1960s 前主流 · 「角色」成通用语言 · 制定古典名单
+
+关键概念
+  功能前提 functional prerequisite
+    = 系统得以持存的必要条件
+      （不是道德要求，也不是充分原因）
+    = 「要活下去，就必须解决这几件事，必须有人做」
+
+关键动作
+  反斯宾塞：「现在谁还在读斯宾塞？」
+  删齐美尔：写了又删（起点会打架）
+  对马克思：只用一次当桥，不专章</pre>
+  </div>
+
+  <p class="meta">下一课：第 15 课 · 帕森斯（四）——模式变项 + AGIL，体系怎么长成又怎么崩</p>
+
+  <div class="lesson-footer">
+    <p class="meta">返回：<a href="../index.html">课程总目录</a> · <a href="../ROADMAP.md">路线图</a></p>
+  </div>
+
+</div>
+</body>
+</html>

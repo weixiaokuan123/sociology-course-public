@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>古典两条路：实证主义 vs 理解社会学</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+  .contrast { display:flex; gap:1rem; flex-wrap:wrap; margin:1.4rem 0; }
+  .contrast > div { flex:1 1 260px; border:1px solid #ddd; border-radius:8px; padding:.9rem 1.1rem; }
+  .contrast h4 { margin-top:0; font-size:1rem; }
+  .contrast p:last-child { margin-bottom:0; }
+  .diagram {
+    background:var(--paper-alt); border:1px solid var(--rule);
+    padding:1.4rem 1rem 1rem; margin:1.6rem 0; overflow-x:auto;
+  }
+  .diagram pre {
+    font-family:"SF Mono", Consolas, "Cascadia Mono", monospace;
+    font-size:.82rem; line-height:1.55; margin:0; color:var(--ink); white-space:pre;
+  }
+  .quote {
+    border-left:3px solid var(--rule); padding:.6rem 0 .6rem 1rem;
+    margin:1.1rem 0; color:var(--ink-soft); font-size:.94rem;
+  }
+  .quote cite { display:block; margin-top:.5rem; font-size:.8rem; color:var(--ink-faint); font-style:normal; }
+  .roster { border:1px solid var(--rule); border-radius:8px; overflow:hidden; margin:1.4rem 0; }
+  .roster .row { display:flex; flex-wrap:wrap; border-top:1px solid var(--rule); }
+  .roster .row:first-child { border-top:none; }
+  .roster .row > div { padding:.65rem .9rem; font-size:.9rem; }
+  .roster .row > div:first-child { flex:0 0 110px; font-weight:600; background:var(--paper-alt); }
+  .roster .row > div:last-child { flex:1 1 320px; }
+  table.cmp { width:100%; border-collapse:collapse; margin:1.4rem 0; font-size:.9rem; }
+  table.cmp th, table.cmp td { border:1px solid var(--rule); padding:.55rem .7rem; text-align:left; vertical-align:top; }
+  table.cmp th { background:var(--paper-alt); font-weight:600; }
+  .note {
+    background:#f7f4ec; border:1px solid var(--rule); border-radius:8px;
+    padding:1rem 1.2rem; margin:1.4rem 0;
+  }
+  .note .label { display:block; font-weight:700; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.03em; }
+  .note p { margin:.4rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  .hook { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .hook h4 { margin:0 0 .5rem; font-size:1rem; }
+  .hook p { margin:.35rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">古典段 · 概念对照 · 跨课查阅</p>
+  <h1>古典两条路：实证主义 vs 理解社会学</h1>
+  <p class="subtitle">一个把社会当自然物来「说明」，一个把社会当人的意义来「理解」——古典期的全部分歧都长在这条缝上</p>
+
+  <div class="note">
+    <span class="label">这份文件怎么用</span>
+    <p>这是<strong>跨课参照表</strong>，不属于某一课。第 2、5、6、7、10、11 课都用到这对区分，所以单独提出来放在这里。</p>
+    <p>用到它的地方：<strong>第 5 课</strong>（孔德 vs 斯宾塞）· <strong>第 6 课</strong>（涂尔干「把社会事实当物」）· <strong>第 7 课</strong>（韦伯「理解社会学」）· <strong>第 10 课</strong>（个人／社会两分法）· <strong>第 11 课</strong>（芝加哥学派接的是哪一支）。</p>
+  </div>
+
+  <h2>一、术语的正名：这对区分正式叫什么</h2>
+
+  <p>「实证」和「理解」是简写。正式的层级是三层：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>方法名</div>
+      <div><strong>理解社会学</strong>（Verstehende Soziologie）——<strong>韦伯自己给这门学问起的名字</strong><br><span class="meta">侯钧生第 1183 行：「韦伯认为，个体及其行动是其<strong>理解社会学</strong>的基本分析单位」</span></div>
+    </div>
+    <div class="row">
+      <div>哲学基础</div>
+      <div><strong>解释学 / 诠释学</strong>（Hermeneutics）</div>
+    </div>
+    <div class="row">
+      <div>最正式的一对</div>
+      <div>哈贝马斯给的：<strong>分析的科学（自然科学）vs 解释学的科学（精神科学）</strong>（侯钧生第 7232—7233 行）</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    哈贝马斯假定了三种包括人类所有理性领域的基本知识类型：<strong>分析的科学（自然科学）</strong>，即旨在理解物质世界规律的科学；<strong>解释学的科学（精神科学）</strong>，即致力于理解历史意义的科学；<strong>批判型科学</strong>，即致力于揭示人类遭受压抑和统治的条件的科学。
+    <cite>侯钧生《西方社会学理论教程》第 7230—7235 行</cite>
+  </div>
+
+  <div class="diagram">
+<pre>实证主义（Positivism）  ←→  理解社会学（Verstehende Soziologie）
+      │                              │
+  分析的科学                     哲学基础：解释学 Hermeneutics
+  （找规律）                     = 精神科学（找意义）</pre>
+  </div>
+
+  <div class="note">
+    <span class="label">两个容易绊倒的地方</span>
+    <p><strong>① 译名不统一</strong>：同一个词 Hermeneutics，大陆多译「<strong>解释学</strong>」，港台多译「<strong>诠释学</strong>」。你在《二十讲》里看到的是「<strong>诠释取向</strong>」；在侯钧生里看到的是「<strong>解释学</strong>」——<strong>是同一个东西</strong>。而「双重解释学」这个词在吉登斯那里也会遇到（侯钧生第 7536 行）。</p>
+    <p><strong>② 严格说不能完全等同</strong>：解释学本来是研究<strong>文本诠释</strong>的学问（从圣经解释发展来），后来才被扩用到社会研究。所以最精确的写法是：<strong>实证主义 vs 理解社会学（其哲学基础是解释学）</strong>。</p>
+  </div>
+
+  <h2>二、德语里本来就有这对词：「说明」vs「理解」</h2>
+
+  <p>为什么「理解」会成为一个专门术语？<strong>因为它有明确的对立面。</strong></p>
+
+  <div class="diagram">
+<pre>Erklären（说明）      Verstehen（理解）
+   │                      │
+自然科学的方法          人文科学的方法
+解释因果                把握意义
+
+德国人的主张：这两者根本不同，
+社会人文现象只能用「理解」。</pre>
+  </div>
+
+  <p><strong>「理解」不是日常的「我理解了」，是专有术语 Verstehen 的翻译</strong>——在德语里它有 Erklären 这个对家。</p>
+
+  <h2>三、两条路的全方位对照</h2>
+
+  <table class="cmp">
+    <tr>
+      <th style="width:20%">对比项</th>
+      <th style="width:40%">实证主义</th>
+      <th style="width:40%">理解社会学</th>
+    </tr>
+    <tr>
+      <td><strong>研究起点</strong></td>
+      <td>社会现象（<strong>外部事实</strong>）</td>
+      <td>行动者的<strong>意义</strong>（内在）</td>
+    </tr>
+    <tr>
+      <td><strong>人的位置</strong></td>
+      <td>社会的一部分，受规律支配</td>
+      <td><strong>意志与自由</strong>优先</td>
+    </tr>
+    <tr>
+      <td><strong>方法</strong></td>
+      <td>观察、实验、统计</td>
+      <td><strong>理解、诠释</strong></td>
+    </tr>
+    <tr>
+      <td><strong>目标</strong></td>
+      <td>找<strong>规律</strong></td>
+      <td>找<strong>意义</strong></td>
+    </tr>
+    <tr>
+      <td><strong>国别</strong></td>
+      <td>法国（孔德、涂尔干）</td>
+      <td>德国（韦伯、齐美尔、滕尼斯）</td>
+    </tr>
+    <tr>
+      <td><strong>哲学母体</strong></td>
+      <td>实证主义</td>
+      <td><strong>观念论</strong>（Idealismus）</td>
+    </tr>
+    <tr>
+      <td><strong>后续</strong></td>
+      <td>定量社会学、调查研究</td>
+      <td>芝加哥学派 · 现象学社会学 · 常人方法论</td>
+    </tr>
+  </table>
+
+  <h3>实证主义的四条基本原则</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>① 本体论</div>
+      <div><strong>自然主义</strong>——社会文化现象与自然现象<strong>本质上一样</strong>，遵循同样的自然规律</div>
+    </div>
+    <div class="row">
+      <div>② 认识论</div>
+      <div><strong>经验主义</strong>——知识的可靠性<strong>取决于观察和检验</strong></div>
+    </div>
+    <div class="row">
+      <div>③ 方法论</div>
+      <div><strong>科学主义</strong>——社会科学<strong>应该以自然科学为楷模</strong></div>
+    </div>
+    <div class="row">
+      <div>④ 价值观</div>
+      <div><strong>价值中立</strong>——只问「是什么」，不问「应该是什么」</div>
+    </div>
+  </div>
+
+  <p class="meta">来源：侯钧生《西方社会学理论教程》第 444—453 行</p>
+
+  <p><strong>拿这四条去对照德国那三个人，会发现他们几乎一条都不同意</strong>——唯一例外是韦伯的「价值中立」，那一半他接受。</p>
+
+  <h2>四、古典期实证主义是主流吗</h2>
+
+  <p><strong>是，但「主流」要分三层看。</strong></p>
+
+  <h3>第一层：从学科建制看——是，压倒性的是</h3>
+
+  <div class="quote">
+    （1）「<strong>社会学</strong>」（sociology）与「<strong>实证主义</strong>」（positivism）是<strong>一对双胞胎</strong>。<br>
+    （2）<strong>发明「社会学」一词的孔德同时也是实证主义的创始人。</strong>
+    <cite>侯钧生《西方社会学理论教程》第 433—434 行</cite>
+  </div>
+
+  <div class="hook">
+    <p><strong>社会学诞生的时候并没有「另一条路」——实证主义就是它的出厂设置。</strong></p>
+  </div>
+
+  <div class="quote">
+    第一个阶段从 19 世纪 30 年代开始<strong>至 20 世纪初</strong>，以孔德的实证哲学为基础，<strong>经由涂尔干的方法论改造，实证主义与社会学相互建构、浑然一体</strong>。
+    <cite>侯钧生《西方社会学理论教程》第 439—440 行</cite>
+  </div>
+
+  <p>注意这个时间窗：<strong>19 世纪 30 年代到 20 世纪初，正好覆盖整个古典期。</strong></p>
+
+  <h3>第二层：从方法论看——另有一条并行，水平一流，但不是主流</h3>
+
+  <p><strong>「主流」不等于「唯一」。</strong>韦伯、齐美尔、滕尼斯这条线在整个古典期一直存在，水平一流。</p>
+
+  <h3>第三层（最值钱的一层）：这个「主流」的划分，是帕森斯改写的</h3>
+
+  <div class="quote">
+    <strong>帕森斯假设法国的知识背景受到实证主义的支配</strong>，但<strong>这个假设也是值得商榷的</strong>。法国思想也许<strong>根本上是分化的</strong>。
+    <cite>《社会理论二十讲》第 2194—2195 行</cite>
+  </div>
+
+  <div class="quote">
+    同样地，<strong>帕森斯说德国思想史在很大程度上受观念论的影响</strong>，也是<strong>可批评的</strong>。之所以值得批评，不是因为他这个说法完全是错误的，而是因为<strong>「观念论」这个标签可能会使人们很草率地忽略掉在德国思想史中对行动理论来说非常有趣的思潮</strong>。
+    <cite>《社会理论二十讲》第 2203—2206 行</cite>
+  </div>
+
+  <p><strong>两段话意思一样</strong>：帕森斯把「实证主义」和「观念论」讲成<strong>法德两个壁垒</strong>，而实际两边内部都比标签复杂得多。</p>
+
+  <div class="diagram">
+<pre>帕森斯要作的事（《二十讲》第 2175 行）：
+  他的行动理论「就是要搭起观念论和实证主义之间的桥梁」
+
+要能搭桥，前提是：两岸得是分开的。
+所以他把韦伯解释成观念论的代表、
+把涂尔干解释成实证主义的代表
+        ↓
+    两个壁垒，他站中间 → 「我，来搭桥」</pre>
+  </div>
+
+  <div class="hook">
+    <h4>完整答案</h4>
+    <p><strong>从「谁在定义学科」看——是实证主义。</strong></p>
+    <p><strong>从「谁在做真正有分量的工作」看——不一定。</strong></p>
+    <p><strong>而「哪个才算主流」这个判断本身，很大程度上是 1937 年以后被帕森斯确定的。</strong></p>
+  </div>
+
+  <h2>五、为什么「理解」那支全是德国人</h2>
+
+  <p><strong>不是巧合，是这套方法本身就是德国特产。</strong>《二十讲》第 1301 行一句话说到底：</p>
+
+  <div class="quote">
+    经济学家马歇尔与身兼经济学家与社会学家的帕累托，他们的源头是<strong>功利主义传统</strong>，<strong>涂尔干和韦伯则分属法国的实证主义和德国的观念论</strong>。
+    <cite>《社会理论二十讲》第 1300—1301 行</cite>
+  </div>
+
+  <div class="diagram">
+<pre>涂尔干 —— 法国的【实证主义】
+韦伯   —— 德国的【观念论】   ← 「理解」这一支的哲学母体</pre>
+  </div>
+
+  <h3>人员的国别清单</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>滕尼斯</div>
+      <div>1855—1936 · 德国（基尔大学）</div>
+    </div>
+    <div class="row">
+      <div>齐美尔</div>
+      <div>1858—1919 · 德国（柏林）</div>
+    </div>
+    <div class="row">
+      <div>韦伯</div>
+      <div>1864—1920 · 德国（海德堡）</div>
+    </div>
+    <div class="row">
+      <div>还有</div>
+      <div><strong>埃利亚斯</strong>（1897—1990，布雷斯劳）——走的是同一条线（长期进程 · 形态），只是当时还没被承认</div>
+    </div>
+  </div>
+
+  <h3>这条德国传统是怎么传下来的</h3>
+
+  <div class="diagram">
+<pre>德国观念论（康德 · 黑格尔）
+        ↓
+  「精神科学」（Geisteswissenschaften）
+   主张：人文现象要用「理解」，不能用「说明」
+        ↓
+   韦伯的「理解社会学」
+        ↓
+   齐美尔（形式社会学）· 滕尼斯（类型对比）
+        ↓
+   → 芝加哥学派（帕克把它带到美国）
+   → 舒茨 · 现象学社会学
+   → 加芬克尔 · 常人方法论</pre>
+  </div>
+
+  <p>《二十讲》第 2203、2213 行也点明：<strong>「德国思想史在很大程度上受观念论的影响」</strong>，且<strong>「德国观念论哲学的基础，根本上是一种关于人类行动的〔理论〕」</strong>。</p>
+
+  <h3>对照：帕森斯挑的是「四国代表各一个」</h3>
+
+  <div class="roster">
+    <div class="row">
+      <div>德国</div>
+      <div>韦伯 —— <strong>观念论</strong></div>
+    </div>
+    <div class="row">
+      <div>法国</div>
+      <div>涂尔干 —— <strong>实证主义</strong></div>
+    </div>
+    <div class="row">
+      <div>英国</div>
+      <div>马歇尔 —— 功利主义</div>
+    </div>
+    <div class="row">
+      <div>意大利</div>
+      <div>帕累托 —— 功利主义</div>
+    </div>
+  </div>
+
+  <p class="meta">来源：《社会理论二十讲》第 1295—1297 行</p>
+
+  <p><strong>他挑这套名单，是为了搭一座桥</strong>——把观念论和实证主义接起来。</p>
+
+  <h2>六、人物站队速查</h2>
+
+  <table class="cmp">
+    <tr>
+      <th style="width:22%">人</th>
+      <th style="width:26%">实证 vs 理解</th>
+      <th style="width:26%">整体 vs 个体</th>
+      <th style="width:26%">备注</th>
+    </tr>
+    <tr>
+      <td><strong>孔德</strong><br>1798—1857 · 法</td>
+      <td><strong>实证</strong>（开山祖）</td>
+      <td><strong>整体</strong>（唯实论）· 社会优先于个人</td>
+      <td>发明「社会学」一词，同时发明「实证主义」</td>
+    </tr>
+    <tr>
+      <td><strong>斯宾塞</strong><br>1820—1903 · 英</td>
+      <td><strong>实证</strong>（更硬的版本：用生物学类比）</td>
+      <td><strong>个体</strong>（唯名论）· 个人优先于社会</td>
+      <td><strong>两条轴不同边</strong>——第 5 课「同一个比喻，两个方向」</td>
+    </tr>
+    <tr>
+      <td><strong>涂尔干</strong><br>1858—1917 · 法</td>
+      <td><strong>实证</strong>（方法论改造者）</td>
+      <td><strong>整体</strong>· 「把社会事实当物」</td>
+      <td>第 6 课</td>
+    </tr>
+    <tr>
+      <td><strong>韦伯</strong><br>1864—1920 · 德</td>
+      <td><strong>理解</strong>（理解社会学）</td>
+      <td>个体（方法论个人主义）</td>
+      <td>唯一例外：他接受「价值中立」</td>
+    </tr>
+    <tr>
+      <td><strong>齐美尔</strong><br>1858—1919 · 德</td>
+      <td><strong>理解</strong>（形式社会学）</td>
+      <td>两者都拆（不站边）</td>
+      <td>第 8 课 · 第 10 课</td>
+    </tr>
+    <tr>
+      <td><strong>滕尼斯</strong><br>1855—1936 · 德</td>
+      <td><strong>理解</strong>（类型对比）</td>
+      <td>两者都拆（共同体／社会）</td>
+      <td>第 9 课</td>
+    </tr>
+    <tr>
+      <td><strong>马克思</strong><br>1818—1883 · 德</td>
+      <td>—（跨两支）</td>
+      <td><strong>整体</strong>· 与涂尔干同列</td>
+      <td>第 10 课·代际摆法须注意（他不算第一代）</td>
+    </tr>
+  </table>
+
+  <div class="note">
+    <span class="label">这张表最有用的一点</span>
+    <p>它能一眼看出<strong>「同轴分歧」和「拆轴」的区别</strong>：</p>
+    <p>· <strong>孔德 ↔ 斯宾塞</strong>：在「整体 vs 个体」轴上各占一边 → <strong>同范式内分歧，不是挑战</strong></p>
+    <p>· <strong>齐美尔 / 埃利亚斯</strong>：说这条轴本身出错了 → <strong>拆轴，是真挑战</strong></p>
+    <p class="meta">判据：<strong>动结论 ＝ 同范式内分歧；动前提 ＝ 真挑战。</strong></p>
+  </div>
+
+  <h2>七、对写论文的用处</h2>
+
+  <div class="note">
+    <span class="label">杰诺维西站在哪</span>
+    <p>他身处<strong>「理解／观念论」那一支</strong>（要把握中国自我理解的意义），但他借用的分析工具（层次、渠道、载体）<strong>带着实证的味道</strong>——讲结构、讲机制、讲因果。</p>
+    <p>所以可以问：<strong>他是不是也站在一个缝隙里——一手伸向理解，一手伸向实证？</strong></p>
+    <p>若这么写，你和帕森斯做的是<strong>同一个动作</strong>（在两支之间找交集），区别是：<strong>他搭桥是为了立自己，你是为了把杰诺维西放准位置。</strong></p>
+  </div>
+
+  <h2>本文件的依据</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>主依据</div>
+      <div><code>侯钧生《西方社会学理论教程（第4版）…md</code><br>第 433—453 行（双胞胎 · 两阶段 · 四原则）· 第 671—720 行（孔德 vs 斯宾塞全对比）· 第 1183—1186、2506—2522 行（理解社会学 · 韦伯 vs 孔德）· 第 7230—7235 行（哈贝马斯的三类知识）· 第 7536 行（双重解释学）</div>
+    </div>
+    <div class="row">
+      <div>辅依据</div>
+      <div><code>社会理论二十讲…md</code><br>第 1164—1168 行（三位德国人）· 第 1295—1301 行（四国代表 · 法实证／德观念论）· 第 1747—1750 行（帕森斯拒斥观念论）· 第 2175 行（搭桥）· 第 2194—2206 行（批评他的两个假设）</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">出处等级说明</span>
+    <p>本文件所有<strong>术语、引文、人物定位，本机书可核验</strong>，行号已逐条标注。</p>
+    <p><strong>「古典期实证主义是名义主流」这个三层划分，是我根据两本书的材料作的整理</strong>——第一层、第三层有直接引文支撑；第二层的判断（「水平一流但不是主流」）属<strong>依据标准讲法</strong>的编排。</p>
+  </div>
+
+</div>
+</body>
+</html>
