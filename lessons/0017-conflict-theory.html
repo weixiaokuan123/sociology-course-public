@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 17 课 · 冲突理论：你只讲整合，不讲冲突</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+  .diagram { background:var(--paper-alt); border:1px solid var(--rule); padding:1.4rem 1rem 1rem; margin:1.6rem 0; overflow-x:auto; }
+  .diagram pre { font-family:"SF Mono", Consolas, "Cascadia Mono", monospace; font-size:.82rem; line-height:1.55; margin:0; color:var(--ink); white-space:pre; }
+  .quote { border-left:3px solid var(--rule); padding:.6rem 0 .6rem 1rem; margin:1.1rem 0; color:var(--ink-soft); font-size:.94rem; }
+  .quote cite { display:block; margin-top:.5rem; font-size:.8rem; color:var(--ink-faint); font-style:normal; }
+  .roster { border:1px solid var(--rule); border-radius:8px; overflow:hidden; margin:1.4rem 0; }
+  .roster .row { display:flex; flex-wrap:wrap; border-top:1px solid var(--rule); }
+  .roster .row:first-child { border-top:none; }
+  .roster .row > div { padding:.65rem .9rem; font-size:.9rem; }
+  .roster .row > div:first-child { flex:0 0 110px; font-weight:600; background:var(--paper-alt); }
+  .roster .row > div:last-child { flex:1 1 320px; }
+  .hook { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .hook h4 { margin:0 0 .5rem; font-size:1rem; }
+  .hook p { margin:.35rem 0; }
+  .hook .main { font-size:1.15rem; font-weight:700; }
+  .note { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .note .label { display:block; font-weight:700; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.03em; }
+  .note p { margin:.4rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  .contrast { display:flex; gap:1rem; flex-wrap:wrap; margin:1.4rem 0; }
+  .contrast > div { flex:1 1 240px; border:1px solid #ddd; border-radius:8px; padding:.9rem 1.1rem; }
+  .contrast h4 { margin-top:0; font-size:1rem; }
+  .contrast p:last-child { margin-bottom:0; }
+  .step { display:flex; align-items:center; gap:.6rem; margin:1.6rem 0 .8rem; font-weight:700; font-size:1.02rem; }
+  .step .num { flex:0 0 2rem; height:2rem; border-radius:50%; background:#333; color:#fff;
+                display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+  table.cmp { width:100%; border-collapse:collapse; margin:1.2rem 0; font-size:.88rem; }
+  table.cmp th, table.cmp td { border:1px solid var(--rule); padding:.5rem .7rem; text-align:left; vertical-align:top; }
+  table.cmp th { background:var(--paper-alt); font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">社会学 · 第 17 课 · 约 30 分钟</p>
+  <h1>冲突理论：你只讲整合，不讲冲突</h1>
+  <p class="subtitle">科塞 · 达伦多夫 · 米尔斯 · 以及他们从古典里借走的三样东西</p>
+
+  <div class="note">
+    <span class="label">这一课的位置</span>
+    <p>第 16 课讲默顿「给功能主义打补丁」。这一课是<strong>补丁不够用之后的第一波反弹</strong>。</p>
+    <p>在 <a href="../reference/anti-parsons-map.html">反帕森斯地图</a>上，它落在<strong>第二层</strong>——反的是「<strong>系统有功能前提</strong>」这个思路本身。</p>
+    <p class="meta">本课按七段写：① 背景 ② 问题 ③ 回答 ④ 优点 ⑤ 裂缝 ⑥ 挑战 ⑦ 影响。</p>
+  </div>
+
+  <div class="hook">
+    <h4>把手词（1 主 + 2 辅）</h4>
+    <p>主：<span class="main">冲突</span>　—　不是社会的病，是社会的正常组成部分</p>
+    <p>辅一：<strong>权力／统治</strong>　—　达伦多夫：阶级的根据不是财产，是<strong>支配权</strong></p>
+    <p>辅二：<strong>安全阀</strong>　—　科塞：把冲突排出来，反而是稳定的表现</p>
+  </div>
+
+  <div class="step"><span class="num">1</span>思想背景：1960 年代，帕森斯成了「美国现状的辩护」</div>
+
+  <h2>当时发生了什么</h2>
+
+  <div class="quote">
+    冲突社会学在 20 世纪 60 年代展现出很特殊的吸引力，并不令人感到意外。因为当时<strong>各社会运动（尤其是学生运动）风起云涌</strong>，对于西方社会——特别是美国社会——的批判日益尖锐，<strong>帕森斯的理论也被视作美国社会状态的反动辩护</strong>。
+    <cite>《社会理论二十讲》第 6877—6880 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">但这里有个必须先说的复杂之处</span>
+    <p>帕森斯自己觉得被粗暴误解了。《二十讲》替他讲了几句公道话（第 6887—6896 行）：</p>
+    <p>「在他早期《社会行动的结构》中……都在<strong>高度的抽象层面上</strong>论证过，<strong>他从未为某个特殊的社会秩序或政治秩序——例如美国——进行辩护。他也完全没有要否认社会冲突的存在。</strong>」</p>
+    <p>所以《二十讲》的结论是<strong>一半一半</strong>：「<strong>对，但也不对。</strong>」（第 6897 行）</p>
+  </div>
+
+  <h2>那这场架到底争的是什么</h2>
+
+  <div class="quote">
+    帕森斯和他的支持者的理论框架<strong>的确缺乏敏锐的概念工具来把握冲突</strong>。批评者责备帕森斯的著作——包括他的经验分析——<strong>呈现出来的景象太过和谐了</strong>，大量的冲突与利益斗争被粉饰……
+    <br><br>
+    人们有理由质疑帕森斯理论体系的根基有一种「<strong>和谐的成见</strong>」，亦即这套理论体系的<strong>构成方式，很难将社会冲突当作核心议题来讨论</strong>。
+    <cite>《社会理论二十讲》第 6900—6908 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>「和谐的成见」——这是本课的总钥匙</h4>
+    <p><strong>冲突理论要打的不是帕森斯的某个结论，是他理论的「构成方式」。</strong></p>
+    <p>换句话说：<strong>不是「你说错了」，是「你这套框架从设计上就装不下冲突」。</strong></p>
+    <p class="meta">这正是第 15 课 AGIL 那个问题的延续——四个功能里，「冲突」没有格子。</p>
+  </div>
+
+  <div class="step"><span class="num n2">2</span>他面临什么问题</div>
+
+  <h2>问题：功能主义看不见两样东西</h2>
+
+  <div class="contrast">
+    <div>
+      <h4>看不见 ①：权力与利益斗争</h4>
+      <p>帕森斯把社会看成靠<strong>共享价值</strong>整合起来的整体</p>
+      <p>但真实社会里，有<strong>「赤裸裸的利益斗争」</strong>（第 6874 行）</p>
+      <p>这些斗争在功能主义的框架里没有位置</p>
+    </div>
+    <div>
+      <h4>看不见 ②：变迁</h4>
+      <p>他的社会像是<strong>稳定的、秩序良好的</strong></p>
+      <p>「把静态、秩序良好的社会当作<strong>无须反思的前提</strong>」（第 6872—6873 行）</p>
+      <p>社会变迁要么没有位置，要么被讲成<strong>持续且线性的</strong>（第 6904 行）</p>
+    </div>
+  </div>
+
+  <p><strong>所以冲突理论的问题意识可以概括成一句</strong>：</p>
+
+  <div class="hook">
+    <p><strong>如果社会靠的是共享价值，那权力、压迫、剥削、反抗，该放在哪里？</strong></p>
+  </div>
+
+  <div class="step"><span class="num n3">3</span>他提出什么回答</div>
+
+  <h2>三层回答：科塞 · 达伦多夫 · 米尔斯</h2>
+
+  <p><strong>先说一件重要的事</strong>——这派没有统一的祖师（第 7288—7294 行）：</p>
+
+  <div class="quote">
+    这里并<strong>没有一个领导性的学者在「推动」一个朝向冲突理论的运动，也没有一本权威的著作</strong>能够决定性地、且富有成果地论证出一个新的「范式」。冲突理论中，<strong>不存在如功能论的帕森斯、常人方法论的加芬克尔、象征互动论的布鲁默</strong>……此外，也<strong>不存在一个孕育出冲突理论取向的统一传统</strong>。
+    <cite>《社会理论二十讲》第 7288—7295 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一点很特别</span>
+    <p>它是一个<strong>「散装」的取向</strong>——几个人各自从不同的古典资源出发，指向同一个对手。</p>
+    <p class="meta">这跟功能主义（帕森斯有整套体系）、象征互动论（布鲁默有明确纲领）都不一样。</p>
+  </div>
+
+  <h2>回答一（科塞）：冲突对社会<strong>有功能</strong></h2>
+
+  <p>科塞的路子最特别——<strong>他不推翻功能主义，他反过来用功能主义说：冲突本身就有功能。</strong></p>
+
+  <div class="quote">
+    没有团体是完全和谐的，因为这样团体<strong>会缺乏过程和结构</strong>。团体<strong>既需要和谐，也需要冲突，既需要联合，也需要解体</strong>。在团体当中，<strong>冲突绝不是分裂要素</strong>。团体的形成就是这两种过程的结果。
+    <cite>科塞，The Functions of Social Conflict, p.31；转引自《二十讲》第 6975—6978 行</cite>
+  </div>
+
+  <p><strong>两个招牌概念</strong>：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>安全阀</div>
+      <div>冲突可以「<strong>净化空气</strong>」，并且可以造就一种<strong>安全阀门</strong>（第 6980—6981 行）<br><span class="meta">意即：让张力有出口，才不会憋到爆</span></div>
+    </div>
+    <div class="row">
+      <div>冲突是学习过程</div>
+      <div>「冲突对<strong>整个社会</strong>来说常常也有正面的效果，因为冲突对社会来说也是<strong>一种学习过程，可以带来新的规则和制度</strong>。他认为，如果社会<strong>不允许冲突，就没办法拥有学习能力</strong>，长久而言也<strong>不具有持存能力</strong>。」（第 6991—6994 行）</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">他给的例子极好（环保运动）</span>
+    <p>1970—80 年代联邦德国出现大规模环保抗议（第 6998—7005 行）：</p>
+    <p>「那时候冲突冲击了日常秩序，甚至出现火爆的争吵。但是<strong>民主程序框架允许冲突，这带来了学习过程效果，让所有政党都赞同环境保护</strong>。」</p>
+    <p>「当时的<strong>民主德国就是因为暴力镇压了生态运动，所以阻碍了社会在这方面的学习</strong>，使得民主德国在 20 世纪 80 年代不断产生严重的环境破坏。」</p>
+    <p><strong>两边一对比，「允许冲突」的好处就出来了。</strong></p>
+  </div>
+
+  <div class="hook">
+    <h4>科塞这一招很妙</h4>
+    <p>帕森斯说「冲突是系统的病」。</p>
+    <p>科塞说：<strong>「不，你把冲突叫病，才是你的病。恰恰相反——不许冲突的社会才活不长。」</strong></p>
+    <p>但他<strong>没有跳出功能主义的语言</strong>——他说的是「冲突<strong>有功能</strong>」。</p>
+    <p class="meta">这一点后面会变成他的局限（第 ⑤ 段）。</p>
+  </div>
+
+  <h2>回答二（达伦多夫）：把阶级的根据从「财产」换成「权力」</h2>
+
+  <p><strong>他的主张最硬</strong>（第 7258—7264 行）：</p>
+
+  <div class="quote">
+    达伦多夫的想法是，<strong>权力和统治是社会学根本上的基本概念，其他现象都是从中产生的</strong>……因为，<strong>统治之所在，亦是被统治者之所在，而被统治者会反抗任何一种形式的被统治现状</strong>。所以达伦多夫认为，<strong>统治之所在，亦是冲突之所在</strong>。
+    <cite>《社会理论二十讲》第 7258—7262 行</cite>
+  </div>
+
+  <h3>他怎么改马克思</h3>
+
+  <p>这是本课的要点之一。达伦多夫要「用马克思补充帕森斯」，<strong>但要先给马克思做减法</strong>（第 7239—7246 行）：</p>
+
+  <div class="quote">
+    可以用<strong>马克思的阶级理论来补充帕森斯的取径</strong>，但马克思的理论必须<strong>摆脱「形上学」的负累，亦即摆脱历史哲学、人类学，甚至还有政治经济学的负累</strong>，完全还原到其在社会学方面最有价值的核心——<strong>即对于社会冲突的解释</strong>。
+    <cite>《社会理论二十讲》第 7239—7242 行</cite>
+  </div>
+
+  <div class="diagram">
+<pre>达伦多夫对马克思做的两次手术：
+
+手术一：拆掉哲学外衣
+  马克思的「历史必然走向共产主义」→ 不要
+  只留「冲突分析」这一个内核
+
+手术二：换掉阶级的判据
+  马克思：谁占有「实质私有财产」 → 谁是资产阶级
+  达伦多夫：谁占据「统治地位」 → 谁是统治阶级
+
+  → 权力和统治才是不可再简化的基本要素
+    财产只是统治的「众多形态之一」（第 7256—7257 行）</pre>
+  </div>
+
+  <div class="note">
+    <span class="label">这一步的社会学意义</span>
+    <p><strong>马克思说「谁有财产」，达伦多夫说「谁有支配权」</strong>——后者不再绑定经济，所以能用来分析<strong>任何组织</strong>：企业、学校、政党、家庭。</p>
+    <p>用个比喻：<strong>马克思给了一把「经济钥匙」，达伦多夫把它改成了「万能钥匙」。</strong></p>
+  </div>
+
+  <h2>回答三（米尔斯）：权力精英</h2>
+
+  <p>米尔斯的处境不同——他<strong>不在学术圈里跟帕森斯论战</strong>，他对着<strong>公众</strong>说话（第 7123—7127 行）：</p>
+
+  <div class="quote">
+    对<strong>非学术公众很有影响力</strong>的美国社会左派社会评论家米尔斯，其于 1956 年出版、对美国社会进行<strong>权力理论与精英理论研究</strong>的著作《<strong>权力精英</strong>》（The Power Elite）。
+    <cite>《社会理论二十讲》第 7124—7127 行</cite>
+  </div>
+
+  <p><strong>但《二十讲》对他的评价有保留</strong>（第 7118—7124 行）：他是「对结构功能论提出一种<strong>根本的、隐讳的批判，但并非真的有另提理论的企图</strong>」。</p>
+
+  <div class="note">
+    <span class="label">所以米尔斯和另两人的差别</span>
+    <p><strong>科塞和达伦多夫是「造理论的」</strong>（要立一套分析方法）；</p>
+    <p><strong>米尔斯是「写批判的」</strong>（要揭穿权力结构，不建理论体系）。</p>
+    <p class="meta">三人同属冲突理论，但做的事不一样——这一点教材自己就分了。</p>
+  </div>
+
+  <h2>回答四（本课的看点）：他们从古典里借了什么</h2>
+
+  <p>这一节直接回答你课前问的问题。<strong>冲突理论不是一个统一的传统，它是从三个人那里各借一样东西</strong>（第 7295—7300 行）：</p>
+
+  <div class="quote">
+    虽然的确如上所述，在古典社会学家<strong>韦伯</strong>那里这条轴线与此有关。但是<strong>齐美尔</strong>所扮演的角色也绝非不重要。此外，冲突理论家也<strong>都在讨论马克思</strong>，虽然他们有些人是出于明确不同的政治目标，虽然他们<strong>都试着将马克思的观点与韦伯的观点结合起来</strong>，或是<strong>用韦伯的工具来矫正马克思的错误</strong>。
+    <cite>《社会理论二十讲》第 7295—7300 行</cite>
+  </div>
+
+  <table class="cmp">
+    <tr>
+      <th style="width:16%">借谁</th>
+      <th style="width:26%">借什么</th>
+      <th style="width:30%">怎么用</th>
+      <th style="width:28%">证据</th>
+    </tr>
+    <tr>
+      <td><strong>马克思</strong></td>
+      <td>冲突的<strong>实质</strong>——阶级、结构性对立</td>
+      <td><strong>去形而上学化</strong>：只要冲突分析，不要历史哲学</td>
+      <td>第 7239—7242 行（达伦多夫）</td>
+    </tr>
+    <tr>
+      <td><strong>齐美尔</strong></td>
+      <td>冲突的<strong>态度</strong>——它不是病，是关系的正常形式</td>
+      <td>科塞直接接过来，转成功能论论证</td>
+      <td>第 6958—6971 行（齐美尔 1908《争执》一章）</td>
+    </tr>
+    <tr>
+      <td><strong>韦伯</strong></td>
+      <td>冲突的<strong>框架</strong>——统治、权力、身份团体</td>
+      <td>用来<strong>矫正马克思</strong>（把阶级判据从财产换成支配）</td>
+      <td>第 7091—7097 行（韦伯是「适当的出发点」）</td>
+    </tr>
+  </table>
+
+  <div class="note">
+    <span class="label">科塞接齐美尔这一条最有意思</span>
+    <p>《二十讲》解释了<strong>为什么是齐美尔</strong>（第 6958—6971 行）：</p>
+    <p>「因为科塞是犹太人，他深受一位犹太学者的影响……这个人就是<strong>齐美尔</strong>。齐美尔在 1908 年出版的《社会学》中有一篇题为《<strong>争执</strong>》的精彩章节。」</p>
+    <p>「<strong>他清楚表明他偏离了德国当时（也许现在也还是）的主流文化传统，他不马上就将争执、冲突、争吵等等贴上负面的标签。</strong>相反，齐美尔认为这种社会关系形式是一种<strong>积极的关系</strong>，因为犹太教在数百年中发展出一种<strong>争执文化</strong>，在这种文化中，<strong>冲突绝不被认为会威胁到共同体的存在</strong>。」</p>
+  </div>
+
+  <div class="step"><span class="num n4">4</span>优点何在：他们赢在哪</div>
+
+  <h2>优点一：他们把「冲突」从病变成了正常</h2>
+
+  <p>这是最根本的贡献。<strong>他们改的不是某个结论，是「什么东西算正常」。</strong></p>
+
+  <div class="contrast">
+    <div>
+      <h4>功能主义的默认</h4>
+      <p>秩序 = 正常</p>
+      <p>冲突 = 失调（病）</p>
+      <p>所以研究重点是「为什么能整合」</p>
+    </div>
+    <div>
+      <h4>冲突理论的默认</h4>
+      <p>冲突 = 正常（甚至有好处）</p>
+      <p>没有冲突 = 可能是<strong>潜在的张力在积压</strong></p>
+      <p>所以研究重点是「权力怎么运作、谁会反抗」</p>
+    </div>
+  </div>
+
+  <h2>优点二：达伦多夫给了社会学一个「通用的冲突工具」</h2>
+
+  <p>把阶级判据从「财产」换成「支配」之后，<strong>这套分析能用到任何组织上</strong>——这也是他的书名叫《工业社会中的社会阶级与阶级冲突》的原因。</p>
+
+  <h2>优点三：科塞证明了「允许冲突」是有功能优势的</h2>
+
+  <p>环保运动那个例子（联邦德国 vs 民主德国）是<strong>可观察的对照</strong>——这正好符合第 15 课讲的判准（要能指出可观察的反馈过程）。</p>
+
+  <h2>优点四：他们让社会学重新「动」了起来</h2>
+
+  <p>功能主义被骂「僵固」「没有变动性」（第 15 课讲过，第 3392—3393 行）——冲突理论给了变迁一个<strong>内在动力</strong>：<strong>有统治就有反抗，有反抗就有变迁。</strong></p>
+
+  <div class="step"><span class="num n5">5</span>缺点怎么暴露</div>
+
+  <h2>裂缝一：科塞打得不彻底——他还在功能主义的语言里说话</h2>
+
+  <p>《二十讲》这一句说得很准（第 7006 行）：</p>
+
+  <div class="quote">
+    虽然科塞对帕森斯多有批判，但<strong>科塞根本上还是在功能论中进行论证</strong>。
+    <cite>《社会理论二十讲》第 7006 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>用判据看科塞</h4>
+    <p>他说的是「<strong>冲突有功能</strong>」——<strong>他改了结论，没改前提。</strong></p>
+    <p>因为「功能」这个词本身就是功能主义的词。<strong>他等于是用帕森斯的语言说帕森斯不对。</strong></p>
+    <p class="meta">所以在反帕森斯地图上，他落在「介于两者之间」那一层——不是真挑战。</p>
+  </div>
+
+  <h2>裂缝二：借马克思的地方，借得最不干净</h2>
+
+  <p>达伦多夫说「只要冲突分析，不要历史哲学」——<strong>但这个切分线很含糊</strong>（第 7297—7300 行）：</p>
+
+  <div class="quote">
+    这些学者<strong>到底与马克思保持了多大的距离，也是众说纷纭的</strong>。
+    <cite>《社会理论二十讲》第 7299—7300 行</cite>
+  </div>
+
+  <p><strong>问题在于</strong>：马克思的冲突分析<strong>能不能跟他的历史哲学切开</strong>？</p>
+
+  <div class="note">
+    <span class="label">这是个真的难题</span>
+    <p>如果切开：你留下的是「社会里总有统治与反抗」——这几乎是个常识。</p>
+    <p>如果不切：那你就得接受「历史必然走向某个终点」。</p>
+    <p><strong>达伦多夫想只要前者、不要后者——但这个边界他没有论证清楚。</strong></p>
+  </div>
+
+  <h2>裂缝三：这派没有统一纲领，所以「边界不清」</h2>
+
+  <p>这是《二十讲》自己点的（第 7288—7295 行）——<strong>没有领导性学者、没有权威著作、没有统一传统</strong>。</p>
+
+  <div class="hook">
+    <h4>代价是什么</h4>
+    <p>这既是它的好处（<strong>开放、不教条</strong>），也是它的弱点——</p>
+    <p><strong>很难说清「什么算冲突理论」「什么不算」</strong>。米尔斯算不算？（他偏批判，不建理论）本迪克斯算不算？（他是「隐讳地批」）</p>
+    <p class="meta">这个模糊性一直拖到今天。</p>
+  </div>
+
+  <h2>裂缝四：他们给的替代方案，本身也只是一个「模型」</h2>
+
+  <p>达伦多夫自己承认（第 7276—7283 行）：</p>
+
+  <div class="quote">
+    我们在解释社会学问题时<strong>既需要社会的均衡模式，也需要社会的冲突模式</strong>。而且从哲学的视角来看，<strong>人类社会现实同时有着两张面孔</strong>：一张是稳定、和谐、共识的面孔，另一张是变迁、冲突和强迫的面孔。
+    <cite>达伦多夫，「Pfade aus Utopia」，pp.262—263；转引自《二十讲》第 7276—7279 行</cite>
+  </div>
+
+  <p><strong>注意这段话的份量</strong>：他<strong>不是要推翻帕森斯</strong>，是说「你那张脸只画了一半，我把另一半补上」。</p>
+
+  <div class="note">
+    <span class="label">所以这一派到底算不算「真挑战」</span>
+    <p><strong>按地图分层</strong>：它落在<strong>第二层</strong>——反的是「系统有功能前提」这个思路（也就是帕森斯「和谐的成见」）。</p>
+    <p><strong>但达伦多夫自己的话表明</strong>：他要的是<strong>补上另一半</strong>，不是<strong>换掉整个框架</strong>。</p>
+    <p class="meta">——所以它是「介于两者之间」，跟第 16 课默顿的位置很像，只是打得更重。</p>
+  </div>
+
+  <div class="step"><span class="num n6">6</span>被谁挑战</div>
+
+  <h2>先分清方向</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>他们挑战谁</div>
+      <div><strong>帕森斯</strong>（反「和谐的成见」）· 也挑战<strong>马克思</strong>（把他的阶级判据换掉）</div>
+    </div>
+    <div class="row">
+      <div>谁挑战他们</div>
+      <div><strong>后来的综合尝试</strong>（吉登斯、布迪厄等——不站在任何单一立场）· 以及<strong>功能主义内部</strong>的反驳（说他们骂错了对象，第 6897 行「对，但也不对」）</div>
+    </div>
+  </div>
+
+  <h3>（一）他们挑战帕森斯的方式，值得单独说</h3>
+
+  <p><strong>他们动的是「前提」，不是「结论」</strong>——这一点比科塞更清楚。</p>
+
+  <div class="diagram">
+<pre>帕森斯的前提：社会靠共享价值整合
+      ↓
+冲突理论的反问：那权力和压迫放在哪？
+
+→ 这动的不是「整合理论哪里算错了」，
+  是「整合理论从设计上就装不下冲突」
+
+→ 按判据：**动前提，属真挑战**（对达伦多夫而言）</pre>
+  </div>
+
+  <p><strong>但科塞是例外</strong>——他动的是结论（「冲突也有功能」），没动前提。</p>
+
+  <h3>（二）谁挑战他们</h3>
+
+  <p>最有意思的一条是<strong>帕森斯阵营的反击</strong>（第 6887—6897 行）：</p>
+
+  <div class="quote">
+    帕森斯自己觉得他的部分理论是被粗暴地误解了……<strong>他从未为某个特殊的社会秩序或政治秩序——例如美国——进行辩护。他也完全没有要否认社会冲突的存在</strong>……他要问的是<strong>社会秩序得以可能的条件</strong>……<strong>这个问题的答案，完全无关乎人们是不是经验上真的在某个社会现实看到著作中提到的秩序安稳或充满冲突的时刻</strong>。
+    <cite>《社会理论二十讲》第 6882—6893 行</cite>
+  </div>
+
+  <p><strong>这个反驳很硬</strong>：帕森斯说「我讲的是<strong>康德意义上的超验条件</strong>，不是经验描述——你怎么能用「现实中有冲突」来反驳我？」</p>
+
+  <p><strong>《二十讲》的裁决是「对，但也不对」</strong>——两边各有一半道理（第 6897—6908 行）。</p>
+
+  <div class="step"><span class="num">7</span>现代影响</div>
+
+  <h2>影响一：他让「冲突」成了社会学的正当议题</h2>
+
+  <p>在他之前，谈冲突容易被当成「讲政治的」；在他之后，<strong>冲突成了社会学的一等公民</strong>。</p>
+
+  <h2>影响二：科塞的「安全阀」成了通用概念</h2>
+
+  <p>今天分析任何组织（企业、学校、政府）时，<strong>「这个系统有没有安全阀」仍是一个常用问法</strong>。</p>
+
+  <h2>影响三：达伦多夫把「权力」从经济里解放出来</h2>
+
+  <p>这一步的影响最深远——<strong>今天谈组织内部的支配关系，用的基本是他的路子</strong>（不绑经济，看支配位置）。</p>
+
+  <h2>影响四（对你最有用）：米尔斯的「权力精英」进了公共语言</h2>
+
+  <p>他走的是<strong>公众路线</strong>，所以《权力精英》这本书<strong>至今仍是「谁在真正做主」这个问题的标准参照</strong>。</p>
+
+  <h2>影响五（反面）：他们也留下了「只反不建」的毛病</h2>
+
+  <p><strong>没有统一纲领</strong>这一条，既是优点也是弱点——它让这一派<strong>容易被吸收、也容易被解散</strong>。后来的综合尝试（吉登斯、布迪厄）就不站在任何单一立场上。</p>
+
+  <hr>
+
+  <h2>三个坑</h2>
+
+  <h3>坑 1：别把「冲突理论」当成一个统一学派</h3>
+  <p>《二十讲》明说：<strong>没有领导性学者、没有权威著作、没有统一传统</strong>。三个人做的事也不一样（科塞论证、达伦多夫建框架、米尔斯写批判）。</p>
+
+  <h3>坑 2：别把科塞和达伦多夫混为一谈</h3>
+  <p><strong>科塞在功能主义内部说话</strong>（「冲突有功能」）；<strong>达伦多夫是另立框架</strong>（「权力和统治才是基本概念」）。一个改结论，一个动前提。</p>
+
+  <h3>坑 3：别以为帕森斯「没看见冲突」</h3>
+  <p>他不否认冲突存在。<strong>问题在他理论的构成方式装不下冲突</strong>——这个区别很重要，不然会把他讲成一个瞎子。</p>
+
+  <hr>
+
+  <h2>自己动手转译</h2>
+
+  <div class="note">
+    <span class="label">题目</span>
+    <p>杰诺维西看到中国中间阶层<strong>「能传导（功能）却无方向决定权（自主）」</strong>。</p>
+    <p>用冲突理论的工具问：</p>
+    <p>　· 用<strong>达伦多夫</strong>问：中间阶层的阶级位置，该怎么定？<strong>他们占有「财产」吗？他们占据「统治地位」吗？</strong></p>
+    <p>　· 用<strong>科塞</strong>问：这套体系里<strong>有没有「安全阀」</strong>？允许不允许冲突表达出来？如果不允许，张力会往哪里走？</p>
+  </div>
+
+  <div class="note">
+    <span class="label">分寸提醒</span>
+    <p>借冲突理论的工具，问杰诺维西的问题；<strong>社会学是描述工具，不是论据</strong>。</p>
+    <p class="meta">这一问的价值在于：<strong>达伦多夫把阶级判据从「财产」换成「支配」这个动作，正好能用来问「中间阶层被排除在什么之外」</strong>——不是问他们有没有钱，是问他们<strong>有没有被排除到「统治地位」之外</strong>。而这正是杰诺维西说的「无方向决定权」。</p>
+  </div>
+
+  <hr>
+
+  <h2>本课小结（按七段）</h2>
+
+  <div class="diagram">
+<pre>① 背景   1960s 学生运动风起云涌，帕森斯被视作「美国现状的辩护」
+         但《二十讲》裁：对，但也不对（他没为某个秩序辩护过）
+② 问题   功能主义有两处看不见：
+         一：权力与利益斗争  二：变迁
+         根子是「和谐的成见」——理论的构成方式装不下冲突
+③ 回答   三层 + 一个借法：
+         科塞：冲突对社会「有功能」（安全阀 · 学习过程）
+         达伦多夫：权力/统治才是基本概念；阶级判据从「财产」换成「支配」
+         米尔斯：权力精英（对公众批判，不建理论）
+         ★ 借古典：马克思给「实质」· 齐美尔给「态度」· 韦伯给「框架」
+④ 优点   把「冲突」从病变成正常
+         达伦多夫给了通用的冲突工具
+         科塞证明了「允许冲突」有功能优势（环保运动对照）
+         让社会学重新「动」起来
+⑤ 裂缝   一：科塞还在功能主义语言里（改了结论没改前提）
+         二：借马克思借得不干净（切分线含糊）
+         三：没有统一纲领，边界不清
+         四：达伦多夫自己说「这是补另一半，不是换框架」
+⑥ 挑战   他们挑战帕森斯——达伦多夫动前提（真挑战），科塞动结论
+         帕森斯的反击：「我讲的是超验条件，不是经验描述」
+⑦ 影响   冲突成正当议题 · 安全阀成通用概念
+         权力从经济里解放 · 权力精英进公共语言
+         反面：只反不建，容易被吸收</pre>
+  </div>
+
+  <h2>下一课预告</h2>
+
+  <p><strong>第 18 课 · 诠释取向两家：象征互动论 + 常人方法论</strong></p>
+
+  <div class="roster">
+    <div class="row">
+      <div>他们打什么</div>
+      <div>「<strong>规范不靠诠释</strong>」——你把人当成规范的执行者，但人其实是规范的解读者</div>
+    </div>
+    <div class="row">
+      <div>在哪一层</div>
+      <div>反帕森斯地图的<strong>第四层（最深）</strong>——动的是他的「人论」</div>
+    </div>
+    <div class="row">
+      <div>已有基础</div>
+      <div>第 11 课讲过芝加哥学派（象征互动论就是它的第二代）· 第 15 课讲过「规范有赖诠释」这处批评</div>
+    </div>
+  </div>
+
+  <h2>本课依据</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>主依据</div>
+      <div><code>社会理论二十讲…md</code><br><strong>第 6856—6908 行</strong>（第八讲开篇：和谐的成见 · 帕森斯是否被误解）· <strong>第 6910—6921 行</strong>（「冲突社会学」与「冲突理论」的区分）· 第 6955—7006 行（科塞：齐美尔 · 安全阀 · 学习过程 · 环保运动）· 第 7117—7132 行（米尔斯与美国的处境）· <strong>第 7239—7300 行</strong>（达伦多夫：改马克思 · 权力的不可简化 · 借古典三源）</div>
+    </div>
+    <div class="row">
+      <div>辅依据</div>
+      <div><a href="0011a-conflict-theory.html">课下追问 · 冲突理论为什么在这条谱系里看不见</a>（诞生时机与接的资源）· <a href="../reference/anti-parsons-map.html">反帕森斯地图</a>（第二层）</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">出处等级说明</span>
+    <p>本课<strong>所有引文与行号，本机书可核验</strong>。</p>
+    <p><strong>「借古典三源」这个归类（马克思给实质 / 齐美尔给态度 / 韦伯给框架），是我对第 7295—7300 行那段话的整理</strong>——《二十讲》原文只说了「韦伯这条轴线有关、齐美尔角色不小、大家都在讨论马克思」，<strong>「实质／态度／框架」这三个字是我加的概括</strong>。</p>
+    <p>「三层回答 + 一个借法」这个编排，也是为了讲清而作的整理。</p>
+  </div>
+
+  <h2>速查卡</h2>
+
+  <div class="diagram">
+<pre>冲突理论（1950s 中期起）
+「散装」取向：无领导学者 · 无权威著作 · 无统一传统
+
+主张  冲突不是社会的病，是社会的正常组成
+      对手：帕森斯的「和谐的成见」
+
+三人三路
+  科塞       冲突对社会「有功能」
+             安全阀 · 冲突是学习过程
+             例子：联邦德国允许环保抗议 → 各党都支持环保
+                   民主德国镇压生态运动 → 环境持续恶化
+             局限：还在功能主义语言里（改了结论，没改前提）
+
+  达伦多夫   权力与统治才是基本概念
+             阶级判据：从「财产」换成「支配地位」
+             → 社会学需要一个「离开乌托邦」的新方针
+             他自己承认：这是补另一半，不是换框架
+
+  米尔斯     权力精英（1956）· 对公众批判，不建理论体系
+
+借古典三源
+  马克思 → 冲突的实质（但要「去形而上学化」）
+  齐美尔 → 冲突的态度（1908《争执》：冲突不是病）
+  韦伯   → 冲突的框架（统治、权力、身份团体）
+
+在反帕森斯地图上：第二层
+  反的是「系统有功能前提」这个思路
+  达伦多夫动前提（真挑战）· 科塞动结论（不算）
+
+下一课  诠释取向两家（象征互动论 + 常人方法论）
+        打的是「规范不靠诠释」——地图第四层</pre>
+  </div>
+
+  <p class="meta">下一课：第 18 课 · 诠释取向两家——象征互动论 + 常人方法论</p>
+
+  <div class="lesson-footer">
+    <p class="meta">返回：<a href="../index.html">课程总目录</a> · <a href="../ROADMAP.md">路线图</a> · <a href="../reference/anti-parsons-map.html">反帕森斯地图</a></p>
+  </div>
+
+</div>
+</body>
+</html>
