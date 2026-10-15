@@ -20,8 +20,11 @@
 
 ```
 index.html        课程总入口（先看这个）
+MISSION.md        学习目标与边界
+GLOSSARY.md       权威术语表
+RESOURCES.md      资源清单
 lessons/          每一课的正文
-  ├─ 0001—0016    正课
+  ├─ 0001—0017    正课
   ├─ 0010a/0010b/0011a   课下追问（由提问生成）
   └─ *-outline.md 部分课的大纲
 reference/        跨课参照表（不属于某一课）
