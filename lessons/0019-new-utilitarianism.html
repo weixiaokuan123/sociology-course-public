@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 19 课 · 新功利主义：人其实一直在算计</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+  .diagram { background:var(--paper-alt); border:1px solid var(--rule); padding:1.4rem 1rem 1rem; margin:1.6rem 0; overflow-x:auto; }
+  .diagram pre { font-family:"SF Mono", Consolas, "Cascadia Mono", monospace; font-size:.82rem; line-height:1.55; margin:0; color:var(--ink); white-space:pre; }
+  .quote { border-left:3px solid var(--rule); padding:.6rem 0 .6rem 1rem; margin:1.1rem 0; color:var(--ink-soft); font-size:.94rem; }
+  .quote cite { display:block; margin-top:.5rem; font-size:.8rem; color:var(--ink-faint); font-style:normal; }
+  .roster { border:1px solid var(--rule); border-radius:8px; overflow:hidden; margin:1.4rem 0; }
+  .roster .row { display:flex; flex-wrap:wrap; border-top:1px solid var(--rule); }
+  .roster .row:first-child { border-top:none; }
+  .roster .row > div { padding:.65rem .9rem; font-size:.9rem; }
+  .roster .row > div:first-child { flex:0 0 110px; font-weight:600; background:var(--paper-alt); }
+  .roster .row > div:last-child { flex:1 1 320px; }
+  .hook { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .hook h4 { margin:0 0 .5rem; font-size:1rem; }
+  .hook p { margin:.35rem 0; }
+  .hook .main { font-size:1.15rem; font-weight:700; }
+  .note { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .note .label { display:block; font-weight:700; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.03em; }
+  .note p { margin:.4rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  .contrast { display:flex; gap:1rem; flex-wrap:wrap; margin:1.4rem 0; }
+  .contrast > div { flex:1 1 240px; border:1px solid #ddd; border-radius:8px; padding:.9rem 1.1rem; }
+  .contrast h4 { margin-top:0; font-size:1rem; }
+  .contrast p:last-child { margin-bottom:0; }
+  .step { display:flex; align-items:center; gap:.6rem; margin:1.6rem 0 .8rem; font-weight:700; font-size:1.02rem; }
+  .step .num { flex:0 0 2rem; height:2rem; border-radius:50%; background:#333; color:#fff;
+                display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+  table.cmp { width:100%; border-collapse:collapse; margin:1.2rem 0; font-size:.88rem; }
+  table.cmp th, table.cmp td { border:1px solid var(--rule); padding:.5rem .7rem; text-align:left; vertical-align:top; }
+  table.cmp th { background:var(--paper-alt); font-weight:600; }
+
+  /* 三股分色（规矩 6.3） */
+  .who { display:inline-block; font-size:.76rem; font-weight:700; padding:.15rem .55rem;
+         border-radius:4px; margin-right:.5rem; vertical-align:middle; border:none; }
+  .who.cf { background:#e8f0e6; color:#3f6b38; }
+  .who.jy { background:#e4eef6; color:#2c5a80; }
+  .who.gl { background:#f6e9e6; color:#8a4535; }
+  .sec-gl { border-left:5px solid #a75a4a; padding-left:1.1rem; margin:1.6rem 0; }
+  .sec-gl > h2, .sec-gl > h3 { color:#8a4535; }
+  .sec-shared { border-left:5px solid #999; padding-left:1.1rem; margin:1.6rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">社会学 · 第 19 课 · 约 30 分钟</p>
+  <h1>新功利主义：人其实一直在算计</h1>
+  <p class="subtitle">霍曼斯 · 布劳 · 奥尔森 · 科尔曼 · 反帕森斯三股的第三股</p>
+
+  <div class="note">
+    <span class="label">⚠️ 读之前先看这张表：三股并列，这一课是第三股</span>
+    <p>《二十讲》有一段把三股<strong>一起点名</strong>，这是本课的位置根据（第 6858—6865 行）：</p>
+    <p>「不论是<strong>新功利主义</strong>，还是<strong>象征互动论与常人方法论</strong>这两个诠释取向，都是 20 世纪 50—60 年代对帕森斯学派的支配的回应。」</p>
+    <p><strong>第 17 课讲了冲突理论，第 18 课讲了两家诠释取向，这一课补最后一支。</strong></p>
+  </div>
+
+  <div class="roster">
+    <div class="row">
+      <div>三股</div>
+      <div><span class="who cf">冲突理论</span>第 17 课 · 科塞 · 达伦多夫 · 米尔斯<br><span class="who jy">诠释取向</span>第 18 课 · 象征互动论 + 常人方法论<br><span class="who gl">新功利主义</span><strong>第 19 课 · 这一课</strong> · 霍曼斯 · 布劳 · 奥尔森 · 科尔曼</div>
+    </div>
+    <div class="row">
+      <div>都说帕森斯哪儿错了</div>
+      <div><span class="who cf">冲突理论</span>「<strong>太和谐</strong>」—— 看不见权力与冲突<br><span class="who jy">诠释取向</span>「<strong>不够复杂</strong>」—— 规范还要靠解读<br><span class="who gl">新功利主义</span>「<strong>太复杂、也太规范</strong>」—— 人没那么高尚，也没那么费劲</div>
+    </div>
+    <div class="row">
+      <div>人是什么</div>
+      <div><span class="who cf">冲突理论</span>人处于<strong>统治与反抗</strong>的位置上<br><span class="who jy">诠释取向</span>人是<strong>意义的解读</strong>者<br><span class="who gl">新功利主义</span>人是<strong>算计</strong>者 —— 算代价、算回报</div>
+    </div>
+    <div class="row">
+      <div>共同点（<strong>只有一条</strong>）</div>
+      <div>都认为<strong>帕森斯的行动概念有问题</strong>，都在 50—60 年代出来反对他。</div>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>一句话分清（三股各一句，务必记住）</h4>
+    <p><span class="who cf">冲突理论</span><strong>「社会不是靠共识撑着的，是靠统治撑着的。」</strong></p>
+    <p><span class="who jy">诠释取向</span><strong>「规矩不是拿来执行的，是拿来解读的。」</strong></p>
+    <p><span class="who gl">新功利主义</span><strong>「人不是在守规矩，是在算账。」</strong></p>
+  </div>
+
+  <div class="note">
+    <span class="label">这一课的位置</span>
+    <p>第 17 课冲突理论落在《反帕森斯地图》<strong>第二层</strong>；第 18 课诠释取向落在<strong>第四层</strong>。</p>
+    <p><strong>这一课不在那张地图上</strong>——因为它反的不是帕森斯的某个<strong>零件</strong>，而是反他的<strong>整个「人」的设定</strong>：帕森斯说人被规范引导，新功利主义说人算账。</p>
+    <p class="meta">按规矩 6.3：<strong>不在地图上的课，必须说明它反的是什么</strong>——它反的是「<strong>规范能压住自利</strong>」这个假定。</p>
+  </div>
+
+  <div class="hook">
+    <h4>把手词（1 主 + 2 辅）</h4>
+    <p>主：<span class="main">算计</span>　—　人会算代价和回报，连做好事也在算</p>
+    <p>辅一：<strong>搭便车</strong>　—　奥尔森：利益一致的人，反而最可能不动手</p>
+    <p>辅二：<strong>把人带回去</strong>　—　霍曼斯的书名，也是这一派的纲领</p>
+  </div>
+
+  <!-- ================= ① 背景 ================= -->
+  <div class="step"><span class="num">1</span>思想背景：一个被判了死刑的东西，又活过来了</div>
+
+  <div class="sec-shared">
+
+  <h2>帕森斯当年是怎么判功利主义死刑的</h2>
+
+  <p>《二十讲》把这件事交代得很清楚（第 3912—3923 行）：</p>
+
+  <div class="quote">
+    <strong>帕森斯非常尖锐地证明了功利导向的行动模式的不足之处。</strong>至少他的第一本大部头著作《社会行动的结构》，就指出了人们如何可以从内部瓦解功利主义的思想体系……帕森斯认为，<strong>功利主义始终没能想到，稳定的社会秩序已经是前后一致、毫无矛盾地存在着了</strong>。在对功利主义进行强有力、广泛、精准地批判之后，帕森斯颇有道理地指出，社会学中所有的功利导向行动模式已经不再是需要被认真看待的理论取向了。
+    <cite>《社会理论二十讲》第 3914—3922 行</cite>
+  </div>
+
+  <h2>但它 50 年代末又活过来了</h2>
+
+  <div class="quote">
+    尽管如此，功利主义在 20 世纪 50 年代末期还是经历了某一种类型的复兴；<strong>甚至这个复兴就是始于对帕森斯思想体系的强烈反击</strong>。这样一种许多人早已不再信奉的思潮之所以会复兴的原因之一，是因为<strong>「效益」这个对于功利主义来说极为根本的概念，其意涵有很多层次</strong>。很多学者认为，我们可以用不同层次的意涵来说明「效益」这个概念，以此来用不同的方式理解「效益」。<strong>这些学者相信，如此一来功利主义就可以回避帕森斯的批评。</strong>
+    <cite>《社会理论二十讲》第 3924—3930 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">「回避帕森斯的批评」是怎么回避的</span>
+    <p>帕森斯的杀招是：<strong>「你只知道人追私利，那社会秩序哪来的？」</strong></p>
+    <p>新功利主义的回答是：<strong>谁说「效益」只能是钱？</strong></p>
+    <p>　· <strong>帮助别人</strong>，我获得满足感 —— 这也是效益。</p>
+    <p>　· <strong>被人感谢</strong>，我获得尊重 —— 这也是效益。</p>
+    <p>　· <strong>守规矩</strong>，我避免了麻烦 —— 这也是效益。</p>
+    <p><strong>于是「利他」也被收编成了「一种算法」。</strong>这就是他们绕开帕森斯批评的办法。</p>
+  </div>
+
+  </div>
+
+  <!-- ================= ② 问题 ================= -->
+  <div class="step"><span class="num n2">2</span>他面临什么问题</div>
+
+  <div class="sec-shared">
+
+  <h2>问题：帕森斯说「人被规范管着」，那怎么解释人其实在算计？</h2>
+
+  <p><strong>这是本课刀刃。</strong>《二十讲》第 6860—6862 行给了最准的一句：</p>
+
+  <div class="quote">
+    <strong>新功利主义认为帕森斯的行动模式太过规范性，且总体来说太复杂</strong>，这也削弱了所谓的社会学解释力。
+    <cite>《社会理论二十讲》第 6860—6861 行</cite>
+  </div>
+
+  <div class="contrast">
+    <div>
+      <h4>帕森斯的模型</h4>
+      <p>人<strong>内化</strong>了规范</p>
+      <p>→ 所以按规范行动</p>
+      <p>→ 秩序稳定</p>
+      <p class="meta">人是「<strong>被规范带着走</strong>」的</p>
+    </div>
+    <div>
+      <h4>新功利主义的质疑</h4>
+      <p>人先<strong>算</strong>：这么做我得到什么、付出什么</p>
+      <p>→ 然后才行动</p>
+      <p>→ 秩序是算出来的<strong>副产品</strong></p>
+      <p class="meta">人是「<strong>自己算着走</strong>」的</p>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>一句话概括这个「问题」</h4>
+    <p><strong>如果人真的会被规范管住，那为什么到处都有人钻空子、占便宜、搭便车？</strong></p>
+    <p class="meta">注意：这不是说帕森斯不知道有人钻空子。是说他的<strong>理论构造</strong>里，「钻空子」只能叫「越轨」——一个例外。<strong>新功利主义说：那不是例外，那是常态。</strong></p>
+  </div>
+
+  </div>
+
+  <!-- ================= ③ 回答 ================= -->
+  <div class="step"><span class="num n3">3</span>他提出什么回答</div>
+
+  <div class="hook">
+    <h4>接下来的读法</h4>
+    <p><strong>上面那个「问题」（人其实在算账）是这一派共用的。但从这里开始，四个人分头回答，路线很不一样。</strong></p>
+    <p>这一派内部有<strong>两条轴线</strong>（第 4070—4089 行）：<span class="who gl">交换理论</span>（霍曼斯 · 布劳）和 <span class="who gl">理性选择</span>（奥尔森 · 科尔曼）。<strong>两条线的分工是：一条研究「人和人怎么换」，一条研究「人为什么不合作」</strong>。</p>
+  </div>
+
+  <div class="sec-gl">
+
+  <div class="hook" style="border-left:6px solid #a75a4a;">
+    <h4>▼ 从这里开始，讲第一块：<span class="who gl">交换理论</span></h4>
+    <p><strong>下面这一整块（霍曼斯 + 布劳），都是「人与人之间在交换」这条线。</strong></p>
+  </div>
+
+  <h2><span class="who gl">交换理论</span>回答一：霍曼斯——把人带回去</h2>
+
+  <h3><span class="who gl">交换理论</span>霍曼斯的三条批评</h3>
+
+  <p>霍曼斯的身份有点特别（第 4091—4094 行）：<strong>他原本是帕森斯的学生，后来也成为帕森斯在哈佛的同事</strong>。而他的名声「<strong>尤其得益于他对帕森斯的功能论提出了出色的批判</strong>」。</p>
+
+  <p>他的批评集中在三点（第 4102—4166 行）：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>批评一</div>
+      <div><strong>「那不是理论，只是描述。」</strong>霍曼斯说功能论「<strong>并没有认真想要对事物进行解释</strong>」，只提出了一些范畴，「这些范畴被相当人为地联结、交叠在一起，但它们并没有呈现出任何理论」。<br><span class="meta">他要的理论是「演绎系统」：从简单命题推出复杂现象。</span></div>
+    </div>
+    <div class="row">
+      <div>批评二</div>
+      <div><strong>「太规范性。」</strong>功能论忽略了一个问题：<strong>规范和制度是怎么、以及为什么被建立起来的</strong>。因为人们常假设「人类总是在制度性的环境中行动的」——<strong>于是制度的来源就不问了</strong>。</div>
+    </div>
+    <div class="row">
+      <div>批评三</div>
+      <div><strong>「反个体主义。」</strong>帕森斯理论里「个体的行为或多或少都被理解成是制度安排作用下的结果」。霍曼斯则相反：<strong>「宏观现象都可以被理解为，而且也只能被理解为个体的选择行动或决策的集聚或集合。」</strong></div>
+    </div>
+  </div>
+
+  <p>这三条最后收在一个书名上——<strong>《把人带回去》</strong>（1964，第 4168—4176 行）：</p>
+
+  <div class="quote">
+    他说，功能论把制度、角色、价值，总而言之，<strong>人类行动的框架条件</strong>，当作主题，也只描述了这些东西；但霍曼斯总结认为，<strong>人类的实际行为才是分析的重点</strong>，我们应该去解释人类的实际行为。
+    <cite>《社会理论二十讲》第 4170—4176 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">「把人带回去」这个书名，说人话就是</span>
+    <p><strong>「你们研究制度、角色、价值，研究得挺起劲——可人在哪儿？」</strong></p>
+    <p>霍曼斯的意思是：帕森斯画了一张<strong>舞台布景图</strong>（制度、角色、规范），但<strong>演员不见了</strong>。</p>
+  </div>
+
+  <h3><span class="who gl">交换理论</span>霍曼斯的核心命题：一切互动都是交换</h3>
+
+  <div class="quote">
+    霍曼斯将人与人之间的互动理解为「<strong>物质与非物质的财物的交换</strong>」……所有的行动……都会想<strong>避免代价、痛苦、惩罚</strong>等等，然后将<strong>愉悦和奖赏加以最大化</strong>。或者换句话说：人与人之间的行动<strong>都是在交换物质的与非物质的财物</strong>，而这些财物会根据不同的类型具有奖赏或惩罚的作用。
+    <cite>Homans, "Social Behavior as Exchange", p.597；转引自《二十讲》第 4182—4189 行</cite>
+  </div>
+
+  <p>他的理论底子来自<strong>行为主义心理学</strong>（斯金纳的鸽子实验）——鸽子越常因为啄某个地方得到谷物，就越常啄那个地方（第 4193—4199 行）。</p>
+
+  <div class="note">
+    <span class="label">他的理论长什么样：「如果……那么……」</span>
+    <p>第 4208—4216 行给了两个真实例子：</p>
+    <p>　·「<strong>如果一个人在过去越常从他人那里得到奖赏，那么接下来每次奖赏的价值对他来说就会越低。</strong>」<span class="meta">（这就是边际效用递减）</span></p>
+    <p>　·「<strong>如果分配正义规则越无法抚平一个人的不如意，那么这个人就容易表现出被我们称为愤怒的情绪行为。</strong>」</p>
+    <p><strong>说人话</strong>：他把人也当鸽子——<strong>给什么奖励，就多做什么；给什么惩罚，就少做什么。</strong></p>
+  </div>
+
+  <h3><span class="who gl">交换理论</span>霍曼斯怎么处理「利他」</h3>
+
+  <p>这是他最花心思的一步。《二十讲》引了他的原话（第 4220—4226 行）：</p>
+
+  <div class="quote">
+    ［经济人的］问题不在于他是经济的……而是在于他是<strong>反社会的、唯物论的，只对钱与物质财物感兴趣</strong>……经济人的<strong>错误之处在于他的价值：他只允许有限范围内的价值</strong>。但新的经济人没有这样的限制。<strong>他可以拥有任何一种价值，从利他主义到享乐主义都行。</strong>只是他不会完全浪费他的资源在这些价值上；<strong>他的行为仍是经济的。</strong>
+    <cite>Homans, Social Behavior, p.79；转引自《二十讲》第 4220—4226 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>这一步很妙，但也埋下了大坑</h4>
+    <p><strong>妙在哪</strong>：帕森斯说「人也会利他，所以你不懂人」。霍曼斯说「利他也是我模型里的一种选项」——<strong>于是帕森斯的反驳就不成立了。</strong></p>
+    <p><strong>坑在哪</strong>：这套说法什么都能解释，所以什么都解释不了。<strong>后面第 ⑤ 段会讲这个坑。</strong></p>
+  </div>
+
+  <p>而《二十讲》紧接着点出了要害（第 4230—4234 行）：</p>
+
+  <div class="quote">
+    对霍曼斯来说，<strong>价值就仅仅是早先奖赏情境下的结果</strong>。因为之后还会不断出现新的奖赏或惩罚，所以<strong>没有什么必然的价值</strong>（即帕森斯所谓的「最终目的」），而<strong>价值完全是由行动者的计算而定</strong>。
+    <cite>《社会理论二十讲》第 4231—4234 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一句是两家最根本的分歧，值得停一下</span>
+    <p><strong>帕森斯说</strong>：价值是<strong>「最终目的」</strong>——你不问它值不值，它本身就是标准。</p>
+    <p><strong>霍曼斯说</strong>：价值是<strong>「过去奖励的沉淀」</strong>——你现在珍惜什么，取决于你过去因为什么被奖励过。</p>
+    <p><strong>打个比方</strong>：帕森斯认为人心里有一把<strong>不会变的秤</strong>；霍曼斯认为人心里那把秤<strong>是被一次次称重调出来的</strong>。</p>
+  </div>
+
+  <h3><span class="who gl">交换理论</span>霍曼斯还给了个「道德上的理由」</h3>
+
+  <p>这一点常被忽略，但书里写得很清楚（第 4241—4250 行）：</p>
+
+  <div class="quote">
+    他相信，对于理性的和能正常运作的共同生活来说，最好的道路，就是<strong>毫无保留地坦承现存的各种利益以及利益差异</strong>。他深信，人类在社会当中的共存，若要以最好的方式运作，就必须<strong>承认彼此之间不可避免的自利行为，而且不该用道德来阻止自利行为</strong>，因为各种伪善和道德批评总是只会不断造成非理性的冲突。
+    <cite>《社会理论二十讲》第 4241—4246 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一层很多教材不写，但对理解这一派很关键</span>
+    <p>很多人以为新功利主义是「冷血」。<strong>其实它有一个道德主张</strong>：</p>
+    <p><strong>「假装人不自私，才是最坏的事。」</strong></p>
+    <p>书上说，很多学者以当新功利主义者为荣，因为「他们<strong>揭穿了看起来高尚无比的道德态度的假面具</strong>」（第 4246—4250 行）。</p>
+    <p class="meta">——所以这一派的气质不是冷酷，是<strong>反伪善</strong>。</p>
+  </div>
+
+  <h2><span class="who gl">交换理论</span>回答二：布劳——交换会产生权力</h2>
+
+  <p>布劳（1918—2002）在组织社会学和社会不平等研究上做得很扎实（第 4400—4402 行）。他在 1964 年出了《社会生活中的交换与权力》——<strong>书名就把他的贡献说完了</strong>。</p>
+
+  <p>他比霍曼斯多走一步（第 4409—4415 行）：</p>
+
+  <div class="quote">
+    布劳一样讨论了个体之间的交换过程，但他又比霍曼斯多走一步，指出<strong>霍曼斯忽略了交换过程也会再生产出权力关系与支配关系</strong>。<br><br>
+    <strong>相互服务会创造出一种能平衡权力的独立性。对于服务的单向依赖则相反，会保持权力的不平衡。</strong>
+    <cite>Blau, Exchange and Power in Social Life, p.29；转引自《二十讲》第 4411—4415 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>这句话极重要——它是本课最有用的一句</h4>
+    <p><strong>「互相帮得上忙，地位就平等；只有一方帮得上，权力就出来了。」</strong></p>
+    <p><strong>打个比方</strong>：两个同事互相替对方顶班 —— <strong>平起平坐</strong>。<br>一个人总替另一个人顶班，另一个人从来帮不上 —— <strong>时间长了，第一个人说话就更有分量。</strong></p>
+    <p class="meta"><strong>权力不是抢来的，是「单向依赖」慢慢长出来的。</strong></p>
+  </div>
+
+  <p>布劳还做了两处修正（第 4418—4430 行）：<strong>一是拒绝极端还原</strong>（「不是所有的结构都可以回溯到个体行为的」）；<strong>二是区分「外在好处」和「内在好处」</strong>——内在好处「意指不会得到直接物质性的回报」，例如爱情里的付出「并不是为了想要相应的外在回报，而是为了表现与确认他自己的承诺」。</p>
+
+  <div class="note">
+    <span class="label">但布劳的结局不太好——书上说得很直接</span>
+    <p>「所有这些对原初霍曼斯理论框架的修正，虽然很必要也很有意义，但<strong>最终也使得这个讨论方向与很多其他理论思潮——包括帕森斯主义——之间没有太多区别</strong>。」（第 4431—4433 行）</p>
+    <p>而且书上还追问：布劳不断参照齐美尔，「他的分析是不是并不需要特别用到交换概念，而是也可用到其他理论语汇」（第 4440 行）。</p>
+    <p><strong>结论</strong>：「<strong>霍曼斯的遗产已经是一个死胡同</strong>」（第 4446—4447 行）。</p>
+  </div>
+
+  <div class="hook" style="border-left:6px solid #8a4535;">
+    <h4>▼ 换线：<span class="who gl">理性选择</span></h4>
+    <p><strong>上面那块（交换理论）到此结束——结局是「死胡同」。下面换成另一条线。</strong></p>
+    <p>按第 4082—4089 行的说法，这条线「<strong>不是从个体的行动来研究社会秩序的构成</strong>」，而是回到霍布斯、洛克的契约论，问一个更狠的问题：<strong>个体的理性行动，怎么才能带来合作？</strong></p>
+  </div>
+
+  <h2><span class="who gl">理性选择</span>回答三：奥尔森——搭便车</h2>
+
+  <p><strong>这是本课的重头，也是对你论文最有用的部分。</strong></p>
+
+  <p>奥尔森 1965 年出《集体行动的逻辑》。书上说这本书「<strong>打破了关于集体行动、团体、组织、叛乱、革命等如何形成的流行假设</strong>」（第 4468—4469 行）。</p>
+
+  <h3><span class="who gl">理性选择</span>那个流行的假设是什么</h3>
+
+  <div class="quote">
+    当时流行的假设认为，集体行动或组织形式，<strong>由于当中诸个体有着共同的利益、目标和目的，因此会近乎自动地形成以实现其利益</strong>。……<strong>就连在马克思或马克思主义的理论中我们也可以看到这个假设。</strong>
+    <cite>《社会理论二十讲》第 4473—4478 行</cite>
+  </div>
+
+  <h3><span class="who gl">理性选择</span>奥尔森说：这个假设是错的</h3>
+
+  <p>书上先引了布东（Boudon）一句极准的话（第 4485—4491 行）：</p>
+
+  <div class="quote">
+    <strong>一群有着共同利益、意识到这种利益并且有实现利益的手段的人，当他们构成一个松散的团体时，事实上会因为大家的状况都不一样而一事无成。利益共同体，就算相当自觉，本身也不足以引出一个朝向一般利益的共同行动。集体行动的逻辑和个体行动的逻辑是相当不同的两回事。</strong>
+    <cite>Boudon, The Unintended Consequences of Social Action, p.30；转引自《二十讲》第 4486—4491 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>为什么？因为「搭便车」</h4>
+    <p><strong>公共财物（新鲜空气、军事安全、科学知识、成功的革命）有一个特点：你不贡献，也能用。</strong></p>
+    <p>于是每个人的算盘都一样：<strong>「反正我不出力也有份，那我干嘛出力？」</strong></p>
+    <p><strong>但问题是——不是只有我这么想，所有人都这么想。</strong></p>
+    <p><strong>结果：谁都不出力，最后谁都用不上。</strong></p>
+  </div>
+
+  <p>书上给了三个具体例子（第 4494—4525 行）：</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>例一：空气</div>
+      <div>「我一个人对维护空气质量或污染空气来说无足轻重」→ 那我宁愿开耗油的车，「反正其他所有人都会爱护环境」</div>
+    </div>
+    <div class="row">
+      <div>例二：地铁</div>
+      <div>「就像我搭乘地铁却没有买车票一样，我想说反正其他人都会买票」</div>
+    </div>
+    <div class="row">
+      <div>例三：工会</div>
+      <div>「我不需要成为工会成员，工会工作的果实也一样会落到我怀里」→ 于是不参加、不贡献</div>
+    </div>
+  </div>
+
+  <p>奥尔森自己的原话（第 4540—4543 行）：</p>
+
+  <div class="quote">
+    一个典型的大型组织的个别成员，其情况类似完美的竞争市场中的企业，或是国家的纳税人：<strong>他的一己之力对他组织的情况不会有什么值得一提的影响。不管他对他的组织有没有做什么支持性的工作，他都可以享受所有其他人带来的进步。</strong>
+    <cite>Olson, The Logic of Collective Action, p.16；转引自《二十讲》第 4540—4544 行</cite>
+  </div>
+
+  <h3><span class="who gl">理性选择</span>那为什么还是有集体行动？奥尔森的答案</h3>
+
+  <p>书上列了第一点，也是最重要的一点（第 4558—4567 行）：</p>
+
+  <div class="quote">
+    <strong>成员为数众多的大团体和小团体之间有根本的差异</strong>。相较于大团体来说，<strong>小团体中单个成员能为集体财物、团体目标提供的贡献是较大的</strong>。团体越小，单个人的贡献就会越大。……「<strong>在非常小的团体中，每个成员都可以得到所有收获中相当高比例的部分</strong>。」
+    <cite>Olson, The Logic of Collective Action, p.34；转引自《二十讲》第 4558—4567 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">用一句人话说清奥尔森的两个发现</span>
+    <p><strong>发现一</strong>：<strong>人越多，越没人出力。</strong>因为「我这一份」占比太小，出不出力都一样。</p>
+    <p><strong>发现二</strong>：<strong>小团体更盯得住人。</strong>「每个人做了什么事都很醒目」（第 4572—4575 行）——谁偷懒一眼看得出来。</p>
+    <p class="meta">所以集体行动能成，往往<strong>不是因为大家觉悟高，是因为团体够小、被人盯着</strong>。</p>
+  </div>
+
+  <h2><span class="who gl">理性选择</span>回答四：科尔曼——连规范也是算出来的</h2>
+
+  <p>科尔曼（1926—1995）被称为「<strong>美国理性选择理论的头号代表人物</strong>」（第 4890—4891 行）。他做了一件这一派别人没做成的事：<strong>用「算计」去解释规范是怎么来的</strong>。</p>
+
+  <div class="note">
+    <span class="label">先说清这件事有多难</span>
+    <p>书上说：「<strong>不论对于哪个新功利主义流派来说，规范一直是一个很难解释的现象</strong>。除非完全否认规范的存在，否则人们的功利计算都得考虑到规范，但新功利主义中可用的理论概念都无法将规范真正解释清楚。」（第 4900—4904 行）</p>
+    <p><strong>翻译</strong>：这一派最怕的就是「规范」——它没法用算账解释，但你又躲不开它。</p>
+  </div>
+
+  <p>科尔曼的处理是（第 4904—4913 行）：</p>
+
+  <div class="quote">
+    柯尔曼<strong>将规范定义为对某些财物或行动的正当且可被接受的控制权利</strong>……让规范所蕴含的利益以及由此而来的<strong>对规范的需求</strong>得以兴起的条件，是<strong>一个行动对许许多多的他人都会产生相似的外部效应</strong>。然而，以控制此种行动的权利为交换对象的市场是无法轻易建立起来的……这种利益本身不会构成规范，也不会保证规范会形成。<strong>这些利益所产生的是规范的基础。</strong>
+    <cite>Coleman, Foundations of Social Theory, pp.250f.；转引自《二十讲》第 4904—4913 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>科尔曼的意思，说人话</h4>
+    <p><strong>规范 ＝ 一群人商量出来的「谁有权管这件事」。</strong></p>
+    <p>什么时候会需要它？<strong>当我的行为影响到很多人，但没人能一对一跟我交易。</strong></p>
+    <p><strong>例子</strong>：邻居半夜放音乐吵到整栋楼 —— 你没法挨个跟他「交易」，于是整栋楼会形成一条「晚上几点以后不能吵」的规范。</p>
+    <p class="meta">所以规范不是从天上掉的，也<b>不是</b>「内化」来的——是<b>被影响的人算出「我需要这条规矩」之后长出来的</b>。</p>
+  </div>
+
+  <p><strong>但书上马上给了保留</strong>（第 4914—4917 行）：「柯尔曼并不是说，他所描述的这种规范建立情况就是事实上最常见的情况。他所谓的规范形成的条件，<strong>在经验上很少见，本身是很有限的</strong>。」</p>
+
+  <div class="note" style="border-left:6px solid #a75a4a; background:#fbf3f1;">
+    <span class="label">◆ 新功利主义·一句话总结（读完这一块，只记这一句就够）</span>
+    <p style="font-size:1.08rem; font-weight:700; line-height:1.7;">人不是在守规矩，是在算账——连「做好事」和「为什么要守规矩」都在账本里。</p>
+    <p><strong>所以帕森斯错在</strong>：他以为规范能压住自利；<strong>其实规范本身就是人算过账之后才长出来的东西。</strong></p>
+    <p class="meta">换句话：<strong>帕森斯问「规范怎么进到人心里」，这一派问「人为什么要造出规范」。</strong>一个从规范出发，一个从算账出发。</p>
+  </div>
+
+  </div><!-- /新功利主义 -->
+
+  <!-- ================= ④ 优点 ================= -->
+  <div class="step"><span class="num n4">4</span>优点何在：他赢在哪</div>
+
+  <h2>优点一：他问了一个帕森斯问不出来的问题</h2>
+
+  <p><strong>「利益一致的人，为什么反而不行动？」</strong>这个问题，在帕森斯的框架里问不出来——因为那个框架的起点是「共享价值促成整合」，<strong>而这里的前提恰恰是「没有共享价值，只有共同利益」</strong>。</p>
+
+  <h2>优点二：他给了「制度从哪来」一个答案</h2>
+
+  <p>这是霍曼斯第二条批评的正面回应。帕森斯假设人「总是在制度性的环境中行动」，<strong>于是不问制度是怎么来的</strong>。这一派非要问，而且给了答案：<strong>制度是算账的产物</strong>（不管是交换形成的，还是科尔曼说的「被影响的人需要它」）。</p>
+
+  <h2>优点三：它逼出了「反直觉」的结论</h2>
+
+  <p>书上的说法是：这种模型的假设「常常会得出一些<strong>矛盾、违反直觉的宏观过程结果或整体社会后果</strong>」（第 4461—4462 行）。<strong>搭便车就是最典型的一个</strong>——人人都理性，结果集体不理性。</p>
+
+  <div class="note">
+    <span class="label">这一类结论的价值在哪</span>
+    <p><strong>它把「好心办坏事」变成了可以推算的东西。</strong></p>
+    <p>以前只能说「这群人怎么这么不团结」，现在可以说：「<strong>团体太大了，每个人分摊到的份额太小，所以不动手是理性的</strong>。」</p>
+  </div>
+
+  <h2>优点四：它的道德主张是「别装」</h2>
+
+  <p>这一点前面讲过（第 4241—4250 行）：<strong>「用道德去压自利，只会造成伪善和更糟的冲突。」</strong></p>
+
+  <p class="meta">这一条争不争得赢是另一回事，但<strong>它确实戳中了一类真问题</strong>——很多「大家都很高尚」的场合，底下其实是没人愿意当那个出力的人。</p>
+
+  <!-- ================= ⑤ 裂缝 ================= -->
+  <div class="step"><span class="num n5">5</span>缺点怎么暴露</div>
+
+  <h2><span class="who gl">交换理论</span>裂缝一：霍曼斯的循环论证（最致命）</h2>
+
+  <p>这是书上花最多笔墨的一条（第 4293—4337 行），而且它有个绝妙的例子。</p>
+
+  <p><strong>先说逻辑问题</strong>：如果我们宣称「人总是追求奖赏」，那我们必须知道<strong>行动者到底把什么看作奖赏</strong>。但怎么知道？<strong>只能从行为本身去推断</strong>——而这就成了循环：<strong>他做了这件事，所以这件事对他有奖赏；怎么知道有奖赏？因为他做了这件事。</strong></p>
+
+  <p><strong>书上举的例子</strong>（第 4323—4333 行）：</p>
+
+  <div class="diagram">
+<pre>用霍曼斯的模型，同一套话能解释两件完全相反的事：
+
+  抢匪抢慈善机构
+    → 「他在增加自己的财富」→ 追求效益 ✓
+
+  捐献者给福利机构捐钱
+    → 「他感到愉快、觉得自己是大好人」→ 追求效益 ✓
+
+结论：一个人无论做什么，都可以说成是出自效益考虑。
+     这种理论【完全没有解释任何事，也无法被证伪】。</pre>
+  </div>
+
+  <div class="hook">
+    <h4>用一句人话说清这个漏洞</h4>
+    <p><strong>一个什么都解释得了的理论，等于什么都没解释。</strong></p>
+    <p>因为它<strong>不可能被证明是错的</strong>——你举任何反例，它都能圆回来。</p>
+    <p>书上的判词很狠：「霍曼斯猛烈地批评帕森斯的理论缺乏解释性的内涵，<strong>但就他自己的理论来看，他跟帕森斯其实也是半斤八两</strong>。」（第 4335—4337 行）</p>
+  </div>
+
+  <h2><span class="who gl">交换理论</span>裂缝二：他的心理学底子塌了</h2>
+
+  <p>第 4341—4344 行：行为主义心理学「<strong>在心理学领域也已经大幅失去影响力与声望了</strong>，因为行为主义贡献有意义研究成果的能力已被证明是有限的」。</p>
+
+  <h2><span class="who gl">交换理论</span>裂缝三：还原不下去——桑拿房的例子</h2>
+
+  <p>这一条极精妙，书上用了一篇小说的场景（第 4368—4385 行）：</p>
+
+  <div class="quote">
+    弗曼在描述桑拿浴的时候呈现出一个场景。在桑拿室的时候，毕竟大家都是赤身裸体的，<strong>没有外在的权力关系和支配关系的标志</strong>，所以照理来说大家都是平等的，应会表现出「基础行为」的纯粹形式。<strong>然而这时候，在桑拿室外头的支配结构，还是马上会通过细微的支配仪式与臣服仪式，再次在桑拿室里再生产出来：上司讲个笑话，下属马上就会阿谀奉承地哈哈大笑——即便是在这种大家都脱光在洗桑拿浴的情况下。</strong>
+    <cite>《社会理论二十讲》第 4379—4385 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这个例子说明什么</span>
+    <p>霍曼斯想找「<strong>最基础的行为</strong>」——剥掉一切制度、所有人赤裸平等的那个底层。</p>
+    <p><strong>桑拿房就是这个最理想的实验场——结果权力照样在那儿。</strong></p>
+    <p><strong>书上结论</strong>：「<strong>极端地还原到微观层面的做法，几乎是不可行的</strong>。也即，我们若没有将微观情境回过头去和宏观结构相关联，是无法了解微观情境的。」（第 4385—4387 行）</p>
+  </div>
+
+  <h2><span class="who gl">理性选择</span>裂缝四：投票和革命，它解释不了</h2>
+
+  <p>第 4707—4718 行给了两个犀利的问题：</p>
+
+  <div class="quote">
+    为什么我会愿意参加这种<strong>不只花钱花时间，甚至还会赔上性命</strong>，而我一个人能提供的贡献其实却又非常微薄的活动？而且，<strong>就连参加投票选举，对理性选择理论家来说也是一大谜题</strong>。因为这个理论几乎无法解释，为什么（总是会）有一堆人会去投票。
+    <cite>《社会理论二十讲》第 4710—4715 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>而书上的补刀方法是——</h4>
+    <p>「理性选择理论家总是必须<strong>借助规范概念或是虔诚的信仰</strong>来解释，但只要一回到个体偏好概念或效益最大化概念，<strong>规范或信仰又会随即被抛诸脑后</strong>。」（第 4716—4718 行）</p>
+    <p><strong>说人话</strong>：解释不通的时候，就偷偷把「规范」搬出来救场；解释了之后，又把规范扔了。<strong>这是在开外挂。</strong></p>
+  </div>
+
+  <h2><span class="who gl">理性选择</span>裂缝五：最狠的一条——只有经济系学生像模型里的人</h2>
+
+  <p>这是全讲最后的收口，也是最精彩的一段（第 4975—4983 行）：</p>
+
+  <div class="quote">
+    哪些人真的会像效益最大化的行动者那样行事？……有趣的是，<strong>大多数人类团体在日常生活当中都离行动理性模式非常遥远</strong>。根据研究，<strong>只有一类人的行为一般来说会在经验上非常贴近理性模型——经济系的学生！</strong>但我们并不知道，这是因为所有经济系的学生都刚好是如此理性地进行选择，还是<strong>这其实是经济学的思维方式形塑了他们的行为</strong>。
+    <cite>《社会理论二十讲》第 4975—4983 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一段为什么厉害</span>
+    <p>它不是在骂人，是<strong>用经验证据把模型的适用范围划出来了</strong>：</p>
+    <p><strong>如果「理性人」只在经济系学生身上出现，那这个模型描述的不是「人」，是「一类被训练出来的人」。</strong></p>
+    <p class="meta">书上的判词：「新功利主义的行动模式是<strong>非常有限的</strong>。」（第 4983—4984 行）</p>
+  </div>
+
+  <!-- ================= ⑥ 挑战 ================= -->
+  <div class="step"><span class="num n6">6</span>被谁挑战</div>
+
+  <h2>先分清方向（四块分开看）</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>挑战谁</div>
+      <div><strong>帕森斯</strong>（三条批评：不是理论 · 太规范 · 反个体）· 也挑战<strong>马克思</strong>（奥尔森说：无产阶级不会自动团结，见搭便车）</div>
+    </div>
+    <div class="row">
+      <div>谁挑战他们</div>
+      <div><strong>《二十讲》作者本人</strong>（说霍曼斯循环论证、和帕森斯半斤八两）· <strong>埃奇奥尼</strong>（道德维度）· <strong>资源动员论</strong>（社会运动研究者）· <strong>赫希曼／西蒙</strong>（有限理性）</div>
+    </div>
+  </div>
+
+  <h3>（一）它挑战马克思的方式，值得单独说</h3>
+
+  <p>这一点在第 17 课没讲到，但对理解奥尔森很关键（第 4476—4484 行）：</p>
+
+  <div class="quote">
+    就连在马克思或马克思主义的理论中我们也可以看到这个假设。马克思或马克思主义假定，<strong>诸无产者和诸资本家……因为在各自的阶级中有相同的利益，因此会形成有组织的阶级斗争</strong>。……若是有人要论证这件事……那么——<strong>奥尔森指出——就会面临一个问题</strong>。
+    <cite>《社会理论二十讲》第 4476—4484 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">奥尔森对马克思的这一击，是「动前提」</span>
+    <p>马克思的前提是：<strong>有共同利益 → 会形成阶级 → 会斗争</strong>。</p>
+    <p>奥尔森说：<strong>「有共同利益 → 会形成阶级」这一步，不成立。</strong></p>
+    <p class="meta">按第 17 课的判据：<strong>这是动前提，是真挑战</strong>——不是「你算错了」，是「你从这里出发就走不通」。</p>
+  </div>
+
+  <h3>（二）谁挑战他们：最有力的是「你没法被证伪」</h3>
+
+  <p>这一条前面讲过（第 4323—4337 行），不再重复。<strong>它的杀伤力在于：它不是说这个理论错了，是说这个理论不成立为「理论」</strong>——按霍曼斯自己给理论定的标准（演绎系统、可检验），他自己的东西也不合格。</p>
+
+  <div class="hook">
+    <h4>这一击为什么特别漂亮</h4>
+    <p><strong>用你的标准量你自己。</strong></p>
+    <p>霍曼斯说：「理论必须是可检验的演绎系统。」<br>那你的「人总在追求效益」——<strong>怎么检验？检验不了。</strong></p>
+    <p class="meta">这跟第 18 课加芬克尔打帕森斯用的是同一招（「实证主义的环境与遗传天赋，与帕森斯的规范价值没两样」）。<strong>用对手的标准反过来量对手，是社会学论战里最常用的一招。</strong></p>
+  </div>
+
+  <h3>（三）还有一路：从「道德维度」来</h3>
+
+  <p>埃奇奥尼（Amitai Etzioni）是这一派最主要的批评者之一，书上提到他写《道德维度》（The Moral Dimension），并借用「道貌岸然的伪君子」这个说法批评那些「<strong>用一些看起来好像很有道理的知识来企图影响跟他对话的人</strong>」的做法（第 4250—4255 行）。</p>
+
+  <p class="meta">这一路的主张是：<strong>人的行动不只有「算账」一个维度，还有「这该不该」这个维度。</strong>——这也是后来社会学里「规范」重新被重视的一个入口。</p>
+
+  <h3>（四）第三路：社会运动研究者</h3>
+
+  <p>书上说「资源动员论」者对奥尔森及其后继者有过尖锐批评（第 4725—4748 行）。他们最不满的一点是：</p>
+
+  <div class="quote">
+    奥尔森的后继者却把<strong>抗议分子、革命家等和快递的客户相提并论</strong>，认为抗议分子和快递客户一样，都是待在家、坐在沙发上，研究便宜特价商品，<strong>在一个舒舒服服的位置上确切地评估效益并将之最大化</strong>。
+    <cite>《社会理论二十讲》第 4726—4729 行</cite>
+  </div>
+
+  <p class="meta">这一击也很狠：<strong>「你在沙发上算账的人，和上街的人，根本不是一个物种。」</strong></p>
+
+  <!-- ================= ⑦ 影响 ================= -->
+  <div class="step"><span class="num">7</span>现代影响</div>
+
+  <h2>影响一：它给了一个到今天仍在用的问法</h2>
+
+  <p><strong>「这个集体为什么没行动？」</strong>——这个问法现在遍布公共政策、组织管理、社会运动研究。<strong>它的源头就是搭便车。</strong></p>
+
+  <h2>影响二：「社会资本」这个概念从他这儿起</h2>
+
+  <p>科尔曼把「规范」解释成一种<strong>可以被拥有、被使用的资源</strong>，这条线后来长成了「社会资本」这套说法（第 4904—4913 行）。</p>
+
+  <h2>影响三：它逼出了「有限理性」</h2>
+
+  <p>书上讲了这一路（第 4958—4972 行）：很多学者放弃了「效益最大化」，改用「<strong>恰当的满足</strong>」——「行动者不真的是『理性的』，而是<strong>一旦找到符合要求的解决方案之后，就不会再去追问对行动来说最适当的手段</strong>」。</p>
+
+  <div class="note">
+    <span class="label">「有限理性」说人话</span>
+    <p><strong>人不是算到最优，是算到「差不多能用」就停了。</strong></p>
+    <p><strong>例子</strong>：你要买台洗衣机，不会把市面上所有型号的所有参数算一遍——<strong>看到第三台觉得「行」，就买了。</strong></p>
+    <p class="meta">这个词是西蒙（Herbert Simon）提的，后来拿了诺贝尔经济学奖。<strong>它是新功利主义被批评之后长出来的东西</strong>——所以它既是这一派的遗产，也是这一派的修正。</p>
+  </div>
+
+  <h2>影响四（反面）：交换理论这条路走死了</h2>
+
+  <div class="quote">
+    <p><strong>霍曼斯的遗产已经是一个死胡同</strong>，对于整个新功利主义的计划来说也当然不再有值。</p>
+    <cite>《社会理论二十讲》第 4446—4447 行</cite>
+  </div>
+
+  <p>但要说清：<strong>死掉的是「交换理论」这条路，不是「理性选择」</strong>。理性选择后来在政治学、经济学、公共选择理论里活得很好——<strong>只是它不再是社会学的主流</strong>。</p>
+
+  <hr>
+
+  <h2>三个坑</h2>
+
+  <h3>坑 1：别把它讲成「经济学入侵社会学」</h3>
+  <p>它<strong>确实借了经济学的工具</strong>，但它的起点是<strong>社会学内部对帕森斯的反击</strong>（第 3924—3925 行：「甚至这个复兴就是始于对帕森斯思想体系的强烈反击」）。<strong>不是外来物种，是内战产物。</strong></p>
+
+  <h3>坑 2：别以为霍曼斯和奥尔森是一路人</h3>
+  <p><strong>霍曼斯那一路（交换理论）走死了</strong>，书上说它是「死胡同」；<strong>奥尔森那一路（理性选择）活下来了</strong>，而且影响远超社会学。<strong>同一个「算计」起点，两条不同的命运。</strong></p>
+
+  <h3>坑 3：别把它的「反伪善」当成「冷血」</h3>
+  <p>霍曼斯有一个<strong>道德主张</strong>：<strong>「假装人不自私，才是最坏的事。」</strong>（第 4241—4246 行）这一点很多教材不写，但它解释了为什么当年那么多人以当新功利主义者为荣。</p>
+
+  <hr>
+
+  <h2>收口：三股并排放，各用一句话</h2>
+
+  <div class="roster" style="border:2px solid var(--rule);">
+    <div class="row">
+      <div style="background:#e8f0e6; color:#3f6b38;">冲突理论<br><span class="meta" style="color:#3f6b38;">第 17 课 · 科塞 · 达伦多夫</span></div>
+      <div style="font-size:1.02rem; line-height:1.75;">
+        <strong>社会不是靠共识撑着的，是靠统治撑着的。</strong><br>
+        <span class="meta">一句话记法：<strong>「冲突是常态，不是病。」</strong><br>
+        帕森斯漏了什么：权力、压迫、反抗——他框架里装不下。</span>
+      </div>
+    </div>
+    <div class="row">
+      <div style="background:#e4eef6; color:#2c5a80;">诠释取向<br><span class="meta" style="color:#2c5a80;">第 18 课 · 布鲁默 · 加芬克尔</span></div>
+      <div style="font-size:1.02rem; line-height:1.75;">
+        <strong>规矩不是拿来执行的，是拿来解读的。</strong><br>
+        <span class="meta">一句话记法：<strong>「意义是谈出来的。」／「秩序是撑出来的。」</strong><br>
+        帕森斯漏了什么：从「规矩」到「行动」之间，还隔着一个判断。</span>
+      </div>
+    </div>
+    <div class="row">
+      <div style="background:#f6e9e6; color:#8a4535;">新功利主义<br><span class="meta" style="color:#8a4535;"><strong>第 19 课 · 霍曼斯 · 奥尔森</strong></span></div>
+      <div style="font-size:1.02rem; line-height:1.75;">
+        <strong>人不是在守规矩，是在算账。</strong><br>
+        <span class="meta">一句话记法：<strong>「连做好事也在算。」</strong><br>
+        帕森斯漏了什么：规范不是压住自利的东西，是自利算过账之后的产物。</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>那三股到底哪儿一样</h4>
+    <p><strong>只有一条：都认为帕森斯的行动概念有问题。</strong>（第 6859—6860 行：「这些取向首先都是对行动概念进行争辩」）</p>
+    <p><strong>再往下就分道了</strong>——一个说「他没看见权力」，一个说「他没看见解读」，一个说「他没看见算账」。</p>
+    <p class="meta">第 6866—6867 行还有一句值得记：「这三个理论主要处理帕森斯的行动概念，但<strong>他们都很少讨论社会秩序问题，更遑论社会变迁问题</strong>。」——<strong>这是三股的共同短板。</strong></p>
+  </div>
+
+  <hr>
+
+  <h2>自己动手转译</h2>
+
+  <div class="note">
+    <span class="label">题目</span>
+    <p>杰诺维西说，中国中间阶层「<strong>能传导（功能）却无方向决定权（自主）</strong>」，「<strong>无法成为能够持续介入并约束君主的中间力量</strong>」。</p>
+    <p>用这一课的工具问三个问题：</p>
+    <p>　· <span class="who gl">布劳</span><strong>用「单向依赖」问</strong>：中间阶层和君主之间，是<strong>互相帮得上忙</strong>，还是<strong>只有一方帮得上</strong>？（布劳：单向依赖会产生权力不平衡——第 4413—4415 行）</p>
+    <p>　· <span class="who gl">奥尔森</span><strong>用「搭便车」问</strong>：如果他们<strong>有共同利益但没形成共同行动</strong>，是因为<strong>团体太大、每个人的贡献太不显眼</strong>吗？（第 4558—4575 行）</p>
+    <p>　· <span class="who gl">奥尔森</span><strong>再用「小团体」问</strong>：为什么这一次偏偏是<strong>小团体</strong>能做成事？（奥尔森说小团体更容易成——第 4564—4567 行）</p>
+  </div>
+
+  <div class="note">
+    <span class="label">分寸提醒</span>
+    <p><strong>社会学是借来的描述工具，不是论据。</strong></p>
+    <p class="meta">这三问里，<strong>第二问最有价值</strong>：它把「无自主」从一个<strong>静态的结论</strong>（「他们没有力量」）变成一个<strong>动态的机制问题</strong>（「他们为什么没组织起来」）。<strong>而奥尔森给的答案——「团体越大，越没人出力」——正好能用来解释「为什么一个庞大有共同利益的群体，反而成不了事」。</strong></p>
+  </div>
+
+  <hr>
+
+  <h2>本课小结（按七段）</h2>
+
+  <div class="diagram">
+<pre>① 背景   帕森斯早年判了功利主义死刑（《社会行动的结构》）
+         50 年代末它又活了 —— 且「始于对帕森斯思想体系的强烈反击」
+         活过来的办法：把「效益」的含义撑大（利他也算效益）
+② 问题   帕森斯的行动模式「太过规范性，且总体来说太复杂」
+         如果人真被规范管住，怎么解释到处有人钻空子、搭便车？
+③ 回答   ★ 两块，两条命
+         【交换理论】
+           霍曼斯 · 三条批评（不是理论 / 太规范 / 反个体）
+                  · 《把人带回去》
+                  · 一切互动都是物质与非物质的交换
+                  · 价值＝过去奖赏的沉淀（不是「最终目的」）
+           布劳   · 交换会再生产权力
+                  · 关键句：互相服务＝平衡；单向依赖＝不平衡
+                  · 结局：与帕森斯主义「没有太多区别」
+         【理性选择】
+           奥尔森 · 《集体行动的逻辑》· 搭便车
+                  · 有共同利益 ≠ 会共同行动
+                  · 大团体没人出力，小团体盯得住人
+           科尔曼 · 规范＝对财物或行动的控制权利
+                  · 规范是「被影响的人需要它」之后长出来的
+④ 优点   问出了帕森斯问不出的问题（利益一致为何不行动）
+         给了「制度从哪来」一个答案
+         逼出反直觉结论（人人理性 → 集体不理性）
+         道德主张：别装（用道德压自利只会造成伪善）
+⑤ 裂缝   霍曼斯：循环论证（抢匪与捐献者都能「解释」）
+               · 心理学底子塌了
+               · 桑拿房：权力剥不掉，还原不下去
+         理性选择：投票与革命解释不了
+                 · 只有经济系学生像模型里的人
+⑥ 挑战   挑战帕森斯三条；也挑战马克思（奥尔森：无产阶级不会自动团结）
+         被挑战：埃奇奥尼（道德维度）· 资源动员论 · 《二十讲》作者本人
+         最漂亮的一击：用霍曼斯自己的「可检验」标准量他自己
+⑦ 影响   搭便车成了通用问法 · 社会资本从这里起
+         逼出「有限理性」（算到「差不多能用」就停）
+         反面：交换理论是死胡同，但理性选择活下来了
+
+★ 三股唯一共同点：都认为帕森斯的行动概念有问题
+  共同短板：都很少讨论秩序问题，更遑论变迁</pre>
+  </div>
+
+  <h2>下一课预告</h2>
+
+  <p><strong>第 20 课 · 哈贝马斯</strong></p>
+
+  <div class="roster">
+    <div class="row">
+      <div>他打什么</div>
+      <div>帕森斯说要研究「<strong>行动</strong>」，结果研究的是「<strong>系统需求</strong>」——「以行动理论作为优先的基本概念，结果变成以系统理论作为优先的基本概念」（第 3570—3574 行）</div>
+    </div>
+    <div class="row">
+      <div>和这一课的关系</div>
+      <div>他也反功利主义，但<strong>也不要帕森斯</strong>——他走第三条路：<strong>沟通</strong>。<strong>不是算账，也不是守规矩，是谈。</strong></div>
+    </div>
+    <div class="row">
+      <div>在哪一层</div>
+      <div>《反帕森斯地图》<strong>第四层</strong>——但他不是「反对」，是<strong>接手重做</strong></div>
+    </div>
+  </div>
+
+  <h2>本课依据</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>主依据</div>
+      <div><code>社会理论二十讲…md</code><br><strong>第 6858—6867 行</strong>（三股并列 · 各自反什么）· 第 3912—3930 行（帕森斯判死刑 · 复兴原因）· 第 4070—4089 行（交换理论 vs 理性选择的轴线）· <strong>第 4091—4270 行</strong>（霍曼斯：三条批评 · 《把人带回去》· 交换命题 · 价值观 · 反伪善）· <strong>第 4293—4396 行</strong>（霍曼斯的三处裂缝：循环论证 · 心理学 · 桑拿房）· 第 4400—4448 行（布劳 · 单向依赖 · 死胡同）· <strong>第 4465—4580 行</strong>（奥尔森：搭便车 · 大团体小团体）· 第 4670—4755 行（对奥尔森的批评 · 资源动员论）· 第 4890—4917 行（科尔曼 · 规范的形成）· <strong>第 4975—4984 行</strong>（只有经济系学生像模型里的人）</div>
+    </div>
+    <div class="row">
+      <div>辅依据</div>
+      <div><a href="0017-conflict-theory.html">第 17 课 · 冲突理论</a>（第一股 · 地图第二层）· <a href="0018-interpretive-turn.html">第 18 课 · 诠释取向两家</a>（第二股 · 地图第四层）· <a href="../reference/anti-parsons-map.html">反帕森斯地图</a></div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">出处等级说明</span>
+    <p>本课<strong>所有引文与行号，本机书可核验</strong>（《社会理论二十讲》第五讲）。</p>
+    <p><strong>「两块，两条命」（交换理论走死 / 理性选择活下来）这个对比是我对第 4446—4447 行与第 4943—4951 行的整理</strong>，书上没有这样并列写。</p>
+    <p><strong>「人不是在守规矩，是在算账」是我加的一句话记法</strong>，不是原文。</p>
+    <p>三股的「一句话分清」也是我的概括。</p>
+  </div>
+
+  <h2>速查卡</h2>
+
+  <div class="diagram">
+<pre>新功利主义（50 年代末复兴 · 反帕森斯三股的第三股）
+
+★ 三股坐标
+  冲突理论    第 17 课   「太和谐」  人处于统治与反抗的位置
+  诠释取向    第 18 课   「不够复杂」 人是意义的解读器
+  新功利主义  第 19 课   「太复杂也太规范」人是算计者
+  唯一共同点：都认为帕森斯的行动概念有问题
+  共同短板：都很少讨论秩序问题，更遑论变迁
+
+★ 复兴的秘诀：把「效益」撑大
+  做好事也有满足感 → 利他也被算进「效益」
+  → 于是绕开了帕森斯「你解释不了利他」的批评
+
+【交换理论】霍曼斯 → 布劳
+  霍曼斯
+    身份：帕森斯的学生，也是同事
+    三条批评：不是理论 / 太规范 / 反个体
+    书名：《把人带回去》（1964）
+    命题：一切互动都是「物质与非物质的交换」
+         人避免代价，最大化奖赏
+    价值观：价值＝过去奖赏的沉淀，不是「最终目的」
+    道德主张：别装 —— 用道德压自利只会造成伪善
+    裂缝：① 循环论证（抢匪与捐献者都能「解释」掉）
+          ② 心理学底子塌了
+          ③ 桑拿房 —— 权力剥不掉，还原不下去
+  布劳
+    加了一步：交换会再生产权力
+    关键句：互相服务＝平衡；单向依赖＝不平衡
+    结局：与帕森斯主义「没有太多区别」→ 死胡同
+
+【理性选择】奥尔森 → 科尔曼
+  奥尔森
+    《集体行动的逻辑》（1965）→ 打破流行假设
+    流行假设：有共同利益 → 会自动形成集体行动
+    奥尔森：错。因为搭便车。
+      公共财物：不贡献也能用
+      于是每个人都想「反正我不出力也有份」
+      但所有人都这么想 → 谁都不出力 → 谁都用不上
+    也挑战马克思：无产阶级不会自动团结（动前提）
+    那为什么还有集体行动？小团体更容易成
+      ① 单人贡献占比大
+      ② 小团体盯得住人
+  科尔曼
+    规范 ＝ 对财物或行动的正当且可接受的控制权利
+    规范从哪来：一个行动影响很多人，但无法一对一交易
+    → 被影响的人算出「我需要这条规矩」
+    （但书上说：这种情况「在经验上很少见」）
+
+★ 最狠的一条批评
+  只有经济系学生的行为贴近理性模型
+  → 这个模型描述的不是「人」，是「一类被训练出来的人」
+
+结局
+  交换理论：死胡同（书上明说）
+  理性选择：活下来了，但不再是社会学主流
+
+下一课  哈贝马斯 —— 不是算账，也不是守规矩，是【谈】</pre>
+  </div>
+
+  <p class="meta">下一课：第 20 课 · 哈贝马斯</p>
+
+  <div class="lesson-footer">
+    <p class="meta">返回：<a href="../index.html">课程总目录</a> · <a href="../reference/anti-parsons-map.html">反帕森斯地图</a></p>
+  </div>
+
+</div>
+</body>
+</html>
