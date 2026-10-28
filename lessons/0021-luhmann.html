@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 21 课 · 卢曼：社会里没有“人”这个位置</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+  .diagram { background:var(--paper-alt); border:1px solid var(--rule); padding:1.4rem 1rem 1rem; margin:1.6rem 0; overflow-x:auto; }
+  .diagram pre { font-family:"SF Mono", Consolas, "Cascadia Mono", monospace; font-size:.82rem; line-height:1.55; margin:0; color:var(--ink); white-space:pre; }
+  .quote { border-left:3px solid var(--rule); padding:.6rem 0 .6rem 1rem; margin:1.1rem 0; color:var(--ink-soft); font-size:.94rem; }
+  .quote cite { display:block; margin-top:.5rem; font-size:.8rem; color:var(--ink-faint); font-style:normal; }
+  .roster { border:1px solid var(--rule); border-radius:8px; overflow:hidden; margin:1.4rem 0; }
+  .roster .row { display:flex; flex-wrap:wrap; border-top:1px solid var(--rule); }
+  .roster .row:first-child { border-top:none; }
+  .roster .row > div { padding:.65rem .9rem; font-size:.9rem; }
+  .roster .row > div:first-child { flex:0 0 110px; font-weight:600; background:var(--paper-alt); }
+  .roster .row > div:last-child { flex:1 1 320px; }
+  .hook { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .hook h4 { margin:0 0 .5rem; font-size:1rem; }
+  .hook p { margin:.35rem 0; }
+  .hook .main { font-size:1.15rem; font-weight:700; }
+  .note { background:#f7f4ec; border:1px solid var(--rule); border-radius:8px; padding:1rem 1.2rem; margin:1.4rem 0; }
+  .note .label { display:block; font-weight:700; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.03em; }
+  .note p { margin:.4rem 0; }
+  .note p:last-child { margin-bottom:0; }
+  .contrast { display:flex; gap:1rem; flex-wrap:wrap; margin:1.4rem 0; }
+  .contrast > div { flex:1 1 240px; border:1px solid #ddd; border-radius:8px; padding:.9rem 1.1rem; }
+  .contrast h4 { margin-top:0; font-size:1rem; }
+  .contrast p:last-child { margin-bottom:0; }
+  .step { display:flex; align-items:center; gap:.6rem; margin:1.6rem 0 .8rem; font-weight:700; font-size:1.02rem; }
+  .step .num { flex:0 0 2rem; height:2rem; border-radius:50%; background:#333; color:#fff;
+                display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+  table.cmp { width:100%; border-collapse:collapse; margin:1.2rem 0; font-size:.88rem; }
+  table.cmp th, table.cmp td { border:1px solid var(--rule); padding:.5rem .7rem; text-align:left; vertical-align:top; }
+  table.cmp th { background:var(--paper-alt); font-weight:600; }
+
+  /* 规矩 6.3：多对象分色 */
+  .who { display:inline-block; font-size:.76rem; font-weight:700; padding:.15rem .55rem;
+         border-radius:4px; margin-right:.5rem; vertical-align:middle; border:none; }
+  .who.cf { background:#e8f0e6; color:#3f6b38; }
+  .who.jy { background:#e4eef6; color:#2c5a80; }
+  .who.gl { background:#f6e9e6; color:#8a4535; }
+  .who.hb { background:#ece8f4; color:#5a4a80; }
+  .who.lm { background:#e8efe8; color:#3a5a3a; }
+  .sec-lm { border-left:5px solid #5a7a5a; padding-left:1.1rem; margin:1.6rem 0; }
+  .sec-lm > h2, .sec-lm > h3 { color:#3a5a3a; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">社会学 · 第 21 课 · 约 30 分钟</p>
+  <h1>卢曼：社会里没有「人」这个位置</h1>
+  <p class="subtitle">功能结构论 · 系统与环境 · 自我生产 · 一个把功能论拧到底的人</p>
+
+  <div class="note">
+    <span class="label">⚠️ 读之前先看这张表：他不「反」帕森斯，他把帕森斯拧到底</span>
+    <p>第 17—19 课讲的是<strong>反对</strong>帕森斯的人。第 20 课讲的是<strong>接手重做</strong>的人。<strong>卢曼比这两种都更特别。</strong></p>
+    <p>《二十讲》给他的讲名只有一句：<strong>「把功能论发展到极致的卢曼」</strong>（第 9609 行）。</p>
+    <p class="meta">按规矩 6.3：先立坐标表。</p>
+  </div>
+
+  <div class="roster" style="border:2px solid var(--rule);">
+    <div class="row">
+      <div>五家</div>
+      <div><span class="who cf">冲突理论</span>17 课 · 科塞 · 达伦多夫<br><span class="who jy">诠释取向</span>18 课 · 布鲁默 · 加芬克尔<br><span class="who gl">新功利主义</span>19 课 · 霍曼斯 · 奥尔森<br><span class="who hb">哈贝马斯</span>20 课<br><span class="who lm">卢曼</span><strong>21 课 · 这一课</strong></div>
+    </div>
+    <div class="row">
+      <div>和帕森斯什么关系</div>
+      <div><span class="who cf">冲突理论</span><strong>反对</strong>：看不见冲突<br><span class="who jy">诠释取向</span><strong>反对</strong>：把人想简单了<br><span class="who gl">新功利主义</span><strong>反对</strong>：太规范、太复杂<br><span class="who hb">哈贝马斯</span><strong>接手重做</strong>：问题问对了，答错了<br><span class="who lm">卢曼</span><strong>从他出发，把他拧到底</strong>——连他自己都不敢去的地方</div>
+    </div>
+    <div class="row">
+      <div>「人」在理论里的位置</div>
+      <div><span class="who cf">冲突理论</span>人处在统治与反抗的位置<br><span class="who jy">诠释取向</span>人是意义的解读器<br><span class="who gl">新功利主义</span>人是算计者<br><span class="who hb">哈贝马斯</span>人是能讲道理的对话者<br><span class="who lm">卢曼</span><strong>人不在系统里</strong>——人属于「环境」</div>
+    </div>
+    <div class="row">
+      <div>共同点（<strong>只有一条</strong>）</div>
+      <div>五家都和帕森斯有关——<strong>但「有关」的方式各不相同</strong>。除此之外，五家彼此之间几乎没有一致的立场。</div>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>一句话分清（五家各一句）</h4>
+    <p><span class="who cf">冲突理论</span>「<strong>社会不是靠共识撑着的，是靠统治撑着的。</strong>」</p>
+    <p><span class="who jy">诠释取向</span>「<strong>规矩不是拿来执行的，是拿来解读的。</strong>」</p>
+    <p><span class="who gl">新功利主义</span>「<strong>人不是在守规矩，是在算账。</strong>」</p>
+    <p><span class="who hb">哈贝马斯</span>「<strong>人不是算账，也不是守规矩——人是能坐下来谈的。</strong>」</p>
+    <p><span class="who lm">卢曼</span>「<strong>不是人在沟通，是沟通在沟通。</strong>」</p>
+  </div>
+
+  <div class="hook">
+    <h4>把手词（1 主 + 2 辅）</h4>
+    <p>主：<span class="main">功能分化</span>　—　现代社会不是一个整体，是很多各干各的子系统</p>
+    <p>辅一：<strong>系统／环境</strong>　—　系统＝有关系的那一堆；其余全是环境</p>
+    <p>辅二：<strong>自我生产</strong>　—　系统自己造自己，外界只能「刺激」</p>
+  </div>
+
+  <!-- ================= ① 背景 ================= -->
+  <div class="step"><span class="num">1</span>思想背景：德国社会学被他俩各占半壁</div>
+
+  <h2>1970 年代的德国：两个人，两半江山</h2>
+
+  <div class="quote">
+    1971 年，发生了上一讲稍微提到过的<strong>哈贝马斯与卢曼之争</strong>［《<strong>探讨社会的理论，还是社会技术学？</strong>》（Theorie der Gesellschaft oder Sozialtechnologie?）一书即是两人的辩论文集］，事情才出现改变。卢曼借着功能论—系统理论的取向，<strong>成为哈贝马斯最重要的对手</strong>。这也让德国社会学在理论相当兴盛的 20 世纪 70 年代里，<strong>由哈贝马斯和卢曼各占了半壁江山</strong>，其他理论在这两人的光芒下都相形失色。
+    <cite>《社会理论二十讲》第 9681—9687 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">注意那本辩论文集的书名——它就是全部争议</span>
+    <p><strong>《探讨社会的理论，还是社会技术学？》</strong></p>
+    <p>翻译过来：<strong>「社会学是要去理解并改善社会，还是要去做一套能运算社会的技术？」</strong></p>
+    <p class="meta">这个书名提前剧透了两人根本的分歧方向——<strong>下面会一步步走到那儿。</strong></p>
+  </div>
+
+  <h2>一个和哈贝马斯完全相反的起点</h2>
+
+  <p>这一点很少被强调，但书上一开头就说了（第 9641—9650 行）：</p>
+
+  <div class="quote">
+    他在 15 岁时担任空军技师，在二战末期被美军逮捕，一直被关到 1945 年 9 月。这段时间他遭到非常不公的对待。所以<strong>他和哈贝马斯不一样，不觉得「解放」有什么悲天悯人的、道德上的价值</strong>，因为他认为自己被美军囚禁的这件事，<strong>无法用「有罪」或「无罪」的范畴来说明</strong>。……<strong>1945 年 5 月 8 日之前，是一种（纳粹政府的）秩序，之后就完全变成另外一种秩序——什么事情都可以是另外一种样子</strong>……<strong>正因社会现象都是偶然的，所以卢曼认为，我们没有必要对道德范畴多费什么心力。</strong>
+    <cite>《社会理论二十讲》第 9640—9650 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>这一条决定了他和哈贝马斯的分歧从哪儿开始</h4>
+    <p><span class="who hb">哈贝马斯</span>的底色是<strong>「为什么会有人相信极权」</strong>→ 所以他一辈子在论证<strong>「讲道理有可能」</strong>。</p>
+    <p><span class="who lm">卢曼</span>的底色是<strong>「秩序换了什么都没解释」</strong>→ 所以他一辈子在研究<strong>「秩序怎么自己运转」</strong>。</p>
+    <p class="meta"><strong>一个从道德出发，一个把道德放一边。</strong>后面的分歧全是从这儿分出来的。</p>
+  </div>
+
+  <h2>他和帕森斯的相遇</h2>
+
+  <div class="quote">
+    影响卢曼学术生涯的一个关键时刻，就是<strong>他与帕森斯的相遇</strong>。卢曼的很多观念都要归功于帕森斯。<strong>但卢曼当然完全不是一位「正统的」帕森斯信徒</strong>，他的思想非常独立于帕森斯的理论。……<strong>卢曼感兴趣的不是帕森斯的行动理论</strong>；整个早期的帕森斯似乎并没有特别让卢曼印象深刻。他所提炼的，是帕森斯<strong>创作中后期的结构功能论、系统理论</strong>的思想体系。
+    <cite>《社会理论二十讲》第 9720—9728 行</cite>
+  </div>
+
+  <!-- ================= ② 问题 ================= -->
+  <div class="step"><span class="num n2">2</span>他面临什么问题</div>
+
+  <div class="sec-lm">
+
+  <div class="hook" style="border-left:6px solid #5a7a5a;">
+    <h4>▼ 接下来是【一个问题接一个问题】走下来的</h4>
+    <p>每一步都先卡一下：解决了什么，又立刻露出什么新麻烦。</p>
+    <p class="meta">全课八步。<strong>卢曼每个动作都是被上一个卡点逼出来的。</strong></p>
+  </div>
+
+  <h2>第 0 步 · 先看他要干什么</h2>
+
+  <p>第 9611—9627 行给了他和哈贝马斯最清楚的一次对比：</p>
+
+  <div class="quote">
+    卢曼对于……理论的纷杂多样性，感到非常不满意，因此转而进行他自己的理论综合工作。当然在卢曼这里，「综合」<strong>不能完全按照字面上的意思来理解</strong>。他与哈贝马斯不一样。<strong>哈贝马斯实际上对各种不同的理论立场，很努力地以融会贯通的方式来进行诠释</strong>，并且他认为在他建立自己的理论体系时，<strong>会保留每个理论中有道理的见解</strong>，所以在他的理论中还是<strong>可以完全辨识出「原本的理论」的某些元素</strong>。<strong>但卢曼的综合方式则直接得多。他没有使用哈贝马斯那种特别显眼的诠释性的做法。他致力追求的，是避开社会学中那些相互争鸣的理论的提问方式，或是改写那些理论的提问方式。</strong>他借助的是<strong>比帕森斯更加极端化的功能论</strong>。
+    <cite>《社会理论二十讲》第 9611—9621 行</cite>
+  </div>
+
+  <div class="contrast">
+    <div>
+      <h4><span class="who hb">哈贝马斯</span>的综合</h4>
+      <p><strong>把各家都读一遍，留下有道理的</strong></p>
+      <p>所以你还能认出韦伯、米德、涂尔干的影子</p>
+      <p class="meta">像<strong>拼图</strong></p>
+    </div>
+    <div>
+      <h4><span class="who lm">卢曼</span>的综合</h4>
+      <p><strong>把各家的「问题」整个换掉</strong></p>
+      <p>不是回答你的问题，是<strong>说你的问题问法就不对</strong></p>
+      <p class="meta">像<strong>换掉整张地图</strong></p>
+    </div>
+  </div>
+
+  <h2>第 1 步 · 卡点：帕森斯那个问法，站不住</h2>
+
+  <p><strong>帕森斯的做法是什么？</strong>书上说得很直白（第 9729—9732 行）：</p>
+
+  <div class="quote">
+    帕森斯一直以来的问题是，<strong>每种社会现象对于一个较大的集体或整体的功能是什么</strong>。例如家庭会为社会发挥什么效用。帕森斯的出发点是一个（<strong>稳定的</strong>）<strong>系统结构</strong>，这个系统结构是通过理论家可以发现的某些<strong>功能效用</strong>而<strong>持存</strong>下来的。
+    <cite>《社会理论二十讲》第 9729—9732 行</cite>
+  </div>
+
+  <p><strong>卢曼说这不行</strong>（第 9737—9743 行）：</p>
+
+  <div class="quote">
+    卢曼接受帕森斯的批评者对结构功能论的指责，特别是有些批评者指出，对于社会科学来说，<strong>结构或系统的持存所需要的东西，并不能被清楚界定出来，因为社会的结构或系统和生物有机体不一样，没有实质意义上的死亡</strong>。任何一个理论，如果用任何一种类型或方式，<strong>先将结构或系统当作出发点，然后才探问其功能</strong>，实际上都会面临这项指责所揭示的问题。
+    <cite>《社会理论二十讲》第 9737—9743 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>「社会没有死亡」这句话，是全部转折的起点</h4>
+    <p>你可以说<strong>一个生物死了</strong>——心跳停了、脑死了，很清楚。</p>
+    <p><strong>但你能说「这个社会死了」吗？</strong>大明亡了，可中国社会还在。苏联解体了，可俄罗斯社会还在。</p>
+    <p><strong>既然「死」都说不清，那「靠什么活着（持存）」就更说不清。</strong></p>
+    <p class="meta">所以帕森斯那套「先认定结构 → 再找它的功能」，<strong>地基就是虚的。</strong></p>
+  </div>
+
+  <h2>第 2 步 · 破局一：把顺序倒过来</h2>
+
+  <p>他的办法只有一句话——<strong>把「结构」和「功能」的位置对调</strong>（第 9746—9754 行）：</p>
+
+  <div class="quote">
+    他想用「<strong>功能结构论</strong>」的系统理论，取代帕森斯的「<strong>结构功能论</strong>」的系统理论：<br><br>
+    结构功能论的系统理论的不足之处，在于它的原则，亦即在于它<strong>将结构概念置于功能概念之前</strong>。……但是如果人们把基本概念的关联反转过来，也就是<strong>将功能概念置于结构概念之前</strong>，那么就可以获得另一种可能性。<strong>功能结构论要问的是系统结构的功能，但不需要把一个无所不包的系统结构当作提问参照的前提。</strong>
+    <cite>Luhmann, "Soziologie als Theorie sozialer Systeme", p.114；转引自《二十讲》第 9746—9754 行</cite>
+  </div>
+
+  <div class="diagram">
+<pre>帕森斯【结构功能论】
+
+   先认定：社会有这些结构（家庭、宗教、教育……）
+   再追问：它们对社会有什么用？
+
+   → 问题：你怎么知道这些「结构」是必须的？
+           （社会又没有死亡，凭什么说它「需要」？）
+
+卢曼【功能结构论】——两个词颠倒了
+
+   先问：社会要解决什么问题？
+   再看：它长出了什么结构？
+
+   → 结构不是给定的，是【解出来的】</pre>
+  </div>
+
+  <div class="hook">
+    <h4>打个比方</h4>
+    <p><strong>帕森斯</strong>：先看到一栋房子，然后问「这个厨房是干什么用的」。</p>
+    <p><strong>卢曼</strong>：先问「人要吃饭、要睡觉、要待客」，<strong>再看人会盖出什么样的房子</strong>。</p>
+    <p><strong>厨房不是当然就有的——它是「吃饭」这个问题解出来的一个答案。</strong></p>
+    <p class="meta">所以卢曼能说：<strong>换一个问题，房子可以完全不一样。</strong></p>
+  </div>
+
+  <h2>第 3 步 · 卡点：那把「结构」拿掉，还剩什么</h2>
+
+  <p><strong>这一步带来的后果比想象的大。</strong>书上列了三条，第一条最关键（第 9759—9771 行）：</p>
+
+  <div class="quote">
+    因为卢曼<strong>不从系统结构的持存（即系统必须维持其状态）出发，所以秩序问题对于卢曼来说就不如对于帕森斯那样成为社会学的整个核心问题</strong>。……因此卢曼的构想，<strong>并不依赖于（应该要）维系社会团结的价值和规范</strong>。这使得他自然也就<strong>将帕森斯理论当中规范主义的基本要素抛在脑后了</strong>。……卢曼还将帕森斯的规范主义从理论基础中<strong>完全排除出去</strong>。此外，卢曼还从经验层面认为，<strong>现代社会里规范和价值已不再扮演整合的角色了</strong>。
+    <cite>《社会理论二十讲》第 9759—9771 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一下，帕森斯的核心就被抽走了</span>
+    <p>帕森斯 <strong>整个理论的核心问题是「秩序为什么可能」</strong>，答案是<strong>共享价值与规范</strong>。</p>
+    <p>卢曼说：<strong>一、我不从「持存」出发，所以秩序问题不再是起点；二、现代社会里，规范和价值已经不管用了。</strong></p>
+    <p class="meta">所以<strong>不是「他的答案和帕森斯不一样」，是「他把帕森斯的问题整个取消了」。</strong></p>
+  </div>
+
+  </div>
+
+
+  <!-- ================= ③ 回答 ================= -->
+  <div class="step"><span class="num n3">3</span>他提出什么回答</div>
+
+  <div class="sec-lm">
+
+  <div class="hook" style="border-left:6px solid #5a7a5a;">
+    <h4>▼ 上一段说到他把顺序倒过来了，那倒过来之后长出什么</h4>
+    <p>第 4—7 步。<strong>每一步都是上一个卡点逼出来的。</strong></p>
+  </div>
+
+  <h2>第 4 步 · 卡点：那系统靠什么界定？</h2>
+
+  <p><strong>没有「持存」，没有「规范」，那「系统」这个词还怎么用？</strong></p>
+
+  <p>他的答案是从<strong>生物学</strong>借的（第 9774—9781 行）：</p>
+
+  <div class="quote">
+    那么我们就必须用<strong>抽象，而且是非常抽象的方式</strong>来理解系统。卢曼在根本上<strong>从生物学中汲取了灵感</strong>。生物学会去观察与分析有机体如何在多变，且原则上始终威胁着有机体的环境中，通过不断调节自身的体温而<strong>稳定地持存</strong>下来。卢曼把这个原本属于生物学的模式应用到社会整体上，并将<strong>社会系统定义为一些彼此相互关联的行动，而且这些行动会跟其他彼此相互关联的行动区别开来</strong>。<strong>系统，包括社会系统，是跟环境相区别的。这里的「环境」……还指所有不属于系统的一切。</strong>
+    <cite>《社会理论二十讲》第 9774—9781 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>「系统／环境」这组词，说人话</h4>
+    <p><strong>系统 ＝ 那些彼此连着、互相关照的事情</strong></p>
+    <p><strong>环境 ＝ 其余一切</strong>（注意：不只是「自然环境」，是<strong>所有不属于这个系统的东西</strong>）</p>
+    <p><strong>比如说「大学」这个系统</strong>：它的环境里包括政府、企业、学生家长、经济景气——<strong>也包括另一个系统（比如「经济」）。</strong></p>
+    <p class="meta">所以「环境」不是「大自然」，是<strong>「这个系统管不着、但会被影响的那一片」</strong>。</p>
+  </div>
+
+  <p>而「稳定」这个说法他也改了（第 9785—9791 行）：</p>
+
+  <div class="quote">
+    <strong>稳定性不是一个系统最根本的本质</strong>，仿佛其他的可能性都被排除掉似的；<strong>而是一个系统是否会稳定下来本身就是问题</strong>。稳定问题是面对着变换不定的、独立于系统而改变的、无情的环境而解决的。……<strong>我们不能将稳定性当作不变的本质来理解，而是要将稳定性理解为一种系统与环境之间的关系</strong>。
+    <cite>Luhmann, "Funktionale Methode und Systemtheorie", p.39；转引自《二十讲》第 9785—9791 行</cite>
+  </div>
+
+  <h2>第 5 步 · 卡点：那系统怎么跟环境打交道？</h2>
+
+  <p><strong>这一步是他最著名、也最狠的一步。</strong></p>
+
+  <p>他借了两位神经生理学家马图拉纳与瓦雷拉的发现（第 10448—10461 行）：</p>
+
+  <div class="quote">
+    马图拉纳与瓦雷拉在对<strong>颜色感知</strong>的分析中，非常惊讶地发现，眼睛内视网膜下的某些神经细胞的活动，<strong>与光的物理性质之间，显然没有什么确切的关系</strong>。光源与神经系统之间<strong>没有明确的因果关系</strong>。……那么人们就可以……宣称，<strong>神经系统是一个封闭系统</strong>。意思是，<strong>神经系统或知觉器官没有生产出一个完全仿造环境的仿造物，而是用它自己的运作逻辑建构出它自己的世界。</strong>
+    <cite>《社会理论二十讲》第 10448—10461 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>这段的意思，用一句日常话就是</h4>
+    <p><strong>眼睛不是摄像机。眼睛不「拍」世界，眼睛「算」出一幅画。</strong></p>
+    <p>同一束光进来，神经系统按它自己的接线方式处理。<strong>所以颜色不在光里，在神经系统的处理方式里。</strong></p>
+    <p class="meta">这就是「<strong>运作封闭</strong>」（operational closure）。</p>
+  </div>
+
+  <p>卢曼把这套搬到社会上（第 10465—10476 行）：</p>
+
+  <div class="quote">
+    生命器官的运作，是一种<strong>自我生产</strong>与自我关联的系统。……这是一种<strong>组织上封闭且自主的系统</strong>……当然，系统与环境还是有接触的……<strong>但系统的重要构成部分不是由环境供给的。外界只能刺激系统，但系统是用它自己的逻辑和处理方式来回应刺激的。</strong>
+    <cite>《社会理论二十讲》第 10465—10472 行</cite>
+  </div>
+
+  <div class="diagram">
+<pre>「刺激」和「决定」是两件事——这一步的关键
+
+   外界 ──【刺激】──→ 系统
+                          ↓
+                    系统用自己的逻辑处理
+                          ↓
+                    系统自己决定怎么办
+
+★ 外界能让系统「动一下」，但管不了它「怎么动」</pre>
+  </div>
+
+  <div class="hook">
+    <h4>这个区分，用一句话说</h4>
+    <p><strong>外面敲一下门，你能听见；但开不开门，是你决定的。</strong></p>
+    <p><strong>而卢曼说：所有的系统都是这样。政府敲经济的门，经济听得见，但开不开门由经济自己决定。</strong></p>
+    <p class="meta">这就是那句名言的由来（第 10519 行）：<strong>「只有经济才能造就经济。」</strong></p>
+  </div>
+
+  <h2>第 6 步 · 卡点：那系统里装的到底是什么？</h2>
+
+  <p><strong>这一步是全课最惊世骇俗的地方。</strong></p>
+
+  <p>既然系统是自己造自己，<strong>那它拿什么造自己？</strong>书上说（第 10540—10552 行）：</p>
+
+  <div class="quote">
+    卢曼将系统区分成机器、有机体、心理系统与社会系统……<strong>系统的构成要素不是人，也不是行动，而是沟通。沟通是社会系统的基本单位。在沟通中，意义被生产出来，并且会不断与意义相关联。人——卢曼惊世骇俗地说——不是「社会」这个系统的部分；并且不是人在沟通，而是沟通在沟通。</strong>
+    <cite>Luhmann, Die Gesellschaft der Gesellschaft, p.29f.；转引自《二十讲》第 10546—10550 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>「不是人在沟通，而是沟通在沟通」——这句怎么读</h4>
+    <p><strong>不是说人不存在</strong>，是说：<strong>「社会」这个东西的零件，不是人，是一件一件的「沟通」。</strong></p>
+    <p><strong>打个比方</strong>：一栋楼由砖砌成——<strong>但砖不是「楼」这个系统里的角色，砖就是楼的零件</strong>。人会进出这栋楼，但人不是楼的一部分。</p>
+    <p><strong>而沟通是可以自我延续的</strong>：一句话引出一句话，一句话引出下一句——<strong>这个过程不需要「谁」在旁边指挥，它自己就这么滚下去。</strong></p>
+    <p class="meta">所以他的结论是：<strong>「人」是社会这个系统的「环境」，不是它的零件。</strong></p>
+  </div>
+
+  <p><strong>他还把「行动」也取消了</strong>（第 10581—10591 行）：</p>
+
+  <div class="quote">
+    卢曼的社会学的基本核心概念，是<strong>沟通和意义，而不是「行动者」或「行动」</strong>。对卢曼来说，提及「行动」或「主体」，<strong>只是在进行归因或归属而已</strong>。……而卢曼当然「知道」，<strong>行动自身不是真的存在的</strong>，至少行动不能被用来描述现实过程。<strong>行动是通过归因过程而被建构起来的。</strong>
+    <cite>《社会理论二十讲》第 10581—10591 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一步有多狠，对比一下就知道了</span>
+    <p><span class="who jy">诠释取向</span>：人是意义的<strong>解读</strong>者　→ 人还是主角</p>
+    <p><span class="who hb">哈贝马斯</span>：人是<strong>讲道理</strong>的　→ 人还是主角</p>
+    <p><span class="who lm">卢曼</span>：<strong>「人」根本不在系统里</strong> → 主角没了</p>
+    <p class="meta">前四家都在争「人是什么样」。<strong>卢曼说：这个问题的位置本身就不对。</strong></p>
+  </div>
+
+  <h2>第 7 步 · 卡点：那现代社会长什么样？</h2>
+
+  <p><strong>答案：一堆各干各的子系统，谁也别想指挥谁。</strong>（第 10488—10513 行）</p>
+
+  <div class="quote">
+    功能分化的子系统，例如<strong>科学系统、知识系统、宗教系统、艺术系统、法律系统、教育系统、政治系统</strong>，在卢曼看来都仅遵循着<strong>它们各自的逻辑</strong>。这些系统是根据自己的<strong>符码</strong>来运作的，有自己特殊的纲要，因此<strong>不受外界的操纵与控制。外界仅能为这些系统带来刺激</strong>。……如此一来，<strong>「对总体社会进行规划」这种观念就完全没有意义了</strong>。
+    <cite>《社会理论二十讲》第 10488—10513 行</cite>
+  </div>
+
+  <p><strong>他还给了个极刻薄的比喻</strong>（第 10513—10517 行）：</p>
+
+  <div class="quote">
+    （政府）关于发展经济、确保德国地位、增加就业率等等的说法，所发挥的功能<strong>跟霍皮族印第安人的祈雨舞一样重要</strong>；这个功能就是<strong>让大家觉得（政府）在做事</strong>，不是只在呆等事情自己好转。
+    <cite>Luhmann, Die Politik der Gesellschaft, p.113；转引自《二十讲》第 10513—10517 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>这个比喻为什么这么刺人</h4>
+    <p><strong>「祈雨舞」的意思是</strong>：跳舞和下雨没有因果关系，但跳舞让大家觉得「我们在努力」。</p>
+    <p><strong>他说政府的「振兴经济」政策也是一样</strong>——听着像在办事，<strong>但经济的门，只有经济自己能开。</strong></p>
+    <p>而他的结论是（第 10519—10522 行）：<strong>「只有经济才能造就经济」</strong>——并且补充：<strong>艺术、科学也是如此。</strong></p>
+  </div>
+
+  <h3>各个系统靠什么区分？靠「二元符码」</h3>
+
+  <div class="diagram">
+<pre>每个系统只认自己的一套二分，别的它看不见：
+
+   科学系统   真 ／ 假
+   法律系统   合法 ／ 违法
+   经济系统   付款 ／ 不付款
+   政治系统   有权 ／ 无权
+   艺术系统   美 ／ 丑
+
+★ 科学系统看不懂「美」，它只能问「真不真」
+★ 政治系统看不懂「真」，它只能问「有没有权」</pre>
+  </div>
+
+  <div class="hook" style="border-left:6px solid #5a7a5a; background:#f3f7f3;">
+    <span class="label">◆ 卢曼·一句话总结（读完这一块，只记这一句就够）</span>
+    <p style="font-size:1.08rem; font-weight:700; line-height:1.7;">社会不是一个整体，是很多各干各的子系统；每个系统只认自己那套二分，外界只能刺激它，管不了它。</p>
+    <p><strong>所以帕森斯错在</strong>：他以为社会有个「整体」，可以靠共享价值统起来。<strong>卢曼说：没有整体，也没有总管。</strong></p>
+    <p class="meta">换句话：<strong>帕森斯问「社会靠什么统起来」，卢曼说「这个问题本身就不成立」。</strong></p>
+  </div>
+
+  <!-- ================= ③ 优点 ================= -->
+  <h2>把前面七步合成一张图</h2>
+
+  <div class="diagram">
+<pre>第 0 步  他要干什么
+           哈贝马斯：读遍各家，留下有道理的（拼图）
+           卢曼：把各家的问题整个换掉（换地图）
+
+第 1 步  卡点：帕森斯的问法站不住
+           「先认定结构，再问功能」
+           但社会【没有死亡】——凭什么说它「必须持存」？
+
+第 2 步  破局一：把顺序倒过来
+           结构功能论 → 功能结构论
+           先问「要解决什么问题」，再看「长出什么结构」
+
+第 3 步  卡点：那把「结构」拿掉，还剩什么
+           → 秩序问题不再是起点
+           → 规范主义整个排除掉
+           → 而且他说：现代社会里规范已经不整合了
+
+第 4 步  卡点：那系统靠什么界定？
+           → 靠【跟环境区别开】
+           系统＝有关联的那些事；环境＝其余一切
+
+第 5 步  卡点：系统怎么跟环境打交道？
+           → 运作封闭：外界只能【刺激】，系统自己决定怎么回应
+           依据：马图拉纳与瓦雷拉的颜色感知研究
+
+第 6 步  卡点：系统里装的到底是什么？
+           → 不是人，不是行动，是【沟通】
+           「不是人在沟通，而是沟通在沟通」
+           人不在系统里，人在【环境】里
+
+第 7 步  卡点：那现代社会长什么样？
+           → 一堆各干各的子系统，各有二元符码
+           科学＝真/假 · 法律＝合法/违法 · 经济＝付款/不付款
+           谁也别想指挥谁 →「规划」没有意义</pre>
+  </div>
+
+  </div>
+
+  <!-- ================= ④ 优点 ================= -->
+  <div class="step"><span class="num n4">4</span>优点何在：他赢在哪</div>
+
+  <h2>优点一：他把功能论从「虚」的地基上搬开了</h2>
+
+  <p>帕森斯的「功能」，是<strong>相对一个「整体必须持存」说的</strong>——而「整体」和「持存」都说不清。</p>
+
+  <p>卢曼改成<strong>相对「问题」</strong>：不问「这个结构对整体有什么用」，问「这个结构解掉了什么问题」。<strong>而「问题」是可以观察、可以比较的。</strong></p>
+
+  <h2>优点二：他能解释「现代社会为什么没法从上面规划」</h2>
+
+  <p>这一点比帕森斯强得多。帕森斯的模型里，<strong>总会有一个「最高控制层」</strong>（就是 L 那个位置）。卢曼说：<strong>没有这种层。</strong></p>
+
+  <p>书上说得很实（第 10643—10646 行）：这样一来，人们可以<strong>很清楚地看到各个子系统以什么逻辑在运作</strong>，「人们也许可以借此拥有一个<strong>比马克思上下建筑概念更现实的观察方式</strong>」。</p>
+
+  <h2>优点三：他给了「系统」一个不用人格化的说法</h2>
+
+  <p>这一点和哈贝马斯其实有共识：<strong>都不能把集体当成有意志的主体</strong>。卢曼走得更彻底：<strong>连「人」都不算系统零件。</strong></p>
+
+  <h2>优点四：他的理论确实包得下很多东西</h2>
+
+  <p>第 10417—10421 行：他宣称<strong>社会学至今所有理论问题都可以被他的系统理论涵括进来</strong>，并自称这是一个「<strong>无所不包（也就是说，连它的对手都包括了）的……超级理论</strong>」。</p>
+
+  <p class="meta">这话很狂，但书上也承认这套语言确实好用——<strong>它能把很多问题重新表述一遍。</strong></p>
+
+  <!-- ================= ⑤ 裂缝 ================= -->
+  <div class="step"><span class="num n5">5</span>缺点怎么暴露</div>
+
+  <h2>裂缝一：他把「操控」这条路彻底堵死了</h2>
+
+  <div class="quote">
+    当卢曼提出的命题认为社会（子）系统是自我生产的系统，这些系统只按照自己的系统逻辑来运作，外界只能给予刺激，但<strong>无法施加操控</strong>的时候，<strong>卢曼自己也阻绝了任何关于计划与控制的希望</strong>了。子系统只能彼此观察，只能将外界影响它们的企图转译为自己独特的语言——<strong>它们只能做到这一点</strong>！
+    <cite>《社会理论二十讲》第 10648—10653 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>这条批评的分量</h4>
+    <p><strong>如果系统只能被「刺激」，那一切改革、立法、政策，在理论上都是无效的。</strong></p>
+    <p>这等于说：<strong>「想做点什么」这个念头本身就没有意义。</strong></p>
+    <p class="meta">书上的追问：「但这也让人们想问，<strong>卢曼这个极端的假设是否符合现实</strong>。」（第 10654—10655 行）</p>
+  </div>
+
+  <h2>裂缝二：他对环保运动的判断，书上直接说「有问题」</h2>
+
+  <div class="quote">
+    卢曼对于生态运动的批评，<strong>从理论方面来看完全是很有问题的</strong>。因为卢曼<strong>把（生态学）对特殊的分化形式的警告，和对功能分化本身的批评，混淆在一起了</strong>。卢曼的说法仿佛是认为，<strong>生态学对现代工业社会生态危害的警告，都是想要回到现代化之前的，即没有功能分化的社会</strong>。但这<strong>不只在经验层面是错误的</strong>……而且<strong>卢曼自己在理论层面上也缺失了对另一种可能性的想象，亦即没有想到社会也可以用另一种方式来分化</strong>。
+    <cite>《社会理论二十讲》第 10711—10718 行</cite>
+  </div>
+
+  <div class="note">
+    <span class="label">这一击很硬，而且不是「立场不同」，是「逻辑跳步」</span>
+    <p><strong>环保运动说</strong>：「现在这种分化方式有问题。」</p>
+    <p><strong>卢曼听成</strong>：「我们不要分化了，回到以前吧。」</p>
+    <p class="meta"><strong>这两个不是一回事。</strong>书上说：<strong>卢曼「没有想到社会也可以用另一种方式来分化」</strong>——他只给了「现在这样」和「回到过去」两个选项，<strong>把第三种可能整段删掉了。</strong></p>
+  </div>
+
+  <h2>裂缝三：他自己的「系统存在」是个断言</h2>
+
+  <div class="quote">
+    最后一句——<strong>要证明系统理论面对现实时的能力</strong>——究竟是什么意思，以及<strong>我们如何证明一个社会现象是否真的是系统，卢曼并没有讲明白</strong>，而且这一句<strong>看起来更像是一个很教条的断言</strong>。
+    <cite>《社会理论二十讲》第 10414—10416 行</cite>
+  </div>
+
+  <h2>裂缝四：他把整套「行动理论」抹掉了</h2>
+
+  <p>第 10592 行：<strong>「卢曼以此，将所有可能的行动理论问题全部抹除。」</strong></p>
+
+  <p class="meta">这不是「他给了另一个答案」，是<strong>「他把问题本身取消」</strong>——那第 17—20 课讲的所有关于行动的争论，在他这儿都没位置了。</p>
+
+  <!-- ================= ⑥ 挑战 ================= -->
+  <div class="step"><span class="num n6">6</span>被谁挑战</div>
+
+  <h2>先分清方向</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>他挑战谁</div>
+      <div><strong>帕森斯</strong>（把结构功能论倒过来）· <strong>哈贝马斯</strong>（「不是人在沟通，而是沟通在沟通」）· <strong>整个行动理论传统</strong>（行动只是归因）· <strong>一切「规划」的想法</strong>（那是祈雨舞）</div>
+    </div>
+    <div class="row">
+      <div>谁挑战他</div>
+      <div><strong>哈贝马斯</strong>（1981 的《沟通行动理论》就是正面回应）· <strong>《二十讲》作者</strong>（环保那条、系统实在性那条）· <strong>行动理论阵营</strong>（说他把问题取消了）</div>
+    </div>
+  </div>
+
+  <h3>（一）和哈贝马斯这一场，是「同词不同义」的正面冲突</h3>
+
+  <p><strong>两家都用「沟通」这个词，但意思是两回事：</strong></p>
+
+  <div class="contrast">
+    <div>
+      <h4><span class="who hb">哈贝马斯</span>的沟通</h4>
+      <p>两个人<strong>面对面讲道理</strong></p>
+      <p>能达成<strong>共识</strong></p>
+      <p>主角是<strong>会说话的人</strong></p>
+    </div>
+    <div>
+      <h4><span class="who lm">卢曼</span>的沟通</h4>
+      <p><strong>系统自己延续下去的那一串事件</strong></p>
+      <p>不需要共识，只需要<strong>接着来</strong></p>
+      <p>主角是<strong>沟通本身</strong></p>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>所以卢曼那一击，打在哪</h4>
+    <p>哈贝马斯整套理论的地基是：<strong>人一开口就在讲道理，所以共识可能。</strong></p>
+    <p>卢曼说：<strong>「沟通」根本不是人在做，是系统在做；人甚至不在系统里。</strong></p>
+    <p class="meta">于是哈贝马斯那个「会讲道理的人」，<strong>在卢曼的系统里连个位置都没有。</strong></p>
+  </div>
+
+  <p><strong>而时间顺序也说明了这是接招</strong>（第 10394—10397 行）：</p>
+
+  <div class="quote">
+    他在 1984 年出版的代表作之一《社会系统》……<strong>这本书也是他对哈贝马斯在三年前出版的《沟通行动理论》的回应</strong>。
+    <cite>《社会理论二十讲》第 10394—10397 行</cite>
+  </div>
+
+  <h3>（二）他到底算哪一派：书上的答案</h3>
+
+  <div class="quote">
+    卢曼在德国<strong>被当作帕森斯的接班人</strong>，同时也<strong>被视作结构功能论的另一种现代版本</strong>；但<strong>美国的帕森斯拥护者却觉得卢曼的理论偏离了帕森斯，认为卢曼不值一哂</strong>。
+    <cite>《社会理论二十讲》第 9704—9707 行</cite>
+  </div>
+
+  <div class="hook">
+    <h4>所以「他属于哪一派」这个问题，当年就有人吵</h4>
+    <p><strong>德国人</strong>说：他是帕森斯的接班人。</p>
+    <p><strong>美国帕森斯派</strong>说：他偏了，不值一提。</p>
+    <p><strong>最准确的说法还是书上的讲名</strong>：<strong>把功能论发展到极致</strong>——<strong>从帕森斯出发，走到帕森斯自己不会去的地方。</strong></p>
+  </div>
+
+  <!-- ================= ⑦ 影响 ================= -->
+  <div class="step"><span class="num">7</span>现代影响</div>
+
+  <h2>影响一：系统论在社会学里有了一个正统版本</h2>
+
+  <p>1995 年创立的《社会系统》期刊——书上说（第 9690—9693 行）：<strong>德国除此之外没有任何一个理论学派，可以独立创立一份期刊。</strong></p>
+
+  <h2>影响二：他影响的不只是社会学</h2>
+
+  <p>第 9694—9696 行：在日本和意大利，他的影响力<strong>不只在社会学，也延伸到法学和政治学</strong>。</p>
+
+  <h2>影响三：反过来，美国社会学几乎不接他的东西</h2>
+
+  <p>书上给了两个原因（第 9697—9707 行）：<strong>一、他没有哈贝马斯那样好的译介者；二、他的理论太抽象，而美国社会学高度专业化、以经验研究为导向。</strong></p>
+
+  <h2>影响四（对你论文最有用）：他给了「无自主」一个最硬的版本</h2>
+
+  <div class="note">
+    <span class="label">这一条要单独说</span>
+    <p>杰诺维西说中国中间阶层「<strong>能传导（功能）却无方向决定权（自主）</strong>」。</p>
+    <p><strong>卢曼的解释会是</strong>：<strong>根本不是「他们没有权力」，是「中间阶层」这个名字在他们系统里根本不占一个位置。</strong></p>
+    <p>他们做的那些事，在系统里是<strong>一件一件的沟通</strong>；而「中间阶层」作为一个<strong>单位</strong>，系统里没有这个东西。</p>
+    <p class="meta"><strong>用他的话说：人不在系统里，人在环境里。</strong>所以「谁能决定方向」这个问题，得先问「这件事归哪个系统管」。</p>
+  </div>
+
+  <hr>
+
+  <h2>三个坑</h2>
+
+  <h3>坑 1：别把他说成「帕森斯的升级版」</h3>
+  <p>他确实从帕森斯出发，但<strong>他把帕森斯的核心问题（秩序为何可能）和核心答案（共享规范）都拆掉了</strong>。这是改造，不是升级。</p>
+
+  <h3>坑 2：别把「不是人在沟通」读成「人不存在」</h3>
+  <p>他的意思是：<strong>「人」不是「社会」这个系统的零件</strong>。人还在，只是<strong>归在「环境」那一栏里</strong>。</p>
+
+  <h3>坑 3：别把「运作封闭」读成「完全隔绝」</h3>
+  <p>他说得很清楚：<strong>系统与环境之间有「结构耦合」，外界能「刺激」系统</strong>（第 10469—10472 行）。<strong>只是刺激不等于控制。</strong></p>
+
+  <hr>
+
+  <h2>收口：五家并排放，各用一句话</h2>
+
+  <div class="roster" style="border:2px solid var(--rule);">
+    <div class="row">
+      <div style="background:#e8f0e6; color:#3f6b38;">冲突理论<br><span class="meta" style="color:#3f6b38;">17 课</span></div>
+      <div style="font-size:1.02rem; line-height:1.75;"><strong>社会不是靠共识撑着的，是靠统治撑着的。</strong></div>
+    </div>
+    <div class="row">
+      <div style="background:#e4eef6; color:#2c5a80;">诠释取向<br><span class="meta" style="color:#2c5a80;">18 课</span></div>
+      <div style="font-size:1.02rem; line-height:1.75;"><strong>规矩不是拿来执行的，是拿来解读的。</strong></div>
+    </div>
+    <div class="row">
+      <div style="background:#f6e9e6; color:#8a4535;">新功利主义<br><span class="meta" style="color:#8a4535;">19 课</span></div>
+      <div style="font-size:1.02rem; line-height:1.75;"><strong>人不是在守规矩，是在算账。</strong></div>
+    </div>
+    <div class="row">
+      <div style="background:#ece8f4; color:#5a4a80;">哈贝马斯<br><span class="meta" style="color:#5a4a80;">20 课</span></div>
+      <div style="font-size:1.02rem; line-height:1.75;"><strong>人不是算账，也不是守规矩——人是能坐下来谈的。</strong></div>
+    </div>
+    <div class="row">
+      <div style="background:#e8efe8; color:#3a5a3a;"><strong>卢曼</strong><br><span class="meta" style="color:#3a5a3a;"><strong>21 课</strong></span></div>
+      <div style="font-size:1.02rem; line-height:1.75;"><strong>不是人在沟通，是沟通在沟通。</strong></div>
+    </div>
+  </div>
+
+  <div class="hook">
+    <h4>五家的关系，一句话说清</h4>
+    <p>前四家都在争论<strong>「人是什么样」</strong>：处境的、解读的、算计的、讲道理的。</p>
+    <p><strong>卢曼说：这个问题的位置本身就不对——社会里没有「人」这个位置。</strong></p>
+    <p class="meta">所以他是这五家里唯一一个<strong>不回答那些问题、而是取消那些问题</strong>的人。</p>
+  </div>
+
+  <hr>
+
+  <h2>自己动手转译</h2>
+
+  <div class="note">
+    <span class="label">题目</span>
+    <p>杰诺维西说，中国中间阶层「<strong>能传导（功能）却无方向决定权（自主）</strong>」。</p>
+    <p>用这一课的工具问三个问题：</p>
+    <p>　· <span class="who lm">功能结构论</span><strong>问</strong>：18 世纪中国这套统治体系，<strong>要解决什么问题</strong>，才长出了「中间阶层」这个结构？（先问问题，再看结构）</p>
+    <p>　· <span class="who lm">二元符码</span><strong>问</strong>：中间阶层办事时，<strong>认的是哪一套二分</strong>？是「合规／不合规」，还是「有利／无利」，还是「得体／不得体」？</p>
+    <p>　· <span class="who lm">运作封闭</span><strong>问</strong>：君主的命令传到中间阶层，是<strong>被「刺激」了然后按自己的逻辑处理</strong>，还是<strong>被直接执行</strong>？如果答案是前者，那「无自主」就要重新定义。</p>
+  </div>
+
+  <div class="note">
+    <span class="label">分寸提醒</span>
+    <p><strong>社会学是借来的描述工具，不是论据。</strong></p>
+    <p class="meta">第一问最有价值：<strong>它把「中间阶层为什么存在」变成一个「他们解掉了什么问题」的问题</strong>——而不是「他们本来就在那儿」。而第二、三问要小心：<strong>卢曼这套工具会把「人」整块抹掉，这对你的论文是有风险的</strong>——你论文里的主角恰恰是「一群人」。</p>
+  </div>
+
+  <hr>
+
+  <h2>本课小结（按七段）</h2>
+
+  <div class="diagram">
+<pre>① 背景   1970s 德国：哈贝马斯与卢曼各占半壁
+         两人 1971 年的辩论文集就叫《社会理论，还是社会技术？》
+         ★ 人生底色相反：哈贝马斯从道德出发，卢曼把道德放一边
+           （他被美军关过，觉得秩序换了什么都没解释）
+         与帕森斯：只取中后期的系统理论，不取行动理论
+
+② 问题   帕森斯的问法站不住：「先认定结构，再问功能」
+         因为【社会没有死亡】——凭什么说它「必须持存」？
+
+③ 回答   ★ 八步问题链
+         0 他要干什么：把各家的问题整个换掉（不是拼图，是换地图）
+         1 卡点：结构功能论的地基是虚的
+         2 破局：倒过来——功能结构论（先问问题，再看结构）
+         3 卡点：那「结构」拿掉还剩什么 → 秩序问题不再是起点
+               → 规范主义整个排除 → 「现代社会规范已不整合」
+         4 卡点：系统靠什么界定 → 靠跟环境区别开
+         5 卡点：怎么跟环境打交道 → 运作封闭
+               外界只能【刺激】，系统自己决定怎么回应
+         6 卡点：系统里装的是什么 → 不是人，不是行动，是【沟通】
+               「不是人在沟通，而是沟通在沟通」
+               人不在系统里，人在【环境】里
+         7 卡点：现代社会长什么样 → 各干各的子系统 + 二元符码
+               科学 真/假 · 法律 合法/违法 · 经济 付款/不付款
+               →「规划」没有意义（政府振兴经济 ≈ 祈雨舞）
+
+④ 优点   把功能论从虚地基上搬开（改成相对「问题」）
+         能解释「现代社会为什么无法从上面规划」
+         给了「系统」一个不人格化的说法
+         理论确实包得下很多东西（他自称「超级理论」）
+
+⑤ 裂缝   一、把「操控」这条路彻底堵死
+         二、对环保运动的判断——书上直说「理论上有问题」
+             （把「警告这种分化方式」听成「要回到没分化」）
+         三、「系统存在」是个教条断言
+         四、把所有行动理论问题全部抹除
+
+⑥ 挑战   挑战帕森斯 / 哈贝马斯 / 整个行动理论 / 一切规划想法
+         被挑战：哈贝马斯 1981 沟通行动理论（他 1984 回招）
+         ★「他算哪一派」当年就吵过：
+           德国人当他是帕森斯接班人，美国帕森斯派说他不值一哂
+           最准确的：把功能论发展到极致
+
+⑦ 影响   《社会系统》期刊 · 影响溢出到法学政治学
+         但美国社会学几乎不接
+         ★ 对论文：「无自主」的最硬版本——不是没权力，
+           是「中间阶层」这个单位在系统里根本不占位置</pre>
+  </div>
+
+  <h2>下一课预告</h2>
+
+  <p><strong>第 22 课 · 结构主义与后结构主义</strong>（索绪尔 · 列维-斯特劳斯 · 福柯 · 德里达 · 利奥塔）</p>
+
+  <div class="roster">
+    <div class="row">
+      <div>为什么是这一课</div>
+      <div>《二十讲》说得极硬（第 14070—14079 行）：「<strong>结构主义和后结构主义实际上很难被归入社会学史</strong>……<strong>人们必须跨出结构主义与后结构主义取向的限制，才能够关联社会学。我们下一讲要来专门介绍的布迪厄就正是这么做的</strong>。」</div>
+    </div>
+    <div class="row">
+      <div>和这一课的关系</div>
+      <div>卢曼说「人不在系统里」，福柯那条线会说得更狠：<strong>「人」本身是个近代发明，可能会消失</strong>（第 13693 行）</div>
+    </div>
+    <div class="row">
+      <div>在哪一层</div>
+      <div><strong>不在反帕森斯地图上</strong>——它根本不在那张图的问题范围里（第 14065—14074 行：「由于……极端的反主体主义，所以在其中是看不到行动理论的」）</div>
+    </div>
+  </div>
+
+  <h2>本课依据</h2>
+
+  <div class="roster">
+    <div class="row">
+      <div>主依据</div>
+      <div><code>社会理论二十讲…md</code> <strong>第十一讲「把功能论发展到极致的卢曼」</strong><br><strong>第 9609—9627 行</strong>（讲名 · 与哈贝马斯综合方式的区别）· <strong>第 9640—9650 行</strong>（人生底色 · 偶然性 · 道德放一边）· 第 9681—9687 行（1971 辩论文集 · 各占半壁）· 第 9704—9707 行（帕森斯接班人 vs 不值一哂）· <strong>第 9720—9754 行</strong>（与帕森斯的相遇 · 结构功能论 vs 功能结构论）· <strong>第 9759—9771 行</strong>（秩序问题不再是起点 · 规范主义排除）· 第 9774—9791 行（系统与环境 · 稳定是关系）· <strong>第 10394—10421 行</strong>（《社会系统》是对哈贝马斯的回应 · 系统实在性）· <strong>第 10440—10486 行</strong>（马图拉纳与瓦雷拉 · 自我生产 · 刺激与决定）· <strong>第 10488—10522 行</strong>（功能分化 · 祈雨舞 · 只有经济才能造就经济）· <strong>第 10540—10591 行</strong>（沟通是基本单位 · 不是人在沟通 · 行动只是归因）· <strong>第 10648—10655 行</strong>（操控被堵死）· <strong>第 10711—10729 行</strong>（对环保运动的批评有问题）</div>
+    </div>
+    <div class="row">
+      <div>辅依据</div>
+      <div><a href="0020-habermas.html">第 20 课 · 哈贝马斯</a>（系统 vs 生活世界 · 那句「系统不能被当成主体」）· <a href="0018-interpretive-turn.html">第 18 课 · 诠释取向</a>（加芬克尔「秩序靠信任」——卢曼把秩序问题整个绕开了）</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <span class="label">出处等级说明</span>
+    <p>本课<strong>所有引文与行号，本机书可核验</strong>（《社会理论二十讲》第十一讲）。</p>
+    <p><strong>「社会里没有『人』这个位置」这个课名是我起的</strong>，依据是第 10546—10552 行（人不是社会系统的部分）。</p>
+    <p><strong>「换地图 vs 拼图」是我对第 9611—9621 行的比喻</strong>；「厨房是吃饭这个问题解出来的答案」是我加的比喻；「眼睛不是摄像机」是我对颜色感知那段的通俗转述。</p>
+    <p>「八步问题链」的编排是我的整理，原文不是这样分步的。</p>
+  </div>
+
+  <h2>速查卡</h2>
+
+  <div class="diagram">
+<pre>卢曼（1927—1998）· 《社会系统》1984
+
+★ 五家坐标
+  冲突理论    17 课  反对：看不见冲突
+  诠释取向    18 课  反对：把人想简单了
+  新功利主义  19 课  反对：太规范、太复杂
+  哈贝马斯    20 课  接手重做：问题问对了，答错了
+  卢曼        21 课  从他出发，把他拧到底
+  唯一共同点：都和帕森斯有关（但方式各不相同）
+
+★ 他和帕森斯的差别，一个词就够
+  帕森斯【结构功能论】先认定结构，再问功能
+  卢曼【功能结构论】先问问题，再看长出什么结构
+  → 结构不是给定的，是【解出来的】
+  → 起因：社会没有死亡，凭什么说它「必须持存」？
+
+★ 四组关键词
+  系统／环境    系统＝有关联的那堆；环境＝其余一切（不只是大自然）
+  运作封闭      外界只能【刺激】，系统自己决定怎么回应
+                （依据：马图拉纳与瓦雷拉的颜色感知）
+  自我生产      系统自己造自己（autos 自我 + poiein 产制）
+  二元符码      科学 真/假 · 法律 合法/违法 · 经济 付款/不付款
+                政治 有权/无权 · 艺术 美/丑
+
+★ 最惊世骇俗的一句
+  「不是人在沟通，而是沟通在沟通」（第 10549 行）
+  → 系统的零件不是人，不是行动，是【沟通】
+  → 人不在系统里，人在【环境】里
+  → 行动只是「归因」，不是真东西
+
+★ 时代诊断
+  各子系统各干各的，「规划」没有意义
+  政府振兴经济 ≈ 霍皮族祈雨舞（让大家觉得在做事）
+  「只有经济才能造就经济」
+
+★ 与哈贝马斯：同词不同义
+  哈贝马斯的沟通：两人面对面讲道理 → 共识
+  卢曼的沟通：系统自己延续下去的那一串 → 接着来就行
+  ★ 卢曼一击：你把「讲道理的人」当主角，可人不在系统里
+    （1984《社会系统》是对 1981《沟通行动理论》的回应）
+
+★ 四条裂缝
+  一、把「操控」彻底堵死（改革理论上无效）
+  二、对环保运动的判断——书上直说「理论上有问题」
+      把「警告这种分化方式」听成「要回到没分化」
+  三、「系统存在」是教条断言
+  四、把所有行动理论问题全部抹除
+
+★「他算哪一派」
+  德国人：帕森斯接班人
+  美国帕森斯派：偏离了，不值一哂
+  最准确：把功能论发展到极致
+
+★ 对论文
+  「无自主」的最硬版本：不是没权力，
+  是「中间阶层」这个单位在系统里根本不占位置
+
+下一课  结构主义与后结构主义（索绪尔 · 列维-斯特劳斯 · 福柯 · 德里达 · 利奥塔）</pre>
+  </div>
+
+  <p class="meta">下一课：第 22 课 · 结构主义与后结构主义</p>
+
+  <div class="lesson-footer">
+    <p class="meta">返回：<a href="../index.html">课程总目录</a> · <a href="../reference/anti-parsons-map.html">反帕森斯地图</a></p>
+  </div>
+
+</div>
+</body>
+</html>
